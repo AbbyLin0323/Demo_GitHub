@@ -1,0 +1,90 @@
+20160825:
+v1.0.2beta:
+1. change list file to like the following:
+   "0B0000003412F81F34120000" --> "0000000B 1FF81234 00001234"
+   binary file is still little-endian mode, so need to modify code that parse list file to binary file.
+2. delete assert and __debugbreak(), only printf error information, then return.
+
+20160818:
+v1.0.1beta:
+1. only provide 4k parameter binary file to de-compile, and the parse config file name should be defined by yourself.
+2. support <hw_init> is used as common register setting for all platform. each board can have its special register setting for the same ftable id.
+you can write as the following:
+(1)
+/main.cfg
+    ......
+    include "CRB/clock_crb.cfg"
+    ...... 
+
+/hw_init/clock_common.cfg
+    ftableid clock_id
+    ...... 
+
+/CRB/clock_crb.cfg
+    ftableid clock_id 1
+    include /hw_init/clock_common.cfg
+    ...... 
+
+(2)
+/main.cfg
+    ......
+    include "/hw_init/clock_common.cfg"
+    include "/CRB/clock_crb.cfg"
+    ...... 
+
+/hw_init/clock_common.cfg
+    ftableid clock_id
+    ...... 
+
+/CRB/clock_crb.cfg
+    ftableid clock_id 1
+    ......
+
+
+20160810:
+v1.0.0beta
+1. Main.cfg and include file can support both absolute and relative path.
+2. If not set the absolute path, the root path will be set to be the directory of EXE by default.
+3. Output file is in the root path, the absolute path you set or the relative to the EXE path.
+4. To get the help info, you can use "bl_parameter_compile.exe /?", or "bl_parameter_compile.exe -h" or   "bl_parameter_compile.exe -hel".
+5. Show the tool version at the beginning.
+6. Don't pause after finish running.
+
+20160728:
+1. fix must add an empty line after the last line if the last line is an opcoe with any parameter.
+   string copy in GetOneValue() should limit the copy length.
+2. fix if some .cfg file with ftableid is empty, the opcode in main.cfg couldn't be write in the right location.
+
+20160726:
+1.support many "main.cfg", select the directory of the "main.cfg" which you want to use in "blscript_parse.bat".
+the directory just like:
+blscript\
+ hw_init\
+   + clockgating\
+   + dram\
+   + global\
+   + nfc\
+   + sdc\
+ CRB_A\
+   + clockgating\
+   + main.cfg
+   + ptable.cfg
+ CRB_B\
+   + dram\
+   + main.cfg
+   + ptable.cfg
+ EVB_TP\
+   + nfc\
+   + main.cfg
+   + ptable.cfg
+ EVB_BJ\
+   + main.cfg
+   + ptable.cfg
+ output\
+   + *.lst
+   + Bootloader_Parameter.bin
+   + Bootloader.bin
+   + main_parse.cfg
+
+ bl_parameter_compile.exe
+ blscript_parse.bat

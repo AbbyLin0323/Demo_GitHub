@@ -1,0 +1,41 @@
+异常掉电normal cases:
+1.wait L3 queue empty -> table_rebuild_pattern.ini
+2.not wait L3 queue empty -> table_rebuild_not_wait_l3_empty_pattern.ini
+3.abnormal shutdown when WL move block -> table_rebuild_WL_not_wait_l3_empty_pattern.ini
+4.abnormal shutdown when flush RPMT/PMT and GC -> abnormal_shutdown_flash_cond.ini
+					       -> abnormal_shutdown_flash_cond_not_wait_l3_empty.ini
+5.abnormal shutdown at certain/random PPO -> abnormal_shutdown_flash_cond_rand_PPO.ini					
+ 
+异常掉电error cases:
+1.Load RPMT UECC -> abnormal_shutdown_data_block_random_UECC.ini
+2.Load RPMT UECC and Load Spare UECC -> abnormal_shutdown_data_block_error_case1.ini
+3.Load PMT UECC -> abnormal_shutdown_Load_PMT_UECC.ini
+4.Load AT0 UECC-> abnormal_shutdown_read_AT0_UECC.ini
+5.RECC of table rebuild -> abnormal_shutdown_RECC.ini
+6.Target block first page UECC -> abnormal_shutdown_target_block_first_page_UECC.ini
+7.Target block last page UECC -> abnormal_shutdown_target_block_last_page_UECC.ini
+
+正常掉电normal cases:
+1.file trim shutdown -> checklist0_file_trim_shutdown.ini
+2.gc trim shutdown -> checklist1_gc_trim_shutdown.ini
+
+正常掉电error cases:
+1.Load RT UECC -> normal_shutdown_load_RT_UECC.ini
+2.Load AT0 UECC -> normal_shutdown_read_AT0_UECC.ini
+3.Load PMT UECC -> normal_shutdown_read_PMT_UECC.ini
+4.Save RT program fail -> normal_shutdown_RT_PRG_fail.ini
+5.Save AT0 program fail -> normal_shutdown_AT0_PRG_fail.ini
+6.Save RT erase RT block fail -> normal_shutdown_erase_RT_block_fail.ini
+7.Save AT0 erase AT0 Block fail -> normal_shutdown_erase_AT0_block_fail.ini
+8.Target block last page UECC -> normal_shutdown_target_data_block_last_page_UECC.ini
+
+other error cases:
+1.L1 error handle -> L1_errorhandle_host_read_UECC.ini
+2.L2 error handle -> L2_errorhandle_Load_RPMT_UECC.ini
+3.L3 error handle -> L3_errorhandle_erase_data_block_fail.ini
+                  -> L3_errorhandle_target_block_prg_fail_and_UECC.ini
+                  -> L3_errorhandle_target_block_RECC.ini
+                  -> L3_errorhandle_UECC_retry_success.ini
+
+other:
+1.WL pattern -> WL_pattern.ini

@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Target Source Files">
+      <UniqueIdentifier>{039891cc-c83c-4d36-a82a-0b52a43dfc21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="satamodel">
+      <UniqueIdentifier>{1ef9099a-4792-4914-b79d-a8800e80b40b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flashmodel">
+      <UniqueIdentifier>{99c93087-0eb5-4f89-a9e2-7ed334d52094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flashmodel\256fm">
+      <UniqueIdentifier>{9a2a2b03-5357-4a17-b071-3c8a24ca439b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="verification">
+      <UniqueIdentifier>{c052faa1-b931-4d72-ac8c-33c287b0f32d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sgemodel">
+      <UniqueIdentifier>{1a880c68-14ee-427c-8573-c519122ba77d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="xtmp_env\xtmp_sysmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xtmp_env\xtmp_options.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xtmp_env\xtmp_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xtmp_env\xtmp_localmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xtmp_env\sysc_driver.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xtmp_env\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\256fm_win32\bufman.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\256fm_win32\cfmid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\256fm_win32\cfmodule.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\256fm_win32\rsvfileman.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\AHCIHost\AHCI_ControllerInterface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\AHCIHost\AHCI_ControllerModel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\AHCIHost\AHCI_HostModel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\CheckListParser\action_define.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\CheckListParser\base_pattern.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\CheckListParser\checklist_parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\CheckListParser\iniparser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\CheckListParser\nfc_Injerr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\dmaemodel\sim_DMAE.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\flashmodel\sim_flash_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\flashmodel\sim_flash_interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\flashmodel\sim_flash_shedule.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\flashmodel\sim_nfccmd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\MixVector_pattern\crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\MixVector_pattern\HostModel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\MixVector_pattern\MixVector_HostApp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\MixVector_pattern\verify_host_pattern.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\platform\memory_access.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\platform\win_bootloader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\search_engine\sim_search_engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\sgemodel\sim_HSG.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\sgemodel\sim_NormalDSG.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\sgemodel\sim_SGE.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model\trace_log\system_statistic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="xtmp_env\xtmp_sysmem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xtmp_env\xtmp_options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xtmp_env\xtmp_localmem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xtmp_env\xtmp_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xtmp_env\getopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xtmp_env\xtmp_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\256fm_win32\common_str.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\256fm_win32\hfmid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\256fm_win32\hfmodule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_ControllerInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_ControllerModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_HostDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_HostModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_HostModelVar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\CheckListParser\checklist_parse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\CheckListParser\action_define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\CheckListParser\base_pattern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\CheckListParser\iniparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\dmaemodel\sim_DMAE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\flashmodel\sim_flash_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\flashmodel\sim_flash_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\flashmodel\sim_flash_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\flashmodel\sim_flash_shedule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\flashmodel\sim_nfccmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\MixVector_pattern\crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\MixVector_pattern\HostInc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\MixVector_pattern\HostModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\MixVector_pattern\HostTrimCmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\MixVector_pattern\MixVector_HostApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\MixVector_pattern\Verify_host_pattern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\platform\memory_access.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\platform\win_bootloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\search_engine\sim_search_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\sgemodel\sim_HSG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\sgemodel\sim_NormalDSG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\sgemodel\sim_SGE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\trace_log\system_statistic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\model_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\platform\model_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_AhciSpec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_ATACmdCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model\CheckListParser\hscmd_parse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

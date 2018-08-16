@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="firmware">
+      <UniqueIdentifier>{1c229ad4-03b6-4824-a718-9000859593d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL">
+      <UniqueIdentifier>{28d3c296-2111-4fa7-874e-3981ae499654}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\COM">
+      <UniqueIdentifier>{d605d70e-d6f8-4d14-90e7-ca2d3a9baaad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model">
+      <UniqueIdentifier>{3d840fbe-d483-495c-b943-2c6bf225ab7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\256fm_x64">
+      <UniqueIdentifier>{e20806a9-dfe0-4132-be98-d19d03e2d6ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\flashmodel">
+      <UniqueIdentifier>{1bbe2a59-c901-42c5-8fde-33eb60bbe5ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\sgemodel">
+      <UniqueIdentifier>{482a6310-c912-4758-9a53-467223937aab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\trace_log">
+      <UniqueIdentifier>{193e8d26-4089-46a3-b770-293aa23ac5b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\AHCIHost">
+      <UniqueIdentifier>{7ffda780-cac9-4e42-b1ce-d28e5e65461a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\platform">
+      <UniqueIdentifier>{f1984a76-ffb3-472e-bdcc-b4c9d0558452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\HostInterface">
+      <UniqueIdentifier>{6313ec1a-6897-4773-a6cf-026b5ef41d87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\CheckListParser">
+      <UniqueIdentifier>{dc8b9785-0d46-4c6d-93fe-ae0bcf076648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\DMAEModel">
+      <UniqueIdentifier>{105e720d-4ce1-4ac8-9f31-b1bac5c43310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\search_engine">
+      <UniqueIdentifier>{fb48e66e-a4f4-4057-9077-4a7399747283}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\Config">
+      <UniqueIdentifier>{e107ea28-bd9a-465a-b6a4-05b3adefd615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\ChainMaintain">
+      <UniqueIdentifier>{b9cf8760-497d-4937-9793-7c5f0d50d1a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\DataMonitor">
+      <UniqueIdentifier>{f39f86ef-877a-4473-92a8-2a0c5ffa7be0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\Debug">
+      <UniqueIdentifier>{da7aea7a-90d9-4429-a8f1-f9ce768cd3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\DMAE">
+      <UniqueIdentifier>{f1ed7697-5d6f-4101-bd61-1ad8b4fc52cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\DSG">
+      <UniqueIdentifier>{513baa4a-23f4-4d5d-b733-1e0d3530cbb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\EM">
+      <UniqueIdentifier>{03d6032a-c9f9-43a2-b735-cb7d89bddc0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\Flash">
+      <UniqueIdentifier>{ddcd78df-16ce-4bbe-9a7f-0d46ec3b2013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\GLB">
+      <UniqueIdentifier>{12adc1a4-f87d-46e9-a0d0-efa17578f31b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\GPIO">
+      <UniqueIdentifier>{418f9965-35f5-4174-b12f-70f879b2daa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\HCT">
+      <UniqueIdentifier>{face4aba-ff28-41ba-9949-4a125e843182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\HSG">
+      <UniqueIdentifier>{5a72aed2-8a34-4403-ade9-e99db376ecc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\IIC">
+      <UniqueIdentifier>{ff019963-b460-451d-bdfe-34ffc9fb8619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\Interrupt">
+      <UniqueIdentifier>{74c252c5-c810-4cd1-94c8-91296b8bf738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\MultiCore">
+      <UniqueIdentifier>{d198542e-95a3-43f9-9aa5-bf026f306641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\SE">
+      <UniqueIdentifier>{3c9437a6-a5e4-47b3-aa6e-d8d40b3ed432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\NFC">
+      <UniqueIdentifier>{ff0395e9-56fc-4f68-bf92-7b7da80755ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\Xtensa">
+      <UniqueIdentifier>{f44519c6-5a60-409e-b5ce-e5423ce06326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\Trace">
+      <UniqueIdentifier>{23c7a153-dfaf-4ed6-a306-dd356925f8db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\SPI">
+      <UniqueIdentifier>{ae43758d-c512-4971-a99c-fff4aea0c7a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\SGE">
+      <UniqueIdentifier>{1555a582-91f7-4a1a-919c-a45c3752ecbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\ParamTable">
+      <UniqueIdentifier>{13d2cb68-01e8-46b7-b29e-9dabf6b65974}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\verify_pattern">
+      <UniqueIdentifier>{dd8e8b2b-286d-4727-a551-25420bace3d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HAL_Test">
+      <UniqueIdentifier>{2c6d50f1-ac2e-454d-bc31-88327a3d521b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HAL_Test\DMAE_Test">
+      <UniqueIdentifier>{cfbbf206-bc4c-44f4-a143-2798d5b82a03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HAL_Test\Mcu">
+      <UniqueIdentifier>{06e76e26-c1e5-473b-bc6c-24be38fc824d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HAL_Test\NFC">
+      <UniqueIdentifier>{72c21bee-4911-4620-b22c-33d83f52de39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HAL_Test\SearchEngine_Test">
+      <UniqueIdentifier>{602ea8ad-e091-4ddc-8d38-46f15cabbe62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HAL_Test\IIC_Test">
+      <UniqueIdentifier>{f50bb8b8-ea4d-405f-ba8b-c84969d0f60d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HAL_Test\DataCheck_EM">
+      <UniqueIdentifier>{09fb903d-5c74-41d5-a22a-a3ff8f08187f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\SimATALib">
+      <UniqueIdentifier>{6808ba73-1e0e-432f-a976-77216c6a3d0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\HCTModel">
+      <UniqueIdentifier>{472e81e4-b6ff-44ba-84db-168e21aa890a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="model\256fm_x64\flash_meminterface.h">
+      <Filter>model\256fm_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="model\256fm_x64\flash_mid.h">
+      <Filter>model\256fm_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_ControllerInterface.h">
+      <Filter>model\AHCIHost</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_ControllerModel.h">
+      <Filter>model\AHCIHost</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_HostDefine.h">
+      <Filter>model\AHCIHost</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_HostModel.h">
+      <Filter>model\AHCIHost</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_HostModelVar.h">
+      <Filter>model\AHCIHost</Filter>
+    </ClInclude>
+    <ClInclude Include="model\flashmodel\sim_flash_common.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="model\flashmodel\sim_flash_config.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="model\flashmodel\sim_flash_interface.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="model\flashmodel\sim_flash_shedule.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="model\flashmodel\sim_nfccmd.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="model\sgemodel\sim_HSG.h">
+      <Filter>model\sgemodel</Filter>
+    </ClInclude>
+    <ClInclude Include="model\sgemodel\sim_NormalDSG.h">
+      <Filter>model\sgemodel</Filter>
+    </ClInclude>
+    <ClInclude Include="model\sgemodel\sim_SGE.h">
+      <Filter>model\sgemodel</Filter>
+    </ClInclude>
+    <ClInclude Include="model\trace_log\system_statistic.h">
+      <Filter>model\trace_log</Filter>
+    </ClInclude>
+    <ClInclude Include="model\platform\memory_access.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="model\CheckListParser\base_pattern.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="model\CheckListParser\checklist_parse.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="model\CheckListParser\iniparser.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="model\HostInterface\HostInc.h">
+      <Filter>model\HostInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="model\HostInterface\HostTrimCmd.h">
+      <Filter>model\HostInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="model\platform\xt_library.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="model\platform\model_config.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="model\CheckListParser\action_define.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="model\model_common.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="model\dmaemodel\sim_DMAE.h">
+      <Filter>model\DMAEModel</Filter>
+    </ClInclude>
+    <ClInclude Include="model\search_engine\sim_search_engine.h">
+      <Filter>model\search_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="model\CheckListParser\nfc_Injerr.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="model\platform\win_bootloader.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\Config\Disk_Config.h">
+      <Filter>firmware\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\Config\Proj_Config.h">
+      <Filter>firmware\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_AhciSpec.h">
+      <Filter>model\AHCIHost</Filter>
+    </ClInclude>
+    <ClInclude Include="model\AHCIHost\AHCI_ATACmdCode.h">
+      <Filter>model\AHCIHost</Filter>
+    </ClInclude>
+    <ClInclude Include="model\CheckListParser\hscmd_parse.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\COM\BaseDef.h">
+      <Filter>firmware\COM</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\COM\COM_Memory.h">
+      <Filter>firmware\COM</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\COM\COM_QWord.h">
+      <Filter>firmware\COM</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\HAL_Inc.h">
+      <Filter>firmware\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\ChainMaintain\HAL_ChainMaintain.h">
+      <Filter>firmware\HAL\ChainMaintain</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\DataMonitor\HAL_NfcDataCheck.h">
+      <Filter>firmware\HAL\DataMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\Debug\HAL_HwDebug.h">
+      <Filter>firmware\HAL\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\DMAE\HAL_Dmae.h">
+      <Filter>firmware\HAL\DMAE</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\DSG\HAL_NormalDSG.h">
+      <Filter>firmware\HAL\DSG</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\Flash\HAL_FlashChipDefine.h">
+      <Filter>firmware\HAL\Flash</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\Flash\HAL_FlashCmd.h">
+      <Filter>firmware\HAL\Flash</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\GLB\HAL_GLBReg.h">
+      <Filter>firmware\HAL\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\GLB\HAL_HostInterface.h">
+      <Filter>firmware\HAL\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\GLB\HAL_MemoryMap.h">
+      <Filter>firmware\HAL\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\GPIO\HAL_GPIO.h">
+      <Filter>firmware\HAL\GPIO</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\HCT\HAL_HCT.h">
+      <Filter>firmware\HAL\HCT</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\HSG\HAL_HSG.h">
+      <Filter>firmware\HAL\HSG</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\Interrupt\HAL_Interrupt.h">
+      <Filter>firmware\HAL\Interrupt</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\MultiCore\HAL_MultiCore.h">
+      <Filter>firmware\HAL\MultiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\NFC\HAL_FlashDriverBasic.h">
+      <Filter>firmware\HAL\NFC</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\NFC\HAL_FlashDriverExt.h">
+      <Filter>firmware\HAL\NFC</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\ParamTable\HAL_ParamTable.h">
+      <Filter>firmware\HAL\ParamTable</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\SE\HAL_SearchEngine.h">
+      <Filter>firmware\HAL\SE</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\SGE\HAL_SGE.h">
+      <Filter>firmware\HAL\SGE</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\Trace\HAL_TraceLog.h">
+      <Filter>firmware\HAL\Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\Xtensa\HAL_Xtensa.h">
+      <Filter>firmware\HAL\Xtensa</Filter>
+    </ClInclude>
+    <ClInclude Include="model\verify_pattern\crc32.h">
+      <Filter>model\verify_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="model\verify_pattern\DosBaseType.h">
+      <Filter>model\verify_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="model\verify_pattern\HostInc.h">
+      <Filter>model\verify_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="model\verify_pattern\HostModel.h">
+      <Filter>model\verify_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="model\verify_pattern\HostTrimCmd.h">
+      <Filter>model\verify_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="model\verify_pattern\MixVector_HostApp.h">
+      <Filter>model\verify_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="model\verify_pattern\MMAIN.H">
+      <Filter>model\verify_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="model\verify_pattern\Verify_host_pattern.h">
+      <Filter>model\verify_pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\MixVector_DRAM.h">
+      <Filter>firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\MixVector_Flash.h">
+      <Filter>firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\MixVector_Interface.h">
+      <Filter>firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\MixVector_SRAM.h">
+      <Filter>firmware</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL_Test\DMAE_Test\TEST_DMAE.h">
+      <Filter>HAL_Test\DMAE_Test</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL_Test\SearchEngine_Test\TEST_SearchEngine.h">
+      <Filter>HAL_Test\SearchEngine_Test</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\EM\HAL_EncriptionModule.h">
+      <Filter>firmware\HAL\EM</Filter>
+    </ClInclude>
+    <ClInclude Include="firmware\HAL\IIC\HAL_IIC.h">
+      <Filter>firmware\HAL\IIC</Filter>
+    </ClInclude>
+    <ClInclude Include="model\SimATALib\SimATA_Interface.h">
+      <Filter>model\SimATALib</Filter>
+    </ClInclude>
+    <ClInclude Include="model\SimATALib\SimATACmd.h">
+      <Filter>model\SimATALib</Filter>
+    </ClInclude>
+    <ClInclude Include="model\HCTModel\Sim_HCT.h">
+      <Filter>model\HCTModel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="model\256fm_x64\flash_meminterface.c">
+      <Filter>model\256fm_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="model\AHCIHost\AHCI_ControllerInterface.c">
+      <Filter>model\AHCIHost</Filter>
+    </ClCompile>
+    <ClCompile Include="model\AHCIHost\AHCI_ControllerModel.c">
+      <Filter>model\AHCIHost</Filter>
+    </ClCompile>
+    <ClCompile Include="model\AHCIHost\AHCI_HostModel.c">
+      <Filter>model\AHCIHost</Filter>
+    </ClCompile>
+    <ClCompile Include="model\flashmodel\sim_flash_common.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="model\flashmodel\sim_flash_interface.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="model\flashmodel\sim_flash_shedule.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="model\flashmodel\sim_nfccmd.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="model\sgemodel\sim_HSG.c">
+      <Filter>model\sgemodel</Filter>
+    </ClCompile>
+    <ClCompile Include="model\sgemodel\sim_NormalDSG.c">
+      <Filter>model\sgemodel</Filter>
+    </ClCompile>
+    <ClCompile Include="model\sgemodel\sim_SGE.c">
+      <Filter>model\sgemodel</Filter>
+    </ClCompile>
+    <ClCompile Include="model\trace_log\system_statistic.c">
+      <Filter>model\trace_log</Filter>
+    </ClCompile>
+    <ClCompile Include="model\platform\memory_access.c">
+      <Filter>model\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="model\CheckListParser\base_pattern.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="model\CheckListParser\checklist_parse.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="model\CheckListParser\iniparser.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="model\platform\xt_library.c">
+      <Filter>model\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="model\CheckListParser\action_define.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="model\dmaemodel\sim_DMAE.c">
+      <Filter>model\DMAEModel</Filter>
+    </ClCompile>
+    <ClCompile Include="model\search_engine\sim_search_engine.c">
+      <Filter>model\search_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="model\CheckListParser\nfc_Injerr.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="model\platform\win_bootloader.c">
+      <Filter>model\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\Config\Disk_Config.c">
+      <Filter>firmware\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\COM\COM_Memory.c">
+      <Filter>firmware\COM</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\COM\COM_QWord.c">
+      <Filter>firmware\COM</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\HAL_Init.c">
+      <Filter>firmware\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\ChainMaintain\HAL_ChainMaintain.c">
+      <Filter>firmware\HAL\ChainMaintain</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\DataMonitor\HAL_NfcDataCheck.c">
+      <Filter>firmware\HAL\DataMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\Debug\HAL_HwDebug.c">
+      <Filter>firmware\HAL\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\DMAE\HAL_Dmae.c">
+      <Filter>firmware\HAL\DMAE</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\DSG\HAL_NormalDSG.c">
+      <Filter>firmware\HAL\DSG</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\Flash\HAL_FlashCmd.c">
+      <Filter>firmware\HAL\Flash</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\GPIO\HAL_GPIO.c">
+      <Filter>firmware\HAL\GPIO</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\HCT\HAL_HCT.c">
+      <Filter>firmware\HAL\HCT</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\HSG\HAL_HSG.c">
+      <Filter>firmware\HAL\HSG</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\Interrupt\HAL_Interrupt.c">
+      <Filter>firmware\HAL\Interrupt</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\MultiCore\HAL_MultiCore.c">
+      <Filter>firmware\HAL\MultiCore</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\NFC\HAL_FlashDriverBasic.c">
+      <Filter>firmware\HAL\NFC</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\NFC\HAL_FlashDriverExt.c">
+      <Filter>firmware\HAL\NFC</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\ParamTable\HAL_ParamTable.c">
+      <Filter>firmware\HAL\ParamTable</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\SE\HAL_SearchEngine.c">
+      <Filter>firmware\HAL\SE</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\SGE\HAL_SGE.c">
+      <Filter>firmware\HAL\SGE</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\Trace\HAL_TraceLog.c">
+      <Filter>firmware\HAL\Trace</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\Xtensa\HAL_Xtensa.c">
+      <Filter>firmware\HAL\Xtensa</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c" />
+    <ClCompile Include="model\verify_pattern\crc32.c">
+      <Filter>model\verify_pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="model\verify_pattern\HostModel.c">
+      <Filter>model\verify_pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="model\verify_pattern\MixVector_HostApp.c">
+      <Filter>model\verify_pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="model\verify_pattern\MMAIN.C">
+      <Filter>model\verify_pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="model\verify_pattern\verify_host_pattern.c">
+      <Filter>model\verify_pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\MixVector_DRAM.c">
+      <Filter>firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\MixVector_Flash.c">
+      <Filter>firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\MixVector_Main.c">
+      <Filter>firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\MixVector_SRAM.c">
+      <Filter>firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL_Test\DMAE_Test\TEST_DMAE.c">
+      <Filter>HAL_Test\DMAE_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL_Test\SearchEngine_Test\TEST_SearchEngine.c">
+      <Filter>HAL_Test\SearchEngine_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL_Test\TEST_MCU0Mix.c">
+      <Filter>HAL_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\EM\HAL_EncriptionModule.c">
+      <Filter>firmware\HAL\EM</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL_Test\DataCheck_EM\TEST_DataCheck_EM.c">
+      <Filter>HAL_Test\DataCheck_EM</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\IIC\HAL_IIC.c">
+      <Filter>firmware\HAL\IIC</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL_Test\IIC_Test\TEST_IIC.c">
+      <Filter>HAL_Test\IIC_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="model\SimATALib\SimATA_Interface.c">
+      <Filter>model\SimATALib</Filter>
+    </ClCompile>
+    <ClCompile Include="model\HCTModel\Sim_HCT.c">
+      <Filter>model\HCTModel</Filter>
+    </ClCompile>
+    <ClCompile Include="model\HostInterface\HostInterface.c">
+      <Filter>model\HostInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\HAL\Flash\HAL_FlashChipFeature.c">
+      <Filter>firmware\HAL\Flash</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

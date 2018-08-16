@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\host_api_lib">
+      <UniqueIdentifier>{3009bd5e-7fa4-4a65-af82-62d651b871cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host_api_lib\nvme">
+      <UniqueIdentifier>{d21f2e56-7d05-4662-a369-1853972b0daf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host_api_lib\ahci">
+      <UniqueIdentifier>{2ab541d4-9780-4011-a867-003088071a60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host_api_lib\scsi">
+      <UniqueIdentifier>{9cb61a90-a12f-4d1a-af65-48fbf96b6a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host_api_ext_lib">
+      <UniqueIdentifier>{2150f53d-2a45-4d7a-a23e-e03066f153d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host_disk_detect_lib">
+      <UniqueIdentifier>{4605a293-fff1-45a5-81d5-ad8fd215a194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host_disk_detect_lib\host_detect_sata">
+      <UniqueIdentifier>{49ad6b0b-0791-494c-81d5-85101356f544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host_disk_detect_lib\host_detect_usb">
+      <UniqueIdentifier>{027459f9-8953-48d1-bf4a-51ce0f97417a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host_disk_detect_lib\host_detect_ahci">
+      <UniqueIdentifier>{8e4fe2f2-aab4-40f9-908e-e95696f8c904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host_disk_detect_lib\host_detect_nvme">
+      <UniqueIdentifier>{33ec3711-0ec5-4a00-b2df-53e6c46a3ae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host_api_lib\uart">
+      <UniqueIdentifier>{ce6bdce0-b8db-4df4-8b72-7d17815005b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host_disk_detect_lib\host_detect_uart">
+      <UniqueIdentifier>{c7a4caaf-8d6e-4e20-a760-691bfc2739b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\host_api_lib\host_api\ahci\ahci.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\host_api_lib\host_api\ahci\hal_ahci.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\host_api_lib\host_api\ahci\ioctrl_ahci.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\host_api_lib\host_api\nvme\hal_nvme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\host_api_lib\host_api\nvme\ioctrl_nvme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\host_api_lib\host_api\nvme\nvme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\host_api_lib\host_api\scsi\hal_scsi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\host_api_lib\host_api\scsi\ioctrl_scsi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\host_api_lib\host_api\scsi\ntddscsi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\host_api_lib\host_api\host_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\host_api_lib\host_api\host_api_define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\host_api_lib\host_api\host_api_misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\host_api_lib\host_api\ahci\hal_ahci.cpp">
+      <Filter>Source Files\host_api_lib\ahci</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api\ahci\ioctrl_ahci.cpp">
+      <Filter>Source Files\host_api_lib\ahci</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api\nvme\hal_nvme.cpp">
+      <Filter>Source Files\host_api_lib\nvme</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api\nvme\ioctrl_nvme.cpp">
+      <Filter>Source Files\host_api_lib\nvme</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api\scsi\hal_scsi.cpp">
+      <Filter>Source Files\host_api_lib\scsi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api\scsi\ioctrl_scsi.cpp">
+      <Filter>Source Files\host_api_lib\scsi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api\host_api.cpp">
+      <Filter>Source Files\host_api_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api_ext\host_api_ext.cpp">
+      <Filter>Source Files\host_api_ext_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api_disk_detect\host_disk_detect.cpp">
+      <Filter>Source Files\host_disk_detect_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api_disk_detect\host_detect_sata\host_sata_detect.cpp">
+      <Filter>Source Files\host_disk_detect_lib\host_detect_sata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api_disk_detect\host_detect_ahci\host_ahci_detect.cpp">
+      <Filter>Source Files\host_disk_detect_lib\host_detect_ahci</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api_disk_detect\host_detect_nvme\host_nvme_detect.cpp">
+      <Filter>Source Files\host_disk_detect_lib\host_detect_nvme</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api\uart\hal_uart.cpp">
+      <Filter>Source Files\host_api_lib\uart</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api_disk_detect\host_detect_uart\host_uart_detect.cpp">
+      <Filter>Source Files\host_disk_detect_lib\host_detect_uart</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api\uart\ioctrl_uart.cpp">
+      <Filter>Source Files\host_api_lib\uart</Filter>
+    </ClCompile>
+    <ClCompile Include="src\host_api_lib\host_api_disk_detect\host_detect_usb\host_usb_detect.cpp">
+      <Filter>Source Files\host_disk_detect_lib\host_detect_usb</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

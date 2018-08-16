@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CA1CF023-804B-41E9-86E2-8039DE46F810}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Win_Sim</RootNamespace>
+    <ProjectName>MixVector_Sim</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>AHCI_INT;SIM;_DEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\firmware;$(SolutionDir)\firmware\COM;$(SolutionDir)\firmware\Config;$(SolutionDir)\firmware\HAL;$(SolutionDir)\firmware\HAL\ChainMaintain;$(SolutionDir)\firmware\HAL\DataMonitor;$(SolutionDir)\firmware\HAL\Debug;$(SolutionDir)\firmware\HAL\DMAE;$(SolutionDir)\firmware\HAL\DSG;$(SolutionDir)\firmware\HAL\EM;$(SolutionDir)\firmware\HAL\Flash;$(SolutionDir)\firmware\HAL\GLB;$(SolutionDir)\firmware\HAL\GPIO;$(SolutionDir)\firmware\HAL\HCT;$(SolutionDir)\firmware\HAL\HSG;$(SolutionDir)\firmware\HAL\IIC;$(SolutionDir)\firmware\HAL\Interrupt;$(SolutionDir)\firmware\HAL\MultiCore;$(SolutionDir)\firmware\HAL\NFC;$(SolutionDir)\firmware\HAL\ParamTable;$(SolutionDir)\firmware\HAL\SE;$(SolutionDir)\firmware\HAL\SGE;$(SolutionDir)\firmware\HAL\SPI;$(SolutionDir)\firmware\HAL\Trace;$(SolutionDir)\firmware\HAL\Xtensa;$(SolutionDir)\model;$(SolutionDir)\model\sgemodel;$(SolutionDir)\model\AHCIHost;$(SolutionDir)\model\DMAEModel;$(SolutionDir)\model\flashmodel;$(SolutionDir)\model\256fm_x64;$(SolutionDir)\model\HostInterface;$(SolutionDir)\model\trace_log;$(SolutionDir)\model\search_engine;$(SolutionDir)\model\platform;$(SolutionDir)\model\checklistparser;$(SolutionDir)\model\verify_pattern;$(SolutionDir)\model\SimATALib;$(SolutionDir)\model\HCTModel</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <BaseAddress>0x400000</BaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>AHCI_INT;SIM;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\firmware;$(SolutionDir)\firmware\COM;$(SolutionDir)\firmware\Config;$(SolutionDir)\firmware\HAL;$(SolutionDir)\firmware\HAL\ChainMaintain;$(SolutionDir)\firmware\HAL\DataMonitor;$(SolutionDir)\firmware\HAL\Debug;$(SolutionDir)\firmware\HAL\DMAE;$(SolutionDir)\firmware\HAL\DSG;$(SolutionDir)\firmware\HAL\EM;$(SolutionDir)\firmware\HAL\Flash;$(SolutionDir)\firmware\HAL\GLB;$(SolutionDir)\firmware\HAL\GPIO;$(SolutionDir)\firmware\HAL\HCT;$(SolutionDir)\firmware\HAL\HSG;$(SolutionDir)\firmware\HAL\IIC;$(SolutionDir)\firmware\HAL\Interrupt;$(SolutionDir)\firmware\HAL\MultiCore;$(SolutionDir)\firmware\HAL\NFC;$(SolutionDir)\firmware\HAL\ParamTable;$(SolutionDir)\firmware\HAL\SE;$(SolutionDir)\firmware\HAL\SGE;$(SolutionDir)\firmware\HAL\SPI;$(SolutionDir)\firmware\HAL\Trace;$(SolutionDir)\firmware\HAL\Xtensa;$(SolutionDir)\model;$(SolutionDir)\model\sgemodel;$(SolutionDir)\model\AHCIHost;$(SolutionDir)\model\flashmodel;$(SolutionDir)\model\256fm_x64;$(SolutionDir)\model\HostInterface;$(SolutionDir)\model\trace_log;$(SolutionDir)\model\search_engine;$(SolutionDir)\model\platform;$(SolutionDir)\model\checklistparser;$(SolutionDir)\model\verify_pattern;$(SolutionDir)\model\SimATALib;$(SolutionDir)\model\HCTModel;$(SolutionDir)\model\dmaemodel</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <BaseAddress>0x400000</BaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="firmware\COM\BaseDef.h" />
+    <ClInclude Include="firmware\COM\COM_Memory.h" />
+    <ClInclude Include="firmware\COM\COM_QWord.h" />
+    <ClInclude Include="firmware\Config\Disk_Config.h" />
+    <ClInclude Include="firmware\Config\Proj_Config.h" />
+    <ClInclude Include="firmware\HAL\ChainMaintain\HAL_ChainMaintain.h" />
+    <ClInclude Include="firmware\HAL\DataMonitor\HAL_NfcDataCheck.h" />
+    <ClInclude Include="firmware\HAL\Debug\HAL_HwDebug.h" />
+    <ClInclude Include="firmware\HAL\DMAE\HAL_Dmae.h" />
+    <ClInclude Include="firmware\HAL\DSG\HAL_NormalDSG.h" />
+    <ClInclude Include="firmware\HAL\EM\HAL_EncriptionModule.h" />
+    <ClInclude Include="firmware\HAL\Flash\HAL_FlashChipDefine.h" />
+    <ClInclude Include="firmware\HAL\Flash\HAL_FlashCmd.h" />
+    <ClInclude Include="firmware\HAL\GLB\HAL_GLBReg.h" />
+    <ClInclude Include="firmware\HAL\GLB\HAL_HostInterface.h" />
+    <ClInclude Include="firmware\HAL\GLB\HAL_MemoryMap.h" />
+    <ClInclude Include="firmware\HAL\GPIO\HAL_GPIO.h" />
+    <ClInclude Include="firmware\HAL\HAL_Inc.h" />
+    <ClInclude Include="firmware\HAL\HCT\HAL_HCT.h" />
+    <ClInclude Include="firmware\HAL\HSG\HAL_HSG.h" />
+    <ClInclude Include="firmware\HAL\IIC\HAL_IIC.h" />
+    <ClInclude Include="firmware\HAL\Interrupt\HAL_Interrupt.h" />
+    <ClInclude Include="firmware\HAL\MultiCore\HAL_MultiCore.h" />
+    <ClInclude Include="firmware\HAL\NFC\HAL_FlashDriverBasic.h" />
+    <ClInclude Include="firmware\HAL\NFC\HAL_FlashDriverExt.h" />
+    <ClInclude Include="firmware\HAL\ParamTable\HAL_ParamTable.h" />
+    <ClInclude Include="firmware\HAL\SE\HAL_SearchEngine.h" />
+    <ClInclude Include="firmware\HAL\SGE\HAL_SGE.h" />
+    <ClInclude Include="firmware\HAL\Trace\HAL_TraceLog.h" />
+    <ClInclude Include="firmware\HAL\Xtensa\HAL_Xtensa.h" />
+    <ClInclude Include="firmware\MixVector_DRAM.h" />
+    <ClInclude Include="firmware\MixVector_Flash.h" />
+    <ClInclude Include="firmware\MixVector_Interface.h" />
+    <ClInclude Include="firmware\MixVector_SRAM.h" />
+    <ClInclude Include="HAL_Test\DMAE_Test\TEST_DMAE.h" />
+    <ClInclude Include="HAL_Test\SearchEngine_Test\TEST_SearchEngine.h" />
+    <ClInclude Include="model\256fm_x64\flash_meminterface.h" />
+    <ClInclude Include="model\256fm_x64\flash_mid.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_AhciSpec.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_ATACmdCode.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_ControllerInterface.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_ControllerModel.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_HostDefine.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_HostModel.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_HostModelVar.h" />
+    <ClInclude Include="model\CheckListParser\action_define.h" />
+    <ClInclude Include="model\CheckListParser\base_pattern.h" />
+    <ClInclude Include="model\CheckListParser\checklist_parse.h" />
+    <ClInclude Include="model\CheckListParser\hscmd_parse.h" />
+    <ClInclude Include="model\CheckListParser\iniparser.h" />
+    <ClInclude Include="model\CheckListParser\nfc_Injerr.h" />
+    <ClInclude Include="model\dmaemodel\sim_DMAE.h" />
+    <ClInclude Include="model\flashmodel\sim_flash_common.h" />
+    <ClInclude Include="model\flashmodel\sim_flash_config.h" />
+    <ClInclude Include="model\flashmodel\sim_flash_interface.h" />
+    <ClInclude Include="model\flashmodel\sim_flash_shedule.h" />
+    <ClInclude Include="model\flashmodel\sim_nfccmd.h" />
+    <ClInclude Include="model\HCTModel\Sim_HCT.h" />
+    <ClInclude Include="model\HostInterface\HostInc.h" />
+    <ClInclude Include="model\HostInterface\HostTrimCmd.h" />
+    <ClInclude Include="model\model_common.h" />
+    <ClInclude Include="model\platform\memory_access.h" />
+    <ClInclude Include="model\platform\model_config.h" />
+    <ClInclude Include="model\platform\win_bootloader.h" />
+    <ClInclude Include="model\platform\xt_library.h" />
+    <ClInclude Include="model\search_engine\sim_search_engine.h" />
+    <ClInclude Include="model\sgemodel\sim_HSG.h" />
+    <ClInclude Include="model\sgemodel\sim_NormalDSG.h" />
+    <ClInclude Include="model\sgemodel\sim_SGE.h" />
+    <ClInclude Include="model\SimATALib\SimATACmd.h" />
+    <ClInclude Include="model\SimATALib\SimATA_Interface.h" />
+    <ClInclude Include="model\trace_log\system_statistic.h" />
+    <ClInclude Include="model\verify_pattern\crc32.h" />
+    <ClInclude Include="model\verify_pattern\DosBaseType.h" />
+    <ClInclude Include="model\verify_pattern\HostInc.h" />
+    <ClInclude Include="model\verify_pattern\HostModel.h" />
+    <ClInclude Include="model\verify_pattern\HostTrimCmd.h" />
+    <ClInclude Include="model\verify_pattern\MixVector_HostApp.h" />
+    <ClInclude Include="model\verify_pattern\MMAIN.H" />
+    <ClInclude Include="model\verify_pattern\Verify_host_pattern.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="firmware\COM\COM_Memory.c" />
+    <ClCompile Include="firmware\COM\COM_QWord.c" />
+    <ClCompile Include="firmware\Config\Disk_Config.c" />
+    <ClCompile Include="firmware\HAL\ChainMaintain\HAL_ChainMaintain.c" />
+    <ClCompile Include="firmware\HAL\DataMonitor\HAL_NfcDataCheck.c" />
+    <ClCompile Include="firmware\HAL\Debug\HAL_HwDebug.c" />
+    <ClCompile Include="firmware\HAL\DMAE\HAL_Dmae.c" />
+    <ClCompile Include="firmware\HAL\DSG\HAL_NormalDSG.c" />
+    <ClCompile Include="firmware\HAL\EM\HAL_EncriptionModule.c" />
+    <ClCompile Include="firmware\HAL\Flash\HAL_FlashChipFeature.c" />
+    <ClCompile Include="firmware\HAL\Flash\HAL_FlashCmd.c" />
+    <ClCompile Include="firmware\HAL\GPIO\HAL_GPIO.c" />
+    <ClCompile Include="firmware\HAL\HAL_Init.c" />
+    <ClCompile Include="firmware\HAL\HCT\HAL_HCT.c" />
+    <ClCompile Include="firmware\HAL\HSG\HAL_HSG.c" />
+    <ClCompile Include="firmware\HAL\IIC\HAL_IIC.c" />
+    <ClCompile Include="firmware\HAL\Interrupt\HAL_Interrupt.c" />
+    <ClCompile Include="firmware\HAL\MultiCore\HAL_MultiCore.c" />
+    <ClCompile Include="firmware\HAL\NFC\HAL_FlashDriverBasic.c" />
+    <ClCompile Include="firmware\HAL\NFC\HAL_FlashDriverExt.c" />
+    <ClCompile Include="firmware\HAL\ParamTable\HAL_ParamTable.c" />
+    <ClCompile Include="firmware\HAL\SE\HAL_SearchEngine.c" />
+    <ClCompile Include="firmware\HAL\SGE\HAL_SGE.c" />
+    <ClCompile Include="firmware\HAL\Trace\HAL_TraceLog.c" />
+    <ClCompile Include="firmware\HAL\Xtensa\HAL_Xtensa.c" />
+    <ClCompile Include="firmware\MixVector_DRAM.c" />
+    <ClCompile Include="firmware\MixVector_Flash.c" />
+    <ClCompile Include="firmware\MixVector_Main.c" />
+    <ClCompile Include="firmware\MixVector_SRAM.c" />
+    <ClCompile Include="HAL_Test\DataCheck_EM\TEST_DataCheck_EM.c" />
+    <ClCompile Include="HAL_Test\DMAE_Test\TEST_DMAE.c" />
+    <ClCompile Include="HAL_Test\IIC_Test\TEST_IIC.c" />
+    <ClCompile Include="HAL_Test\SearchEngine_Test\TEST_SearchEngine.c" />
+    <ClCompile Include="HAL_Test\TEST_MCU0Mix.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="model\256fm_x64\flash_meminterface.c" />
+    <ClCompile Include="model\AHCIHost\AHCI_ControllerInterface.c" />
+    <ClCompile Include="model\AHCIHost\AHCI_ControllerModel.c" />
+    <ClCompile Include="model\AHCIHost\AHCI_HostModel.c" />
+    <ClCompile Include="model\CheckListParser\action_define.c" />
+    <ClCompile Include="model\CheckListParser\base_pattern.c" />
+    <ClCompile Include="model\CheckListParser\checklist_parse.c" />
+    <ClCompile Include="model\CheckListParser\iniparser.c" />
+    <ClCompile Include="model\CheckListParser\nfc_Injerr.c" />
+    <ClCompile Include="model\dmaemodel\sim_DMAE.c" />
+    <ClCompile Include="model\flashmodel\sim_flash_common.c" />
+    <ClCompile Include="model\flashmodel\sim_flash_interface.c" />
+    <ClCompile Include="model\flashmodel\sim_flash_shedule.c" />
+    <ClCompile Include="model\flashmodel\sim_nfccmd.c" />
+    <ClCompile Include="model\HCTModel\Sim_HCT.c" />
+    <ClCompile Include="model\HostInterface\HostInterface.c" />
+    <ClCompile Include="model\platform\memory_access.c" />
+    <ClCompile Include="model\platform\win_bootloader.c" />
+    <ClCompile Include="model\platform\xt_library.c" />
+    <ClCompile Include="model\search_engine\sim_search_engine.c" />
+    <ClCompile Include="model\sgemodel\sim_HSG.c" />
+    <ClCompile Include="model\sgemodel\sim_NormalDSG.c" />
+    <ClCompile Include="model\sgemodel\sim_SGE.c" />
+    <ClCompile Include="model\SimATALib\SimATA_Interface.c" />
+    <ClCompile Include="model\trace_log\system_statistic.c" />
+    <ClCompile Include="model\verify_pattern\crc32.c" />
+    <ClCompile Include="model\verify_pattern\HostModel.c" />
+    <ClCompile Include="model\verify_pattern\MixVector_HostApp.c" />
+    <ClCompile Include="model\verify_pattern\MMAIN.C" />
+    <ClCompile Include="model\verify_pattern\verify_host_pattern.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

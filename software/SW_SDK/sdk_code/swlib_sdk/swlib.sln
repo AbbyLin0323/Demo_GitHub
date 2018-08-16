@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "plxlib", "plxlib\plxlib.vcxproj", "{40ECA474-68E9-436F-BC7B-5C0A2A3F2375}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "swlib", "swlib\swlib.vcxproj", "{4195E2FD-2DAF-46CF-BA52-69FA2D14E75F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "swlib_sample", "..\..\sample_code\swlib_sample\swlib_sample.vcxproj", "{F5EEC899-FC90-48CD-9B88-84B1ED159316}"
+	ProjectSection(ProjectDependencies) = postProject
+		{40ECA474-68E9-436F-BC7B-5C0A2A3F2375} = {40ECA474-68E9-436F-BC7B-5C0A2A3F2375}
+		{4195E2FD-2DAF-46CF-BA52-69FA2D14E75F} = {4195E2FD-2DAF-46CF-BA52-69FA2D14E75F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40ECA474-68E9-436F-BC7B-5C0A2A3F2375}.Debug|Win32.ActiveCfg = Debug|Win32
+		{40ECA474-68E9-436F-BC7B-5C0A2A3F2375}.Debug|Win32.Build.0 = Debug|Win32
+		{40ECA474-68E9-436F-BC7B-5C0A2A3F2375}.Debug|Win32.Deploy.0 = Debug|Win32
+		{40ECA474-68E9-436F-BC7B-5C0A2A3F2375}.Release|Win32.ActiveCfg = Release|Win32
+		{40ECA474-68E9-436F-BC7B-5C0A2A3F2375}.Release|Win32.Build.0 = Release|Win32
+		{40ECA474-68E9-436F-BC7B-5C0A2A3F2375}.Release|Win32.Deploy.0 = Release|Win32
+		{4195E2FD-2DAF-46CF-BA52-69FA2D14E75F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4195E2FD-2DAF-46CF-BA52-69FA2D14E75F}.Debug|Win32.Build.0 = Debug|Win32
+		{4195E2FD-2DAF-46CF-BA52-69FA2D14E75F}.Debug|Win32.Deploy.0 = Debug|Win32
+		{4195E2FD-2DAF-46CF-BA52-69FA2D14E75F}.Release|Win32.ActiveCfg = Release|Win32
+		{4195E2FD-2DAF-46CF-BA52-69FA2D14E75F}.Release|Win32.Build.0 = Release|Win32
+		{4195E2FD-2DAF-46CF-BA52-69FA2D14E75F}.Release|Win32.Deploy.0 = Release|Win32
+		{F5EEC899-FC90-48CD-9B88-84B1ED159316}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F5EEC899-FC90-48CD-9B88-84B1ED159316}.Debug|Win32.Build.0 = Debug|Win32
+		{F5EEC899-FC90-48CD-9B88-84B1ED159316}.Debug|Win32.Deploy.0 = Debug|Win32
+		{F5EEC899-FC90-48CD-9B88-84B1ED159316}.Release|Win32.ActiveCfg = Release|Win32
+		{F5EEC899-FC90-48CD-9B88-84B1ED159316}.Release|Win32.Build.0 = Release|Win32
+		{F5EEC899-FC90-48CD-9B88-84B1ED159316}.Release|Win32.Deploy.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

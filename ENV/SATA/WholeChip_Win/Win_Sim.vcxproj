@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CA1CF023-804B-41E9-86E2-8039DE46F810}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Win_Sim</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)/%(Directory)</ObjectFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>HOST_SATA;SIM;_DEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;VT3514_C0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\firmware;..\..\..\firmware\COM;..\..\..\firmware\Config;..\..\..\firmware\HAL;..\..\..\firmware\HAL\LDPC;..\..\..\firmware\HAL\ChainMaintain;..\..\..\firmware\HAL\DataMonitor;..\..\..\firmware\HAL\Debug;..\..\..\firmware\HAL\DMAE;..\..\..\firmware\HAL\DSG;..\..\..\firmware\HAL\DecSts;..\..\..\firmware\HAL\EM;..\..\..\firmware\HAL\Flash;..\..\..\firmware\HAL\GLB;..\..\..\firmware\HAL\GPIO;..\..\..\firmware\HAL\XOR;..\..\..\firmware\HAL\HCT;..\..\..\firmware\HAL\HSG;..\..\..\firmware\HAL\IIC;..\..\..\firmware\HAL\Interrupt;..\..\..\firmware\HAL\MultiCore;..\..\..\firmware\HAL\SDC;..\..\..\firmware\HAL\NFC;..\..\..\firmware\HAL\ParamTable;..\..\..\firmware\HAL\SE;..\..\..\firmware\HAL\SGE;..\..\..\firmware\HAL\SPI;..\..\..\firmware\HAL\TSC;..\..\..\firmware\HAL\Trace;..\..\..\firmware\HAL\Xtensa;..\..\..\firmware\adapter\L0\SATA;..\..\..\firmware\adapter\L1\SATA;..\..\..\firmware\adapter\L2\SATA;..\..\..\firmware\adapter\L3\SATA;..\..\..\firmware\algorithm\Misc;..\..\..\firmware\algorithm\L0;..\..\..\firmware\algorithm\L0\ATALib;..\..\..\firmware\algorithm\L1;..\..\..\firmware\algorithm\L2;..\..\..\firmware\algorithm\L3;..\..\..\firmware\config;..\..\..\firmware\config\AHCI_ProjConfig\WholeChip_Win;..\..\..\model;..\..\..\model\sgemodel;..\..\..\model\satamodel;..\..\..\model\flashmodel;..\..\..\model\256fm_x64;..\..\..\model\DECstsModel;..\..\..\model\HostInterface;..\..\..\model\trace_log;..\..\..\model\search_engine;..\..\..\model\platform;..\..\..\model\LDPC;..\..\..\model\checklistparser;..\..\..\model\HCTModel;..\..\..\model\verification;..\..\..\model\XORModel;..\..\..\model\SimATALib;..\..\..\unittest;..\..\..\unittest\L2_TableRebuildCheck;..\..\..\unittest\BkEnd_TestMain;..\..\..\unittest\HAL_UnitTest;..\..\..\unittest\HAL_UnitTest\FlashDriver;..\..\..\unittest\HAL_UnitTest\NFC;..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT;..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\MICRON_3D_TLC_B16;..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC;F:\03-UT_SRC\B16\unittest\HAL_UnitTest\NFC\FLASH_TEST;F:\03-UT_SRC\B16\unittest\HAL_UnitTest\NFC\FLASH_TEST\MICRON_3D_TLC_B16;..\..\..\unittest\HAL_UnitTest\XOR;..\..\..\unittest\L3_UnitTest;..\..\..\unittest\L3_UnitTest\RDT;..\..\..\unittest\L3_UnitTest\L3LLFBootTest;..\..\..\unittest\L3_UnitTest\L3FCmdTest;..\..\..\unittest\L3_UnitTest\L3Seq4kRTest;..\..\..\unittest\L3_UnitTest\L3BbtTest;..\..\..\unittest\L3_UnitTest\L3XorTest;..\..\..\unittest\L3_UnitTest\L3StressTest;..\..\..\unittest\L3_UnitTest\L3StressTest\L3RdStressTest;..\..\..\unittest\L3_UnitTest\L3StressTest\L3MixStressTest</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)/%(Directory)</ObjectFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <BaseAddress>0x400000</BaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)/%(Directory)</ObjectFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>HOST_SATA;SIM;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;VT3514_C0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\firmware;..\..\..\firmware\COM;..\..\..\firmware\Config;..\..\..\firmware\HAL;..\..\..\firmware\HAL\ChainMaintain;..\..\..\firmware\HAL\DataMonitor;..\..\..\firmware\HAL\LDPC;..\..\..\firmware\HAL\Debug;..\..\..\firmware\HAL\DMAE;..\..\..\firmware\HAL\DSG;..\..\..\firmware\HAL\EM;..\..\..\firmware\HAL\XOR;..\..\..\firmware\HAL\DecSts;..\..\..\firmware\HAL\Flash;..\..\..\firmware\HAL\GLB;..\..\..\firmware\HAL\GPIO;..\..\..\firmware\HAL\HCT;..\..\..\firmware\HAL\HSG;..\..\..\firmware\HAL\IIC;..\..\..\firmware\HAL\Interrupt;..\..\..\firmware\HAL\MultiCore;..\..\..\firmware\HAL\SDC;..\..\..\firmware\HAL\NFC;..\..\..\firmware\HAL\ParamTable;..\..\..\firmware\HAL\SE;..\..\..\firmware\HAL\SGE;..\..\..\firmware\HAL\SPI;..\..\..\firmware\HAL\Trace;..\..\..\firmware\HAL\Xtensa;..\..\..\firmware\adapter\L0\SATA;..\..\..\firmware\adapter\L1\SATA;..\..\..\firmware\adapter\L2\SATA;..\..\..\firmware\adapter\L3\SATA;..\..\..\firmware\algorithm\Misc;..\..\..\firmware\algorithm\L0;..\..\..\firmware\algorithm\L0\ATALib;..\..\..\firmware\algorithm\L1;..\..\..\firmware\algorithm\L2;..\..\..\firmware\algorithm\L3;..\..\..\firmware\config;..\..\..\firmware\config\AHCI_ProjConfig\WholeChip_Win;..\..\..\model;..\..\..\model\DECstsModel;..\..\..\model\sgemodel;..\..\..\model\XORModel;..\..\..\model\satamodel;..\..\..\model\flashmodel;..\..\..\model\256fm_x64;..\..\..\model\HostInterface;..\..\..\model\trace_log;..\..\..\model\search_engine;..\..\..\model\platform;..\..\..\model\checklistparser;..\..\..\model\HCTModel;..\..\..\model\verification;..\..\..\model\SimATALib;..\..\..\unittest;..\..\..\unittest\L2_TableRebuildCheck;..\..\..\unittest\BkEnd_TestMain;..\..\..\unittest\HAL_UnitTest;..\..\..\unittest\HAL_UnitTest\FlashDriver;..\..\..\unittest\HAL_UnitTest\NFC;..\..\..\unittest\HAL_UnitTest\XOR;..\..\..\unittest\L3_UnitTest;..\..\..\unittest\L3_UnitTest\RDT;..\..\..\unittest\L3_UnitTest\L3LLFBootTest;..\..\..\unittest\L3_UnitTest\L3FCmdTest;..\..\..\unittest\L3_UnitTest\L3Seq4kRTest;..\..\..\unittest\L3_UnitTest\L3BbtTest;..\..\..\unittest\L3_UnitTest\L3XorTest;..\..\..\unittest\L3_UnitTest\L3StressTest;..\..\..\unittest\L3_UnitTest\L3StressTest\L3RdStressTest;..\..\..\unittest\L3_UnitTest\L3StressTest\L3MixStressTest</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)/%(Directory)</ObjectFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <BaseAddress>0x400000</BaseAddress>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\firmware\adapter\L0\SATA\L0_ATALibAdapter.h" />
+    <ClInclude Include="..\..\..\firmware\adapter\L0\SATA\L0_HcmdChain.h" />
+    <ClInclude Include="..\..\..\firmware\adapter\L0\SATA\L0_Init.h" />
+    <ClInclude Include="..\..\..\firmware\adapter\L0\SATA\L0_Pio.h" />
+    <ClInclude Include="..\..\..\firmware\adapter\L0\SATA\L0_SataErrorHandling.h" />
+    <ClInclude Include="..\..\..\firmware\adapter\L0\SATA\L0_SataIsr.h" />
+    <ClInclude Include="..\..\..\firmware\adapter\L0\SATA\L0_Schedule.h" />
+    <ClInclude Include="..\..\..\firmware\adapter\L1\SATA\L1_SataIO.h" />
+    <ClInclude Include="..\..\..\firmware\adapter\L2\SATA\L2_Sata.h" />
+    <ClInclude Include="..\..\..\firmware\adapter\L3\SATA\L3_Sata.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\ATALib\L0_ATAGenericCmdLib.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\L0_Config.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\L0_Event.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\L0_Interface.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\L0_TaskManager.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\L0_TrimProcess.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\L0_ViaCmd.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Buffer.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Cache.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_CacheStatus.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Debug.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_GlobalInfo.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Inc.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Interface.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_PlatformDefine.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Ramdisk.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_RdPreFetch.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Schedule.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_SCmdInterface.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_SpecialSCMD.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_SubCmdProc.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Trim.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Boot.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Debug.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Defines.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_DWA.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Erase.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_ErrorHandling.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Evaluater.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_FCMDQ.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_FTL.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_FullRecovery.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_GCManager.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Init.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Interface.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_LLF.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_PBIT.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_PMTI.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_PMTManager.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_PMTPage.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Ramdisk.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_ReadDisturb.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_RPMT.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_RT.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Schedule.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_SearchEngine.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Shutdown.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_StaticWL.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_StripeInfo.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_TableBBT.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_TableBlock.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_TblChk.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Thread.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_TLCMerge.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Trim.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_VBT.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_BufMgr.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_DataRecover.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_Debug.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_ErrHBasic.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_ErrHExtend.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_FCMDQ.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_FlashMonitor.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_HostAdapter.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_Init.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_Interface.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_Schedule.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_SoftDecoder.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_BufAddr.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_DataMonitor.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_Debug.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_Event.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_SDL.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_SMSG.h" />
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_ViaCmd.h" />
+    <ClInclude Include="..\..\..\firmware\COM\BaseDef.h" />
+    <ClInclude Include="..\..\..\firmware\COM\COM_BitMask.h" />
+    <ClInclude Include="..\..\..\firmware\COM\COM_Memory.h" />
+    <ClInclude Include="..\..\..\firmware\COM\COM_QWord.h" />
+    <ClInclude Include="..\..\..\firmware\Config\Disk_Config.h" />
+    <ClInclude Include="..\..\..\firmware\Config\Proj_Config.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\DataMonitor\HAL_NfcDataCheck.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\DecSts\HAL_DecStsReport.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\DMAE\HAL_Dmae.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\DSG\HAL_NormalDSG.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\EM\HAL_EncriptionModule.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\Flash\HAL_FlashChipDefine.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\Flash\HAL_FlashCmd.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\GLB\HAL_GLBReg.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\GLB\HAL_HostInterface.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\GLB\HAL_MemoryMap.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\GPIO\HAL_GPIO.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\HAL_Inc.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\IIC\HAL_IIC.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\IIC\HAL_TemperatureSensor.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\Interrupt\HAL_Interrupt.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\LDPC\HAL_LdpcEngine.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\LDPC\HAL_LdpcMatrix.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\LDPC\HAL_LdpcSoftDec.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\MultiCore\HAL_MultiCore.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\NFC\HAL_FlashDriverBasic.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\NFC\HAL_FlashDriverExt.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\ParamTable\HAL_ParamTable.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\SDC\HAL_BufMap.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\SDC\HAL_SataDSG.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\SDC\HAL_SataIO.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\SE\HAL_SearchEngine.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\Trace\HAL_TraceLog.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\TSC\HAL_TSC.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\XOR\HAL_XOR.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\XOR\HAL_XOR_Common.h" />
+    <ClInclude Include="..\..\..\firmware\HAL\Xtensa\HAL_Xtensa.h" />
+    <ClInclude Include="..\..\..\model\256fm_x64\INTEL_3D_TLC\flash_special_interface.h" />
+    <ClInclude Include="..\..\..\model\256fm_x64\MICRON_3D_TLC_B16\flash_special_interface.h" />
+    <ClInclude Include="..\..\..\model\256fm_x64\MICRON_MLC_L95\flash_special_interface.h" />
+    <ClInclude Include="..\..\..\model\256fm_x64\TSB_2D_TLC\flash_special_interface.h" />
+    <ClInclude Include="..\..\..\model\256fm_x64\TSB_3D_TLC\flash_special_interface.h" />
+    <ClInclude Include="..\..\..\model\256fm_x64\TSB_FOURPLN\flash_special_interface.h" />
+    <ClInclude Include="..\..\..\model\DECstsModel\Sim_DEC_Status.h" />
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_status.h" />
+    <ClInclude Include="..\..\..\model\platform\single_list.h" />
+    <ClInclude Include="..\..\..\model\XORModel\Sim_XOR_Common.h" />
+    <ClInclude Include="..\..\..\model\XORModel\Sim_XOR_Interface.h" />
+    <ClInclude Include="..\..\..\model\XORModel\Sim_XOR_Schedule.h" />
+    <ClInclude Include="..\..\..\unittest\BkEnd_TestMain\BkEnd_TestMain.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\FlashDriver\FlashDriver_Test.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\LDPC\TEST_LdpcSoftDec.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\FLASH_TEST\FT_BasicFunc.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\FLASH_TEST\FT_Case.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\FLASH_TEST\FT_Main.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\FLASH_TEST\MICRON_3D_TLC_B16\FT_FlashTypeAdapter.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcFuncBasic.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcPattBasicInsert.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcPattGenBasic.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcPattQ.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\MICRON_3D_TLC_B16\TEST_NfcFlashTypeAdapter.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcExtDataCheck.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcFCMDQ.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcFuncExt.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcLLF.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcPattExtInsert.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcPattGenExt.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcCheckList.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcConfig.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcMCU1.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcMCU2.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcPerformance.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Common.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Config.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Nfc_Interface.h" />
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Schedule.h" />
+    <ClInclude Include="..\..\..\unittest\L2_TableRebuildCheck\L2_SimRebuildTable.h" />
+    <ClInclude Include="..\..\..\unittest\L2_TableRebuildCheck\L2_SimTablecheck.h" />
+    <ClInclude Include="..\..\..\model\256fm_x64\flash_opinfo.h" />
+    <ClInclude Include="..\..\..\model\256fm_x64\flash_meminterface.h" />
+    <ClInclude Include="..\..\..\model\256fm_x64\flash_mid.h" />
+    <ClInclude Include="..\..\..\model\CheckListParser\action_define.h" />
+    <ClInclude Include="..\..\..\model\CheckListParser\base_pattern.h" />
+    <ClInclude Include="..\..\..\model\CheckListParser\checklist_parse.h" />
+    <ClInclude Include="..\..\..\model\CheckListParser\hscmd_parse.h" />
+    <ClInclude Include="..\..\..\model\CheckListParser\iniparser.h" />
+    <ClInclude Include="..\..\..\model\dmaemodel\sim_DMAE.h" />
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_common.h" />
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_config.h" />
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_interface.h" />
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_shedule.h" />
+    <ClInclude Include="..\..\..\model\flashmodel\sim_nfccmd.h" />
+    <ClInclude Include="..\..\..\model\HostInterface\HostInc.h" />
+    <ClInclude Include="..\..\..\model\HostInterface\HostModel.h" />
+    <ClInclude Include="..\..\..\model\HostInterface\HostTrimCmd.h" />
+    <ClInclude Include="..\..\..\model\model_common.h" />
+    <ClInclude Include="..\..\..\model\platform\COM_MainSche.h" />
+    <ClInclude Include="..\..\..\model\platform\memory_access.h" />
+    <ClInclude Include="..\..\..\model\platform\model_config.h" />
+    <ClInclude Include="..\..\..\model\platform\win_bootloader.h" />
+    <ClInclude Include="..\..\..\model\platform\xt_library.h" />
+    <ClInclude Include="..\..\..\model\satamodel\sdc_common.h" />
+    <ClInclude Include="..\..\..\model\satamodel\simsatadev.h" />
+    <ClInclude Include="..\..\..\model\satamodel\Simsatahost.h" />
+    <ClInclude Include="..\..\..\model\satamodel\simsatainc.h" />
+    <ClInclude Include="..\..\..\model\satamodel\simsatainterface.h" />
+    <ClInclude Include="..\..\..\model\satamodel\simsataloc.h" />
+    <ClInclude Include="..\..\..\model\search_engine\sim_search_engine.h" />
+    <ClInclude Include="..\..\..\model\sgemodel\sim_NormalDSG.h" />
+    <ClInclude Include="..\..\..\model\sgemodel\sim_SataDSG.h" />
+    <ClInclude Include="..\..\..\model\SimATALib\SimATACmd.h" />
+    <ClInclude Include="..\..\..\model\SimATALib\SimATA_HSCMDCallBack.h" />
+    <ClInclude Include="..\..\..\model\SimATALib\SimATA_Interface.h" />
+    <ClInclude Include="..\..\..\model\trace_log\system_statistic.h" />
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3BbtTest\BBT_Test.h" />
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3FCmdTest\FCMD_Test.h" />
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3LLFBootTest\LLFBoot_Test.h" />
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3Seq4kRTest\Seq4KR_Test.h" />
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3StressTest\L3MixStressTest\MixStress_Test.h" />
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3StressTest\L3RdStressTest\ReadStress_Test.h" />
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3XorTest\Xor_Test.h" />
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\RDT\RDT.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\firmware\adapter\L0\SATA\L0_ATALibAdapter.c" />
+    <ClCompile Include="..\..\..\firmware\adapter\L0\SATA\L0_HcmdChain.c" />
+    <ClCompile Include="..\..\..\firmware\adapter\L0\SATA\L0_Init.c" />
+    <ClCompile Include="..\..\..\firmware\adapter\L0\SATA\L0_Pio.c" />
+    <ClCompile Include="..\..\..\firmware\adapter\L0\SATA\L0_SataErrorHandling.c" />
+    <ClCompile Include="..\..\..\firmware\adapter\L0\SATA\L0_SataIsr.c" />
+    <ClCompile Include="..\..\..\firmware\adapter\L0\SATA\L0_Schedule.c" />
+    <ClCompile Include="..\..\..\firmware\adapter\L1\SATA\L1_SataIO.c" />
+    <ClCompile Include="..\..\..\firmware\adapter\L2\SATA\L2_Sata.c" />
+    <ClCompile Include="..\..\..\firmware\adapter\L3\SATA\L3_Sata.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L0\ATALib\L0_ATAGenericCmdLib.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L0\L0_Event.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L0\L0_Interface.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L0\L0_MainTasks.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L0\L0_TrimProcess.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L0\L0_ViaCmd.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Buffer.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Cache.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_CacheStatus.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Debug.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_GlobalInfo.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Interface.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Ramdisk.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_RdPreFetch.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Schedule.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_SCmdInterface.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_SpecialSCMD.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_SubCmdProc.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Trim.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Boot.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Debug.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_DWA.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Erase.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_ErrorHandling.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Evaluater.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_FCMDQ.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_FTL.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_FullRecovery.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_GCManager.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Init.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Interface.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_LLF.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_PBIT.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_PMTI.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_PMTManager.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_PMTPage.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Ramdisk.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_ReadDisturb.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_RPMT.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_RT.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Schedule.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_SearchEngine.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Shutdown.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_StaticWL.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_StripeInfo.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_TableBBT.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_TableBlock.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_TblChk.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Thread.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_TLCMerge.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Trim.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_VBT.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_BufMgr.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_DataRecover.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_Debug.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_ErrHBasic.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_ErrHExtend.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_FCMDQ.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_FlashMonitor.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_Init.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_Interface.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_Schedule.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_SoftDecoder.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_BufAddr.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_DataMonitor.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_Debug.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_Event.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_SDL.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_SMSG.c" />
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_ViaCmd.c" />
+    <ClCompile Include="..\..\..\firmware\COM\COM_BitMask.c" />
+    <ClCompile Include="..\..\..\firmware\COM\COM_Memory.c" />
+    <ClCompile Include="..\..\..\firmware\COM\COM_QWord.c" />
+    <ClCompile Include="..\..\..\firmware\Config\Disk_Config.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\DataMonitor\HAL_NfcDataCheck.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\DecSts\HAL_DecStsReport.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\DMAE\HAL_Dmae.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\DSG\HAL_NormalDSG.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\EM\HAL_EncriptionModule.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\Flash\HAL_FlashChipFeature.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\Flash\HAL_FlashCmd.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\Flash\HAL_FlashSoftDecPara.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\GPIO\HAL_GPIO.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\HAL_Init.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\IIC\HAL_IIC.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\IIC\HAL_TemperatureSensor.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\Interrupt\HAL_Interrupt.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\LDPC\HAL_LdpcEngine.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\LDPC\HAL_LdpcSoftDec.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\MultiCore\HAL_MultiCore.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\NFC\HAL_FlashDriverBasic.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\NFC\HAL_FlashDriverExt.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\ParamTable\HAL_ParamTable.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\SDC\HAL_BufMap.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\SDC\HAL_SataDSG.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\SDC\HAL_SataIO.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\SE\HAL_SearchEngine.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\Trace\HAL_TraceLog.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\TSC\HAL_TSC.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\XOR\HAL_XOR.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\Xtensa\HAL_Xtensa.c" />
+    <ClCompile Include="..\..\..\firmware\MCU0_Main.c" />
+    <ClCompile Include="..\..\..\firmware\MCU1_Main.c" />
+    <ClCompile Include="..\..\..\firmware\MCU2_Main.c" />
+    <ClCompile Include="..\..\..\model\256fm_x64\INTEL_3D_TLC\flash_special_interface.c" />
+    <ClCompile Include="..\..\..\model\256fm_x64\MICRON_3D_TLC_B16\flash_special_interface.c" />
+    <ClCompile Include="..\..\..\model\256fm_x64\MICRON_MLC_L95\flash_special_interface.c" />
+    <ClCompile Include="..\..\..\model\256fm_x64\TSB_2D_TLC\flash_special_interface.c" />
+    <ClCompile Include="..\..\..\model\256fm_x64\TSB_3D_TLC\flash_special_interface.c" />
+    <ClCompile Include="..\..\..\model\256fm_x64\TSB_FOURPLN\flash_special_interface.c" />
+    <ClCompile Include="..\..\..\model\DECstsModel\Sim_DEC_Status.c" />
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_status.c" />
+    <ClCompile Include="..\..\..\model\platform\single_list.c" />
+    <ClCompile Include="..\..\..\model\XORModel\Sim_XOR_Common.c" />
+    <ClCompile Include="..\..\..\model\XORModel\Sim_XOR_Interface.c" />
+    <ClCompile Include="..\..\..\model\XORModel\Sim_XOR_Schedule.c" />
+    <ClCompile Include="..\..\..\unittest\BkEnd_TestMain\BkEnd_TestMain.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\FlashDriver\FlashDriver_Test.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\LDPC\TEST_LdpcSoftDec.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\FLASH_TEST\FT_BasicFunc.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\FLASH_TEST\FT_Case.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\FLASH_TEST\FT_Main.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\FLASH_TEST\MICRON_3D_TLC_B16\FT_FlashTypeAdapter.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcFuncBasic.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcPattBasicInsert.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcPattGenBasic.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcPattQ.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\MICRON_3D_TLC_B16\TEST_NfcFlashTypeAdapter.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcExtDataCheck.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcFCMDQ.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcFuncExt.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcLLF.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcPattExtInsert.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcPattGenExt.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcCheckList.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcMCU1.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcMCU2.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcPerformance.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Common.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Config.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Nfc_Interface.c" />
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Schedule.c" />
+    <ClCompile Include="..\..\..\unittest\L2_TableRebuildCheck\L2_SimRebuildTable.c" />
+    <ClCompile Include="..\..\..\unittest\L2_TableRebuildCheck\L2_SimTablecheck.c" />
+    <ClCompile Include="..\..\..\model\256fm_x64\flash_opinfo.c" />
+    <ClCompile Include="..\..\..\model\main.c" />
+    <ClCompile Include="..\..\..\model\256fm_x64\flash_meminterface.c" />
+    <ClCompile Include="..\..\..\model\CheckListParser\action_define.c" />
+    <ClCompile Include="..\..\..\model\CheckListParser\base_pattern.c" />
+    <ClCompile Include="..\..\..\model\CheckListParser\checklist_parse.c" />
+    <ClCompile Include="..\..\..\model\CheckListParser\iniparser.c" />
+    <ClCompile Include="..\..\..\model\CheckListParser\nfc_Injerr.c" />
+    <ClCompile Include="..\..\..\model\dmaemodel\sim_DMAE.c" />
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_common.c" />
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_interface.c" />
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_shedule.c" />
+    <ClCompile Include="..\..\..\model\flashmodel\sim_nfccmd.c" />
+    <ClCompile Include="..\..\..\model\HostInterface\HostModel.c" />
+    <ClCompile Include="..\..\..\model\platform\COM_MainSche.c" />
+    <ClCompile Include="..\..\..\model\platform\memory_access.c" />
+    <ClCompile Include="..\..\..\model\platform\win_bootloader.c" />
+    <ClCompile Include="..\..\..\model\platform\xt_library.c" />
+    <ClCompile Include="..\..\..\model\satamodel\sdc_common.c" />
+    <ClCompile Include="..\..\..\model\satamodel\simsatadev.c" />
+    <ClCompile Include="..\..\..\model\satamodel\simsatahost.c" />
+    <ClCompile Include="..\..\..\model\satamodel\simsatainterface.c" />
+    <ClCompile Include="..\..\..\model\search_engine\sim_search_engine.c" />
+    <ClCompile Include="..\..\..\model\sgemodel\sim_NormalDSG.c" />
+    <ClCompile Include="..\..\..\model\sgemodel\sim_SataDSG.c" />
+    <ClCompile Include="..\..\..\model\SimATALib\SimATA_HSCMDCallBack.c" />
+    <ClCompile Include="..\..\..\model\SimATALib\SimATA_Interface.c" />
+    <ClCompile Include="..\..\..\model\trace_log\system_statistic.c" />
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3BbtTest\BBT_Test.c" />
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3FCmdTest\FCMD_Test.c" />
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3LLFBootTest\LLFBoot_Test.c" />
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3Seq4kRTest\Seq4KR_Test.c" />
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3StressTest\L3MixStressTest\MixStress_Test.c" />
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3StressTest\L3RdStressTest\ReadStress_Test.c" />
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3XorTest\Xor_Test.c" />
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\RDT\RDT.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

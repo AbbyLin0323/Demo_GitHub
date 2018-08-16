@@ -1,0 +1,1 @@
+@PowerShell -command "& %ReportScripts%\CheckinLog\CheckinLog.ps1" %AutoSimLog% %DestinationPath% %LogTime% %ProjectNameofTotal% %WorkSpace%

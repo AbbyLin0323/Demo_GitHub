@@ -1,0 +1,81 @@
+#
+#  Makefile for Q&A Booklet Demo Programs
+#
+
+#which memory model and processor to use by default
+#PROCESSOR =     # for the 16-bit compilers
+PROCESSOR = 386 # for the 32-bit compilers
+
+# name the compiler
+CC = wcc$(PROCESSOR)
+ASM = wasm
+
+!ifeq PROCESSOR 386
+MODEL = f       # flat
+!else
+MODEL = l       # large
+!endif
+
+# options to use
+CFLAGS = -m$(MODEL) -zq
+AFLAGS =
+LNKOPT = option quiet
+OBJ_FILES =  &
+mmain.obj     &
+TraceLog.obj  &
+pci.obj      
+
+
+
+LIB_FILES   = lib_all.lib
+
+.EXTENSIONS:
+.EXTENSIONS: .exe .rex .lib .obj .wbj .asm .c .for
+
+.BEFORE
+        @set INCLUDE=.;$(%watcom)\h;$(%watcom)\h\win
+        @set DOS4G=QUIET
+
+exes = m.exe
+
+
+# explicit rules
+
+all :   most .SYMBOLIC
+        @%null
+
+most :  $(exes) .SYMBOLIC
+        @%null
+
+m.exe :  $(OBJ_FILES) .PRECIOUS
+        %write mk.tmp $(LNKOPT) system dos4g  name m file {$(OBJ_FILES)}
+        wlink  @mk.tmp
+
+#mpt.exe :  $(LIB_FILES) .PRECIOUS
+#        wlink  $(LNKOPT) system dos4g  name mpt file {$(LIB_FILES)}
+#mpt.exe :  $(LIB_FILES_1) $(LIB_FILES_2) .PRECIOUS
+#        wlink  $(LNKOPT) system dos4g  name mpt file $(LIB_FILES_1), $(LIB_FILES_2)
+##        wlink $(LNKOPT) system dos4g  name mpt file $(OBJ_FILES_L)
+
+$(LIB_FILES) : $(OBJ_FILES) .PRECIOUS
+        wlib -b $^ -l $<
+
+
+clean : .SYMBOLIC
+        if exist *.obj del *.obj
+        if exist *.rex del *.rex
+        if exist *.exe del *.exe
+        if exist *.exp del *.exp
+		if exist *.tmp del *.tmp
+
+# implicit rules
+
+.c.obj :
+        $(CC) $^& $(CFLAGS)
+
+.c.wbj :
+        $(CC) $^& $(CFLAGS) -zw -fo=$^&.wbj
+
+
+.asm.obj :
+        $(ASM) $(AFLAGS) $^&

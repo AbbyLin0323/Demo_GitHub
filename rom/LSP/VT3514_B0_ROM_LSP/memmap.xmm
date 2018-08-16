@@ -1,0 +1,116 @@
+//  Memory map file to generate linker scripts for programs run on the ISS.
+
+// $Id: //depot/rel/Eagleridge/Xtensa/SWConfig/ldscripts/sim.parm#1 $
+
+// Customer ID=5586; Build=0x4c3c6; Copyright (c) 2004-2007 by Tensilica Inc.  ALL RIGHTS RESERVED.
+// These coded instructions, statements, and computer programs are the
+// copyrighted works and confidential proprietary information of Tensilica Inc.
+// They may not be modified, copied, reproduced, distributed, or disclosed to
+// third parties in any manner, medium, or form, in whole or in part, without
+// the prior written consent of Tensilica Inc.
+
+
+// A memory map is a sequence of memory descriptions and
+// optional parameter assignments.
+//
+// Each memory description has the following format:
+//   BEGIN <name>
+//     <addr> [,<paddr>] : <mem-type> : <mem-name> : <size> [,<psize>]
+//                       : [writable] [,executable] [,device] ;
+//     <segment>*
+//   END <name>
+//
+// where each <segment> description has the following format:
+//     <seg-name> : F|C : <start-addr> - <end-addr> [ : STACK ] [ : HEAP ]
+//                : <section-name>* ;
+//
+// Each parameter assignment is a keyword/value pair in the following format:
+//   <keyword> = <value>                (no spaces in <value>)
+// or
+//   <keyword> = "<value>"              (spaces allowed in <value>)
+//
+// The following primitive is also defined:
+//   PLACE SECTIONS( <section-name>* ) { WITH_SECTION(<section-name>)
+//                                       | IN_SEGMENT(<seg-name>) }
+//
+// Please refer to the Xtensa LSP Reference Manual for more details.
+//
+
+BEGIN dram0
+0x1ff80000: dataRam : dram0 : 0x80000 : writable ;
+ dram0_reg : F : 0x1ff80000 - 0x1ff83fff : ;
+ dram0_hsg : F : 0x1ff84000 - 0x1ff86fff : ;
+ dram1_usr : C : 0x1ffc0000 - 0x1ffdffff : ;
+ dram0_blank1 : C : 0x1ffb8000 - 0x1ffbffff : ;
+ dram0_usr : F : 0x1ffa4800 - 0x1ffb7fff : .data .bss;
+ dram0_nfcq : F : 0x1ff87000 - 0x1ff87fff : ;
+ dram0_dsg : F : 0x1ff88000 - 0x1ff89fff : ;
+ dram0_prcq : F : 0x1ff8a000 - 0x1ff8bfff : ;
+ dram0_sgeq : F : 0x1ff8c000 - 0x1ff8c3ff : ;
+ dram0_ldpc : F : 0x1ff8c400 - 0x1ff8d7ff : ;
+ dram0_blank0 : C : 0x1ff8d800 - 0x1ffa3fff : ;
+ dram0_stack : C : 0x1ffa4000 - 0x1ffa47ff :  STACK :  HEAP : ;
+ dram1_blank : C : 0x1ffe0000 - 0x1fffffff : ;
+END dram0
+
+BEGIN iram0
+0x20000000: instRam : iram0 : 0x80000 : executable, writable ;
+ iram0_remap : C : 0x20000000 - 0x20027fff : ;
+ iram0_blank : C : 0x20028000 - 0x2007ffff : ;
+END iram0
+
+BEGIN sram_4
+0x40000000: sysram : sram_4 : 0x40000000 : executable, writable ;
+ sram0 : C : 0x40008000 - 0x40017fff : ;
+ blank : C : 0x40004000 - 0x4000400f : ;
+ head : C : 0x40000010 - 0x40003fff : .head_text.literal .head_text;
+ entrance : C : 0x40000000 - 0x4000000f : .entrance_text.literal .entrance_text;
+END sram_4
+
+BEGIN sram_8
+0x80000000: sysram : sram_8 : 0x40000000 : executable, writable ;
+ sram_remap8 : C : 0x80000000 - 0xbfffffff : ;
+END sram_8
+
+BEGIN rom
+0xffe00000: sysrom : rom : 0x6000 : executable ;
+ srom1 : C : 0xffe00040 - 0xffe000ff : .ResetVector.literal;
+ srom2 : F : 0xffe00100 - 0xffe00177 : .ResetVector.text;
+ srom3 : C : 0xffe00178 - 0xffe0017f : .Level2InterruptVector.literal;
+ srom0 : F : 0xffe00000 - 0xffe0003f : .WindowVectors.text;
+ srom4 : F : 0xffe00180 - 0xffe001b7 : .Level2InterruptVector.text;
+ srom5 : C : 0xffe001b8 - 0xffe001bf : .Level3InterruptVector.literal;
+ srom6 : F : 0xffe001c0 - 0xffe001f7 : .Level3InterruptVector.text;
+ srom7 : C : 0xffe001f8 - 0xffe001ff : .Level4InterruptVector.literal;
+ srom8 : F : 0xffe00200 - 0xffe00237 : .Level4InterruptVector.text;
+ srom9 : C : 0xffe00238 - 0xffe0023f : .Level5InterruptVector.literal;
+ srom10 : F : 0xffe00240 - 0xffe00277 : .Level5InterruptVector.text;
+ srom11 : C : 0xffe00278 - 0xffe0027f : .DebugExceptionVector.literal;
+ srom12 : F : 0xffe00280 - 0xffe002b7 : .DebugExceptionVector.text;
+ srom13 : C : 0xffe002b8 - 0xffe002bf : .NMIExceptionVector.literal;
+ srom14 : F : 0xffe002c0 - 0xffe002f7 : .NMIExceptionVector.text;
+ srom15 : C : 0xffe002f8 - 0xffe002ff : .KernelExceptionVector.literal;
+ srom16 : F : 0xffe00300 - 0xffe00337 : .KernelExceptionVector.text;
+ srom17 : C : 0xffe00338 - 0xffe0033f : .UserExceptionVector.literal;
+ srom18 : F : 0xffe00340 - 0xffe00377 : .UserExceptionVector.text;
+ srom19 : C : 0xffe00378 - 0xffe0037f : .DoubleExceptionVector.literal;
+ srom20 : F : 0xffe00380 - 0xffe003b7 : .DoubleExceptionVector.text;
+ srom21 : C : 0xffe003b8 - 0xffe05fbf : .rodata .literal .text .srom.literal .srom.text .srom.rodata .rom.store;
+ srom22 : F : 0xffe05fc0 - 0xffe05fff : rom_func_table;
+END rom
+
+INCLUDE_XT2000_MEMORIES=try
+VECBASE=0xffe00000
+VECSELECT=0
+BEGIN spi
+0xc0000000: sysram : spi : 0x10000000 : writable, executable ;
+ spi_0 : F : 0xc0000000 - 0xcfffffff : .spi.data .spi.bss;
+END spi
+BEGIN apb
+0xffe07000: sysrom : apb : 0x9000 : executable, writable ;
+ apb_0 : F : 0xffe07000 - 0xffe0ffff : ;
+END apb
+BEGIN otfb_usr
+0xfff00000: sysram : otfb_usr : 0x50000 : writable, executable ;
+ otfb_0 : C : 0xfff00000 - 0xfff4ffff : ;
+END otfb_usr

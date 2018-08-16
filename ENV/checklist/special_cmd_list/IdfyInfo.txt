@@ -1,0 +1,657 @@
+***  IDENTIFY DEVICE information (ATA/ATAPI-ACS-3 D2161 Rev1c) V3.3 ***
+     Copyright @VIA Technology
+
+Word 00:  ####h (M)          General configuration bit-significant information:
+          F     &b                   15 0 = ATA device
+          X     &&&&&&&b           14-8 Retired
+          F     &b                    7 1 = removable media device
+                &b                    6 Obsolete
+          X     &&&b                5-3 Retired
+          V     &b                    2 Response incomplete
+          X     &b                    1 Retired
+          F     &b                    0 Reserved
+                                       
+Word 01:  ####h ####h ####h ####h ####h ####h  Obsolete/Retired/Specific
+                                                          
+Word 07:  ####h ####h (O)V   Reserved for assignment by the CompactFlashTM Association
+                                       
+Word 09:  ####h ( )X         Retired    
+                                       
+Word 10:  ####h ####h ####h ####h ####h ####h ####h ####h ####h ####h 
+                      (M)F   Serial number (20 ASCII characters)
+                             Serial number:
+                                       
+Word 20:  ####h ####h ####h ( )X   (Retired/Obsolete)
+                                       
+Word 23:  ####h ####h ####h ####h (M)F Firmware revision (8 ASCII characters)
+                                       Firmware revision:
+                                       
+Word 27:  ####h ####h ####h ####h ####h ####h ####h ####h 
+          ####h ####h ####h ####h ####h ####h ####h ####h 
+          ####h ####h ####h ####h (M)F Model number (40 ASCII characters)
+                                       Model number:
+Word 47:  ####h (M)          
+          F                        15-8 80h
+                                    7-0 00h = Reserved
+          F                             01h-10h = Maximum number of sectors that shall be
+                                        transferred per interrupt on READ/WRITE MULTIPLE commands
+                                        11h-FFh = Reserved
+                             
+Word 48:  ####h ( )F         Trusted Computing feature set options
+          F     &b                   15 Shall be cleared to zero
+          F     &b                   14 Shall be set to zero
+          F     &&&&&&&&&&&&&b     13-1 Reserved for the Trusted Computing Group
+          F     &b                    0 1=Trusted Computing feature set is supported
+                             
+Word 49:  ####h (M)          Capabilities
+          F     &&b               15-14 Reserved for the IDENTIFY PACKET DEVICE command.
+          F     &b                   13 1 = Standby timer values as specified in this standard are supported
+                                        0 = Standby timer values shall be managed by the device
+                &b                   12 Reserved for the IDENTIFY PACKET DEVICE command.
+          F     &b                   11 1 = IORDY supported
+                                        0 = IORDY may be supported
+          F     &b                   10 1 = IORDY may be disabled
+          F     &b                    9 1 = LBA supported
+          F     &b                    8 1 = DMA supported
+          X     &&&&&&b             7-2 Reserved
+                &&b                 1-0 Current Long Physical Sector Alignment setting    
+                             
+Word 50:  ####h (M)          Capabilities
+          F     &b                   15 Shall be cleared to zero.
+          F     &b                   14 Shall be set to one.
+                &&&&&&&&&&&&b      13-2 Reserved.
+          X     &b                    1 Obsolete
+          F     &b                    0 Shall be set to one to indicate a device specific Standby timer value
+                                      minimum.
+                             
+Word 51:  ####h ####h ( )X   Obsolete
+                             
+Word 53:  ####h (M)          
+          F     &&&&&&&&b          15-8 Free-fall Control Sensitivity
+                                        00h=Vendor's recommended's setting
+                                        01h-ffh=Sensitivity level. A larger number is a more sensitive setting.
+          F     &&&&&b              7-3 Reserved
+          F     &b                    2 1 = the fields reported in word 88 are valid
+                                        0 = the fields reported in word 88 are not valid
+          F     &b                    1 1 = the fields reported in words (70:64) are valid
+                                        0 = the fields reported in words (70:64) are not valid
+          X     &b                    0 Obsolete
+                             
+Word 54:  ####h ####h ####h ####h ####h ( )X 
+                             Obsolete
+                             
+Word 59:  ####h (M)          
+                &b                   15 1 = BLOCK ERASE EXT command is supported
+                &b                   14 1 = OVERWRITE EXT command is supported
+                &b                   13 1 = CRYPTO SCRAMBLE EXT command is supported
+                &b                   12 1 = Sanitize feature set is supported
+                &&&b               11-9 Reserved
+          V     &b                    8 1 = Multiple sector setting is valid
+          V     &&&&&&&&b           7-0 xxh = Current setting for number of logical sectors that shall be transferred 
+                                        per DRQ data block on READ/WRITE Multiple commands
+                             
+Word 60:  ####h ####h (M)F   Total number of user addressable logical sectors 
+                             
+Word 62:  ####h ( )X         Obsolete 
+                             
+Word 63:  ####h (M)          
+          F     &&&&&b            15-11 Reserved
+          V     &b                   10 1 = Multiword DMA mode 2 is selected
+                                        0 = Multiword DMA mode 2 is not selected
+          V     &b                    9 1 = Multiword DMA mode 1 is selected
+                                        0 = Multiword DMA mode 1 is not selected
+          V     &b                    8 1 = Multiword DMA mode 0 is selected
+                                        0 = Multiword DMA mode 0 is not selected
+          F     &&&&&b              7-3 Reserved
+          F     &b                    2 1 = Multiword DMA mode 2 and below are supported
+          F     &b                    1 1 = Multiword DMA mode 1 and below are supported
+          F     &b                    0 1 = Multiword DMA mode 0 is supported     
+                             
+Word 64:  ####h (M)          
+          F     &&&&&&&&&&&&&&b    15-2 Reserved
+          F     &&b                 1-0 PIO modes 3 and 4 supported
+                                                          
+Word 65:  ####h (M)          Minimum Multiword DMA transfer cycle time per word
+          F                        15-0  Cycle time in nanoseconds
+                                       
+Word 66:  ####h (M)          Manufacturer's recommended Multiword DMA cycle time
+          F                        15-0  Cycle time in nanoseconds
+                                       
+Word 67:  ####h (M)          Minimum PIO transfer cycle time without flow control
+          F                        15-0  Cycle time in nanoseconds
+                                       
+Word 68:  ####h (M)          Minimum PIO transfer cycle time with IORDY flow control
+          F                        15-0  Cycle time in nanoseconds
+                             
+Word 69:  ####h ( )          Additional Supported 
+          F     &b                    15 1 = CFast Specification Support
+          F     &b                    14 1 = Deterministic data in trimmed LBA range(s) is supported
+          F     &b                    13 1 = Long Physical Sector Alignment Error Reporting Control is supported
+          F     &b                    12 1 = DEVICE CONFIGURATION IDENTIFY DMA and DEVICE CONFIGURATION SET DMA are supported
+          F     &b                    11 1 = READ BUFFER DMA is supported
+          F     &b                    10 1 = WRITE BUFFER DMA is supported
+          F     &b                     9 1 = SET MAX SET PASSWORD DMA and SET MAX UNLOCK DMA are supported
+          F     &b                     8 1 = DOWNLOAD MICROCODE DMA is supported
+          F     &b                     7 Reserved for IEEE 1667
+          F     &b                     6 0 = Optional ATA device 28-bit commands supported
+                &b                     5 1 = Trimmed LBA range(s) returning zeroed data is supported 
+                &b                     4 1 = Device Encrypts All User data
+                &b                     3 1 = Extended Number of User Addressable Sectors is supported
+                &b                     2 1 = All write cache is non-volatile
+                &&b                  1-0 Reserved
+    
+word 70:  ####h ( )F   Reserved
+                             
+Word 71:  ####h ####h ####h ####h ( )F   
+                             Reserved for IDENTIFY PACKET DEVICE command.
+                             
+Word 75:  ####h (O)          Queue depth 
+                &&&&&&&&&&&b       15-5 Reserved
+          F     &&&&&b              4-0 Maximum queue depth - 1
+                                       
+Word 76:  ####h (O)          Serial ATA capabilities
+          F     &b                   15 Supports READ LOG DMA EXT as equivalent to READ LOG EXT
+          F     &b                   14 Supports Device Automatic Partial to Slumber transitions
+          F     &b                   13 Supports Host Automatic Partial to Slumber transitions
+          F     &b                   12 Supports Native Command Queuing priority  
+          F     &b                   11 Supports Unload while NCQ commands outstanding
+          F     &b                   10 Supports Phy event counters
+          F     &b                    9 Supports receipt of host-initiated interface power management requests
+          F     &b                    8 Supports native command queuing
+                &&&&b               7-4 Reserved for future Serial ATA signaling speed grades
+          F     &b                    3 1 = Supports Serial ATA Gen-3 signaling speed (6.0Gbps)
+          F     &b                    2 1 = Supports Serial ATA Gen-2 signaling speed (3.0Gbps)
+          F     &b                    1 1 = Supports Serial ATA Gen-1 signaling speed (1.5Gbps)
+          F     &b                    0 Shall be cleared to zero
+                                       
+Word 77:  ####h (O)          Serial ATA Additional capabilities
+          R     &&&&&&&&&b         15-8 Reserved
+          F     &b                    7 Supports DevSleep to reduced power state capability
+          F     &b                    6 Supports RECEIVE FPDMA QUEUED and SEND FPDMA QUEUED commands 
+          F     &b                    5 Supports NCQ Queue Management Command
+          F     &b                    4 Supports NCQ Streaming
+          V     &&&b                3-1 Coded value indicating current negotiated Serial ATA signal speed
+          F     &b                    0 Shall be cleared to zero
+                                       
+Word 78:  ####h (O)          Serial ATA features supported
+                &&&&&b            15-11 Reserved for Serial ATA
+          F     &b                   10 1 = Supports Device Initiated Interface Power Management Software Settings Preservation
+          F     &b                    9 1 = Reserved
+          F     &b                    8 1 = Device Sleep supported
+          F     &b                    7 1 = Supports NCQ Autosense
+          F     &b                    6 1 = supports software settings preservation
+                &b                    5 1 = Hardware Feature Control is supported
+          F     &b                    4 1 = supports in-order data delivery
+          F     &b                    3 1 = supports dev initiate interface power management
+          F     &b                    2 1 = supports DMA Setup Auto-Activate optimization
+          F     &b                    1 1 = supports non-zero buffer offsets in DMA Setup FIS
+          F     &b                    0 Shall be cleared to zero 
+                                       
+Word 79:  ####h (O)          Serial ATA features enabled
+          R     &&&&&&&b           15-9 Reserved
+          V     &b                    8 1 = Device Sleep enabled
+          V     &b                    7 1 = Device Automatic Partial to Slumber transitions enabled
+          V     &b                    6 1 = software settings preservation enabled
+          V     &b                    5 1 = Hardware Feature Control is enabled
+          V     &b                    4 1 = in-order data delivery enabled
+          V     &b                    3 1 = device initiating interface power management enabled
+          V     &b                    2 1 = DMA Setup Auto-Activate optimization enabled
+          V     &b                    1 1 = non-zero buffer offsets in DMA Setup FIS enabled
+          V     &b                    0 Shall be cleared to zero 
+                                       
+Word 80:  ####h (M)          Major version number
+                             0000h or FFFFh = device does not report version
+          F     &&&&&&b           15-10 Reserved
+                &b                    9 1 = supports ACS-2
+          F     &b                    8 1 = supports ATA8-ACS
+          F     &b                    7 1 = supports ATA/ATAPI-7
+          F     &b                    6 1 = supports ATA/ATAPI-6
+          F     &b                    5 1 = supports ATA/ATAPI-5
+          F     &b                    4 1 = supports ATA/ATAPI-4
+          F     &b                    3 Obsolete
+          X     &b                    2 Obsolete
+          X     &b                    1 Obsolete
+                &b                    0 Reserved
+                                       
+Word 81:  ####h (M)          Minor revision number
+          F                       0000h or FFFFh = device does not report version
+          F                       0001h-000Ch = Obsolete
+          F                       000Dh = ATA/ATAPI-4 X3T13 1153D revision 6
+          F                       000Eh = ATA/ATAPI-4 T13 1153D revision 13
+          F                       000Fh = ATA/ATAPI-4 X3T13 1153D revision 7
+          F                       0010h = ATA/ATAPI-4 T13 1153D revision 18
+          F                       0011h = ATA/ATAPI-4 T13 1153D revision 15
+          F                       0012h = ATA/ATAPI-4 published ANSI NCITS 317-1998
+          F                       0013h = ATA/ATAPI-5 T13 1321D revision 3
+          F                       0014h = ATA/ATAPI-4 T13 1153D revision 14
+          F                       0015h = ATA/ATAPI-5 T13 1321D revision 1
+          F                       0016h = ATA/ATAPI-5 published ANSI NCITS 340-2000
+          F                       0017h = ATA/ATAPI-4 T13 1153D revision 17
+          F                       0018h = ATA/ATAPI-6 T13 1410D revision 0
+          F                       0019h = ATA/ATAPI-6 T13 1410D revision 3a
+          F                       001Ah = ATA/ATAPI-7 T13 1532D revision 1
+          F                       001Bh = ATA/ATAPI-6 T13 1410D revision 2
+          F                       001Ch = ATA/ATAPI-6 T13 1410D revision 1
+                                  001Dh = ATA/ATAPI-7 published ANSI INCITS 397-2005
+          F                       001Eh = ATA/ATAPI-7 T13 1532D revision 0
+          F                       001Fh-0020h = Reserved
+          F                       0021h = ATA/ATAPI-7 T13 1532D revision 4a
+          F                       0022h = ATA/ATAPI-6 published, ANSI INCITS 361-2002
+          F                       0023h-0026h = Reserved
+          F                       0027h = ATA8-ACS version 3c
+          F                       0028h = ATA8-ACS version 6
+          F                       0029h = ATA8-ACS version 4
+          F                       0030h = Reserved
+          F                       0031h = ACS-2 Revision 2
+          F                       0032h = Reserved
+          F                       0033h = ATA8-ACS version 3e
+          F                       0034h-0038h = Reserved
+          F                       0039h = ATA8-ACS version 4c
+          F                       0040h-0041h = Reserved
+          F                       0042h = ATA8-ACS version 3f
+          F                       0043h-0051h = Reserved
+          F                       0052h = ATA8-ACS version 3b
+          F                       0053h-0106h = Reserved
+          F                       0107h = ATA8-ACS version 2d
+          F                       0108h-010Fh = Reserved
+          F                       0110h = ACS-2 Revision 3
+          F                       0111h-FFFEh = Reserved
+                                                 
+Word 82:  ####h (M)          Commands and feature set supported
+          X     &b                   15 Obsolete
+          F     &b                   14 1 = NOP command supported
+          F     &b                   13 1 = READ BUFFER command supported
+          F     &b                   12 1 = WRITE BUFFER command supported
+          X     &b                   11 Obsolete
+          F     &b                   10 1 = Host Protected Area feature set supported
+          F     &b                    9 1 = DEVICE RESET command supported
+          F     &b                    8 1 = SERVICE interrupt supported
+          F     &b                    7 1 = release interrupt supported
+          F     &b                    6 1 = look-ahead supported
+          F     &b                    5 1 = write cache supported
+          F     &b                    4 Shall be cleared to zero to indicate that the PACKET feature set is not supported
+          F     &b                    3 Shall be set to one to indicate that the mandatory Power Management feature set is supported
+          F     &b                    2 Obsolete
+          F     &b                    1 1 = Security Mode feature set supported
+          F     &b                    0 1 = SMART feature set supported
+                             
+Word 83:  ####h (M)          Commands and features sets supported
+          F     &b                   15 Shall be cleared to zero
+          F     &b                   14 Shall be set to one
+          F     &b                   13 1 = FLUSH CACHE EXT command supported
+          F     &b                   12 Shall be set to one to
+                                        indicate that the mandatory FLUSH CACHE command is supported
+          F     &b                   11 1 = Device Configuration Overlay feature set supported
+          F     &b                   10 1 = 48-bit Address feature set supported
+          F     &b                    9 1 = Automatic Acoustic Management feature set supported
+          F     &b                    8 1 = SET MAX security extension supported
+          F     &b                    7 Reserved for the Address Offset Reserved Area Boot Method
+          F     &b                    6 1 = SET FEATURES subcommand required to spin-up after power-up
+          F     &b                    5 1 = Power-Up In Standby features set supported
+          F     &b                    4 Obsolete
+          F     &b                    3 1 = Advanced Power Management feature set supported
+          F     &b                    2 1 = CFA feature set supported
+          F     &b                    1 1 = TCQ feature set supported
+          F     &b                    0 1 = DOWNLOAD MICROCODE command supported
+                             
+Word 84:  ####h (M)          Command set/feature supported extension.
+          F     &b                   15 Shall be cleared to zero
+          F     &b                   14 Shall be set to one
+          F     &b                   13 1 = IDLE IMMEDIATE with UNLOAD FEATURE supported
+          F     &b                   12 Reserved for technical report INCITS TR-37-2004 (TLC)
+          F     &b                   11 Reserved for technical report INCITS TR-37-2004 (TLC)
+          F     &&b                10-9 1 = Obsolete
+          F     &b                    8 1 = 64-bit Word wide name supported
+          F     &b                    7 1 = WRITE DMA QUEUEDFUA EXT command supported
+          F     &b                    6 1 = WRITE DMA FUA EXT and WRITE MULTI FUA EXT commands supported
+          F     &b                    5 1 = General Purpose Logging feature set supported
+          F     &b                    4 1 = Streaming feature set supported
+          F     &b                    3 1 = Media Card Pass Through Command feature set supported
+          F     &b                    2 1 = Media serial number supported
+          F     &b                    1 1 = SMART self-test supported
+          F     &b                    0 1 = SMART error logging supported
+                              
+Word 85:  ####h (M)          Command set/feature enabled.
+          X     &b                   15 Obsolete
+          F     &b                   14 1 = NOP command supported
+          F     &b                   13 1 = READ BUFFER command supported
+          F     &b                   12 1 = WRITE BUFFER command supported
+          X     &b                   11 Obsolete
+          V     &b                   10 1 = Host Protected Area feature set enabled
+          F     &b                    9 Shall be cleared to zero to indicate that the DEVICE RESET command is not supported 
+          V     &b                    8 1 = SERVICE interrupt enabled
+          V     &b                    7 1 = release interrupt enabled
+          V     &b                    6 1 = Read look-ahead enabled
+          V     &b                    5 1 = write cache enabled
+          F     &b                    4 Shall be cleared to zero to indicate that the PACKET feature set is not supported.
+          F     &b                    3 Shall be 1 to indicate mandatory PM feature is supported
+          F     &b                    2 Obsolete
+          V     &b                    1 1 = Security Mode feature set enabled
+          V     &b                    0 1 = SMART feature set enabled
+                             
+Word 86:  ####h (M)          Command set/feature enabled.
+                &b                   15 1 = Words 120-119 are valid
+          F     &b                   14 Reserved
+          F     &b                   13 1 = FLUSH CACHE EXT command supported
+          F     &b                   12 1 = FLUSH CACHE command supported
+          F     &b                   11 1 = Device Configuration Overlay supported
+          F     &b                   10 1 = 48-bit Address features set supported
+          V     &b                    9 1 = Automatic Acoustic Management feature set enabled
+          F     &b                    8 1 = SET MAX security enabled by SET MAX SET PASSWORD
+          F     &b                    7 Reserved for address Offset Reserved Area Boot,INCITS TR27:2001
+          F     &b                    6 1 = SET FEATURES subcommand required to spin-up after power-up
+          V     &b                    5 1 = Power-Up In Standby features set enabled
+          X     &b                    4 Obsolete
+          V     &b                    3 1 = Advanced Power Management feature set enabled
+          F     &b                    2 1 = CFA feature set supported
+          F     &b                    1 1 = TCQ feature set supported
+          F     &b                    0 1 = DOWNLOAD MICROCODE command supported
+                             
+Word 87:  ####h (M)          Command set/feature enabled/supported.
+          F     &b                   15 Shall be cleared to zero
+          F     &b                   14 Shall be set to one
+          F     &b                   13 1 = IDLE IMMEDIATE with UNLOAD FEATURE supported
+          V     &b                   12 Reserved for technical report- INCITS tr-37-2004 (TLC)
+          V     &b                   11 Reserved for technical report- INCITS TR-37-2004 (TLC)
+          F     &&b                10-9 Obsolete
+          F     &b                    8 1 = 64 bit Word wide name supported
+          F     &b                    7 1 = WRITE DMA QUEUED FUA EXT command supported
+          F     &b                    6 1 = WRITE DMA FUA EXT and WRITE MULTI FUA EXT commands supported
+          F     &b                    5 1 = General Purpose Logging feature set supported
+          X     &b                    4 Obsolete
+          V     &b                    3 1 = Media Card Pass Through Command feature set supported
+          V     &b                    2 1 = Media serial number is valid
+          F     &b                    1 1 = SMART self-test supported
+          F     &b                    0 1 = SMART error logging supported
+                             
+Word 88:  ####h (O)          Ultra DMA modes 
+          F     &b                   15 Reserved
+          V     &b                   14 1 = Ultra DMA mode 6 is selected
+                                        0 = Ultra DMA mode 6 is not selected 
+          V     &b                   13 1 = Ultra DMA mode 5 is selected
+                                        0 = Ultra DMA mode 5 is not selected 
+          V     &b                   12 1 = Ultra DMA mode 4 is selected
+                                        0 = Ultra DMA mode 4 is not selected 
+          V     &b                   11 1 = Ultra DMA mode 3 is selected
+                                        0 = Ultra DMA mode 3 is not selected 
+          V     &b                   10 1 = Ultra DMA mode 2 is selected
+                                        0 = Ultra DMA mode 2 is not selected 
+          V     &b                    9 1 = Ultra DMA mode 1 is selected
+                                        0 = Ultra DMA mode 1 is not selected 
+          V     &b                    8 1 = Ultra DMA mode 0 is selected
+                                        0 = Ultra DMA mode 0 is not selected 
+          F     &b                    7 Reserved
+          F     &b                    6 1 = Ultra DMA mode 6 and below are supported
+          F     &b                    5 1 = Ultra DMA mode 5 and below are supported
+          F     &b                    4 1 = Ultra DMA mode 4 and below are supported
+          F     &b                    3 1 = Ultra DMA mode 3 and below are supported
+          F     &b                    2 1 = Ultra DMA mode 2 and below are supported
+          F     &b                    1 1 = Ultra DMA mode 1 and below are supported
+          F     &b                    0 1 = Ultra DMA mode 0 is supported
+                             
+Word 89:  ####h (O)F         
+          F     &b                   15 1 = Extended Time is reported in bits 14:0
+                                        0 = Time is reported in bits 7:0 and bits 14:8 are reserved
+          F     &&&&&&&b           14-8 Extended Time required for Normal Erase mode SECURITY ERASE UNIT command 
+          F     &&&&&&&&b           7-0 Extended Time required for Normal Erase mode SECURITY ERASE UNIT
+                                        command and Time required for Normal Erase mode SECURITY ERASE UNIT command
+Word 90:  ####h (O)F         
+          F     &b                 15 1 = Extended Time is reported in bits 14:0
+                                      0 = Time is reported in bits 7:0 and bits 14:8 are reserved
+          F     &&&&&&&b           14-8 Extended Time required for Enhanced Erase mode SECURITY ERASE UNIT command
+          F     &&&&&&&&b           7-0 Extended Time required for Enhanced Erase mode SECURITY ERASE UNIT
+                                        command and Time required for Enhanced Erase mode SECURITY ERASE UNIT command   
+                                       
+Word 91:  ####h (O)V         Current advanced power management level value
+                &&&&&&&&b          15-8 Reserved
+                &&&&&&&&b           7-0 Current APM level value
+                                         00h = Reserved
+                                         01h = Minimum power consumption with Standby
+                                         02h-7Fh = Intermediate power management levels with Standby
+                                         80h = Minimum power consumption without Standby
+                                         81h-FDh = Intermediate power management levels without Standby
+                                         FEh = Maximum performance
+                                         FFh = Reserved
+                                       
+Word 92:  ####h (O)V         Master Password Identifier
+                             
+Word 93:  ####h ( )          Hardware reset result. The contents of bits (12-0) of this world shall change only 
+                             during the execution of a hardware reset. See 7.16.7.41 for more information.
+          F     &b                   15 Shall be cleared to zero.
+          F     &b                   14 Shall be set to one.
+          V     &b                   13 1 = dev detected CBLID- above ViH.
+                                        0 = dev detected CBLID- above ViL.
+                                   12-8 Device 1 HW reset result. Device 0 shall clear these bits to 0.
+                                        Device 1 shall set these bits as follows: 
+          F     &b                        12 Reserved.
+          V     &b                        11 0 = Device 1 did not assert PDIAG-.
+                                             1 = Device 1 asserted PDIAG-.
+          V     &&b                     10-9 These bits indicate how Dev 1 determined device number:
+                                             00 = Reserved.
+                                             01 = a jumper was used.
+                                             10 = the CSEL signal was used.
+                                             11 = some other method was used or the method is unknown
+                &b                         8 Shall be set to one.
+                                    7-0 Device 0 hardware reset result. Device 1  shall clear these bits to 0.
+                                        Device 0 shall set these bits as follows:
+          F     &b                         7 Reserved.
+          F     &b                         6 0 = Device 0 not respond when Device 1 is selected.
+                                             1 = Device 0 responds when Device 1 is selected.
+          V     &b                         5 0 = Device 0 did not detect assertion of DASP-.
+                                             1 = Device 0 detected assertion of DASP-.
+          V     &b                         4 0 = Device 0 did not detect assertion of PDIAG-.
+                                             1 = Device 0 detected assertion of PDIAG-.
+          V     &b                         3 0 = Device 0 failed diagnostics.
+                                             1 = Device 0 passed diagnostics.
+          V     &&b                      2-1 These bits indicate how Device 0 determined device number:
+                                             00 = Reserved.
+                                             01 = a jumper was used.
+                                             10 = the CSEL signal was used.
+                                             11 = some other method was used or the method unknown.
+          F     &b                         0 Shall be set to one.
+                              
+Word 94:  ####h (O)          
+          F                        15-8 Vendor's recommended acoustic management value.
+          V                         7-0 Current automatic acoustic management value.
+                                       
+Word 95:  ####h (O)F         Stream Minimum Request Size
+                             
+Word 96:  ####h (O)V         Streaming Transfer Time - DMA
+                              
+Word 97:  ####h (O)V         Streaming Access Latency - DMA and PIO
+                             
+Word 98:  ####h ####h (O)F   Streaming Performance Granularity(98-99)
+                             
+Word 100: ####h ####h ####h ####h (O)
+          V                  Total Number of user LBA for 48-bit Address feature set.
+                             
+Word 104: ####h (O)V         Streaming Transfer Time - PIO
+                             
+Word 105: ####h (O)v         Maximum number of 512-byte blocks per DATA SET MANAGEMENT command
+                             
+Word 106: ####h (O)          Physical sector size / Logical Sector Size 
+          F     &b                   15 Shall be cleared to zero
+          F     &b                   14 Shall be set to one
+          F     &b                   13 1 = Device has multiple logical sectors per physical sector.
+                &b                   12 1 = Device Logical Sector Longer than 256 Words
+          F     &&&&&&&&b          11-4 Reserved
+          F     &&&&b               3-0 2^x logical sectors per physical sector
+                             
+Word 107: ####h (O)F         Inter-seek delay for ISO-7779 acoustic testing in microseconds
+                             
+Word 108: ####h (M)          
+          F     &&&&b             15-12 NAA (3-0)
+                &&&& &&&& &&&&b    11-0 IEEE OUI (23-12)
+                             
+Word 109: ####h (M)          
+          F     &&&& &&&& &&&&b    15-4 IEEE OUI (11-0)
+                &&&&b               3-0 Unique ID (35-32)
+                             
+Word 110: ####h (M)F               15-0 Unique ID (31-16)
+                             
+Word 111: ####h (M)F               15-0 Unique ID (15-0)
+                             
+Word 112: ####h ####h ####h ####h (O)F Reserved for 128 bit world wide name extension to 128 bits
+                             
+Word 116: ####h (O)V         Reserved for INCITS TR-37-2004
+                             
+Word 117: ####h ####h (O)F   Words per Logical Sector
+                             
+Word 119: ####h (M)          Commands and feature sets supported (Continued from words 84-82)
+          F     &b                   15 Shall be cleared to zero
+          F     &b                   14 Shall be set to one
+                &&&&&&b            13-8 Reserved
+                &b                    7 1 = Extended Power Conditions feature set is supported
+                &b                    6 1 = Sense Data Reporting feature set is supported
+          F     &b                    5 1 = The Free-fall Control feature set is supported
+          F     &b                    4 1 = The DOWNLOAD MICROCODE command with mode 3 is supported
+          F     &b                    3 1 = The READ LOG DMA EXT and WRITE LOG DMA EXT commands are supported
+          F     &b                    2 1 = The WRITE UNCORRECTABLE EXT command is supported
+          F     &b                    1 1 = The Write-Read-Verify feature set is supported
+                &b                    0 Reserved for Disable Data Transfer
+
+Word 120: ####h (M)          Commands and feature sets supported or enabled (Continued from words 87-85)
+          F     &b                   15 Shall be cleared to zero
+          F     &b                   14 Shall be set to one
+                &&&&&&b          13-8 Reserved
+                &b                    7 1 = Extended Power Conditions feature set is enabled
+          V     &b                    6 1 = Sense Data Reporting feature set is enabled
+          V     &b                    5 1 = The Free-fall Control feature set is enabled
+          F     &b                    4 1 = The DOWNLOAD MICROCODE command with mode 3 is supported
+          F     &b                    3 1 = The READ LOG DMA EXT and WRITE LOG DMA EXT commands are supported
+          F     &b                    2 1 = The WRITE UNCORRECTABLE EXT command is supported
+          V     &b                    1 1 = The Write-Read-Verify feature set is enabled
+                &b                    0 Reserved for Disable Data Transfer
+
+                             
+Word 121: ####h ####h ####h ####h ####h ####h (M)
+          F                  Reserved for expanded supported and enable settings
+                             
+Word 127: ####h (O)          Obsolete
+                             
+Word 128: ####h (O)          Security status
+                &&&&&&&b           15-9 Reserved
+          V     &b                    8 Master Password Capability 0 = High, 1 = Maximum
+                &&b                 7-6 Reserved
+          F     &b                    5 1 = Enhanced security erase supported
+          V     &b                    4 1 = Security count expired
+          V     &b                    3 1 = Security frozen
+          V     &b                    2 1 = Security locked
+          V     &b                    1 1 = Security enabled
+          F     &b                    0 1 = Security supported
+                                       
+Word 129: ####h ####h ####h ####h ####h ####h ####h ####h 
+          ####h ####h ####h ####h ####h ####h ####h ####h 
+          ####h ####h ####h ####h ####h ####h ####h ####h 
+          ####h ####h ####h ####h ####h ####h ####h ( )
+          X                  Vendor specific
+                             
+Word 160: ####h (O)          CFA power mode 1
+          F     &b                   15 Word 160 supported
+                &b                   14 Reserved
+          F     &b                   13 CFA power mode 1 is required for one or more commands implemented by the device
+          V     &b                   12 CFA power mode 1 disabled
+          F     &&&&&&&&&&&&b      11-0 Maximum current in ma
+                             
+Word 161: ####h ####h ####h ####h ####h ####h ####h 
+          X                  Reserved for assignment by the CompactFlashTM Association
+
+Word 168: ####h              Device Nominal Form Factor
+                &&&&&&&&&&&&b      15-4 Reserved
+                &&&&b               3-0 Device Nominal Form Factor
+
+Word 169: ####h              DATA SET MANAGEMENT command is supported
+                &&&&&&&&&&&&&&&b   15-1 Reserved
+          F     &b                    0 1 = the Trim bit in the DATA SET MANAGEMENT command is supported
+
+Word 170: ####h ####h ####h ####h 
+                             Additional Product Identifier(ATA String)
+
+Word 174: ####h ####h        Reserved
+                             
+Word 176: ####h ####h ####h ####h ####h ####h ####h ####h 
+          ####h ####h ####h ####h ####h ####h ####h ####h 
+          ####h ####h ####h ####h ####h ####h ####h ####h 
+          ####h ####h ####h ####h ####h ####h  (O)
+          V                  Current media serial number (60 ASCII characters)
+                             
+Word 206: ####h (O)          SCT Command Transport
+          X     &&&&b             15-12 Vender Specific
+                &&&&&&b            11-6 Reserved
+          F     &b                    5 SCT Command Transport Data Tables support
+          F     &b                    4 SCT Command Transport Features Control supported                    
+          F     &b                    3 SCT Command Transport Error Recovery control supported
+          F     &b                    2 SCT Command Transport Write Same supported
+          F     &b                    1 SCT Command Transport Long Sector Access supported
+          F     &b                    0 SCT Command Transport supported
+                             
+Word 207: ####h ####h ( )F   Reserved 
+                             
+Word 209: ####h (O)          Alignment of logical blocks within a larger physical block
+                &b                   15 Shall be cleared to zero
+                &b                   14 Shall be set to one
+                &&&&&&&&&&&&&&b    13-0 'Logical sector' offset within the first physical sector where the first logical sector is places. 
+                              
+Word 210: ####h ####h (O)V   Write-Read-Verify Sector Count Mode 3 Only
+                                    
+Word 212: ####h ####h (O)F   Write-Read-Verify Sector Count Mode 2 Only
+                                    
+Word 214: ####h (O)          NV Cache Capabilities
+          F     &&&&b             15-12 NV Cache feature set version
+          F     &&&&b              11-8 NV Cache Power Mode feature set version
+                &&&b                7-5 Reserved
+          V     &b                    4 1 = NV Cache feature set enabled
+                &&b                 3-2 Reserved
+          V     &b                    1 1 = NV Cache Power mode feature set enabled
+          F     &b                    0 1 = NV Cache Power Mode feature set supported
+                              
+Word 215: ####h (O)V         NV Cache Size in Logical Blocks (LSW)
+                             
+Word 216: ####h (O)V         NV Cache Size in Logical Blocks (MSW)
+                             
+Word 217: ####h (M)F         Nominal media rotation rate (ATA8-ACS 1699-D Revision 6)
+                             NV Cache Read Transfer Speed in MB/s (ATA8-ACS 1699-D Revision 3f)
+                             
+Word 218: ####h (O)V         NV Cache Write Transfer Speed in MB/s
+                             
+Word 219: ####h (O)          NV Cache Options
+                &&&&&&&&b          15-8 Reserved
+          F     &&&&&&&&b           7-0 Device Estimated Time to Spin Up in Seconds
+                             
+Word 220: ####h (O)                
+                &&&&&&&&b          15-8 Reserved
+          V     &&&&&&&&b           7-0 Write-Read-Verify feature set current mode
+                           
+Word 221: ####h ( )          Reserved
+                             
+Word 222: ####h (M)F         Transport Major revision number. 0000h or FFFFh = device does not report version
+                &&&&b             15-12 Transport Type - 0 = Parallel, 1 = Serial, 2-15 = Reserved                                       
+                                        Parallel (Type = 0)                Serial (Type = 1)
+                &&&&&b             11-7 Reserved                           Reserved
+                &b                    6 Reserved                           SATA Rev 3.1
+                &b                    5 Reserved                           SATA Rev 3.0 
+                &b                    4 Reserved                           SATA Rev 2.6
+                &b                    3 Reserved                           SATA Rev 2.5
+                &b                    2 Reserved                           SATA II: Extensions
+                &b                    1 Reserved                           SATA 1.0a
+                &b                    0 ATA8-APT                           ATA8-AST
+                             
+Word 223: ####h (M)F         Transport Minor revision number
+                             
+Word 224: ####h ####h ####h ####h ####h ####h  
+                ( )F         Reserved for CE-ATA
+
+Word 230: ####h ####h ####h ####h 
+                             Extended Number of User Addressable Sectors(QWord)
+                             
+Word 234: ####h (O)F         Minimum number of 512 byte units per DOWNLOAD MICROCODE command mode 3
+                             
+Word 235: ####h (O)F         Maximum number of 512 byte units per DOWNLOAD MICROCODE command mode 3
+                             
+Word 236: ####h ####h ####h ####h ####h ####h ####h ####h ####h ####h
+          ####h ####h ####h ####h ####h ####h ####h ####h ####h
+                             Reserved
+                             
+Word 255: ####h (O)X         Integrity word
+                             15-8 Checksum
+                              7-0 Signature

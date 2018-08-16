@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<buildSystem id="Xtensa.147805733">
+			<storageModule id="Xtensa.147805733" moduleId="org.eclipse.cdt.core.settings"/>
+		</buildSystem>
+		<cconfiguration id="Xtensa.147805733">
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="" description="" errorParsers="org.eclipse.cdt.core.VCErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;com.tensilica.xide.cdt.XCCErrorParser;org.eclipse.cdt.core.GASErrorParser;com.tensilica.xide.cdt.XtLDErrorParser;com.tensilica.xide.cdt.TCErrorParser;com.tensilica.xide.cdt.FlexLmErrorParser" id="Xtensa.147805733" name="Xtensa" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="Xtensa.147805733." name="/" resourcePath="">
+						<toolChain errorParsers="" id="org.eclipse.cdt.build.core.prefbase.toolchain.589276548" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
+							<targetPlatform binaryParser="com.tensilica.xide.cdt.XtensaELF" id="org.eclipse.cdt.build.core.prefbase.toolchain.589276548.313488221" name=""/>
+							<builder command="${default_xttools_make_path}" enableAutoBuild="false" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="org.eclipse.cdt.build.core.settings.default.builder.169422014" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder">
+								<outputEntries>
+									<entry excluding="**/.genned|**/*.pstamp|**/*.props|**/*.d|**/objFiles.list|**/*.interlock|**/*.icmiss|**/*.dcmiss|**/*.icmiss_cyc|**/*.dcmiss_cyc|**/*.cc_miss|**/*.cc_miss_cyc|**/*.cyc|**/*.insn|**/*.bdelay" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="bin"/>
+								</outputEntries>
+							</builder>
+							<tool errorParsers="org.eclipse.cdt.core.VCErrorParser;org.eclipse.cdt.core.GASErrorParser" id="org.eclipse.cdt.build.core.settings.holder.libs.158414458" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
+							<tool errorParsers="org.eclipse.cdt.core.VCErrorParser;org.eclipse.cdt.core.GASErrorParser" id="org.eclipse.cdt.build.core.settings.holder.756508321" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1242558302" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/COM"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/DMAE"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/GLB"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/Interrupt"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/MP"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/NFC"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/NormalDsg"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/Pin"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/SPI"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/trace"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/Xtensa"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/SATA"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/tools/RF-2014.1-win32/XtensaTools/lib/xcc/include"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RF-2014.1-win32/rfviatieloop16/xtensa-elf/arch/include"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RF-2014.1-win32/rfviatieloop16/xtensa-elf/include"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/tools/RF-2014.1-win32/XtensaTools/xtensa-elf/include"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RF-2014.1-win32/rfviatieloop16/xtensa-elf/include/xcc/c++"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RF-2014.1-win32/rfviatieloop16/xtensa-elf/include/xcc/c++/xtensa-elf"/>
+								</option>
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.487699545" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CHAR_BIT__=8"/>
+									<listOptionValue builtIn="false" value="__FLT_EVAL_METHOD__=0"/>
+									<listOptionValue builtIn="false" value="__FINITE_MATH_ONLY__=0"/>
+									<listOptionValue builtIn="false" value="__GNUC_PATCHLEVEL__=0"/>
+									<listOptionValue builtIn="false" value="__UINTMAX_TYPE__=long"/>
+									<listOptionValue builtIn="false" value="__CHAR_UNSIGNED__=1"/>
+									<listOptionValue builtIn="false" value="__XCC__=11000"/>
+									<listOptionValue builtIn="false" value="__XTENSA_CALL0_ABI__=1"/>
+									<listOptionValue builtIn="false" value="__USER_LABEL_PREFIX__"/>
+									<listOptionValue builtIn="false" value="__XTENSA_EL__=1"/>
+									<listOptionValue builtIn="false" value="__XCC_MINOR__=1"/>
+									<listOptionValue builtIn="false" value="__REGISTER_PREFIX__"/>
+									<listOptionValue builtIn="false" value="__NO_INLINE__=1"/>
+									<listOptionValue builtIn="false" value="__XTENSA_SOFT_FLOAT__=1"/>
+									<listOptionValue builtIn="false" value="__SIZE_TYPE__=unsigned"/>
+									<listOptionValue builtIn="false" value="__ELF__=1"/>
+									<listOptionValue builtIn="false" value="__xtensa__=1"/>
+									<listOptionValue builtIn="false" value="__WCHAR_TYPE__=short"/>
+									<listOptionValue builtIn="false" value="__XTENSA__=1"/>
+									<listOptionValue builtIn="false" value="__INTMAX_TYPE__=long"/>
+									<listOptionValue builtIn="false" value="__XTENSA_SOFT_DOUBLE__=1"/>
+									<listOptionValue builtIn="false" value="__STDC__=1"/>
+									<listOptionValue builtIn="false" value="__GNUC_GNU_INLINE__=1"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1710737749" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+							<tool errorParsers="org.eclipse.cdt.core.VCErrorParser;org.eclipse.cdt.core.GASErrorParser" id="org.eclipse.cdt.build.core.settings.holder.1883218748" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.378710293" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/COM"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/DMAE"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/GLB"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/Interrupt"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/MP"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/NFC"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/NormalDsg"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/Pin"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/SPI"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/trace"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/Xtensa"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/SATA"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/tools/RF-2014.1-win32/XtensaTools/lib/xcc/include"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RF-2014.1-win32/rfviatieloop16/xtensa-elf/arch/include"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RF-2014.1-win32/rfviatieloop16/xtensa-elf/include"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/tools/RF-2014.1-win32/XtensaTools/xtensa-elf/include"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RF-2014.1-win32/rfviatieloop16/xtensa-elf/include/xcc/c++"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RF-2014.1-win32/rfviatieloop16/xtensa-elf/include/xcc/c++/xtensa-elf"/>
+								</option>
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.843367564" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CHAR_BIT__=8"/>
+									<listOptionValue builtIn="false" value="__FLT_EVAL_METHOD__=0"/>
+									<listOptionValue builtIn="false" value="__FINITE_MATH_ONLY__=0"/>
+									<listOptionValue builtIn="false" value="__GNUC_PATCHLEVEL__=0"/>
+									<listOptionValue builtIn="false" value="__UINTMAX_TYPE__=long"/>
+									<listOptionValue builtIn="false" value="__CHAR_UNSIGNED__=1"/>
+									<listOptionValue builtIn="false" value="__XCC__=11000"/>
+									<listOptionValue builtIn="false" value="__XTENSA_CALL0_ABI__=1"/>
+									<listOptionValue builtIn="false" value="__USER_LABEL_PREFIX__"/>
+									<listOptionValue builtIn="false" value="__XTENSA_EL__=1"/>
+									<listOptionValue builtIn="false" value="__XCC_MINOR__=1"/>
+									<listOptionValue builtIn="false" value="__REGISTER_PREFIX__"/>
+									<listOptionValue builtIn="false" value="__NO_INLINE__=1"/>
+									<listOptionValue builtIn="false" value="__XTENSA_SOFT_FLOAT__=1"/>
+									<listOptionValue builtIn="false" value="__SIZE_TYPE__=unsigned"/>
+									<listOptionValue builtIn="false" value="__ELF__=1"/>
+									<listOptionValue builtIn="false" value="__xtensa__=1"/>
+									<listOptionValue builtIn="false" value="__WCHAR_TYPE__=short"/>
+									<listOptionValue builtIn="false" value="__XTENSA__=1"/>
+									<listOptionValue builtIn="false" value="__INTMAX_TYPE__=long"/>
+									<listOptionValue builtIn="false" value="__XTENSA_SOFT_DOUBLE__=1"/>
+									<listOptionValue builtIn="false" value="__STDC__=1"/>
+									<listOptionValue builtIn="false" value="__GNUC_GNU_INLINE__=1"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.928155306" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+							<tool errorParsers="org.eclipse.cdt.core.VCErrorParser;org.eclipse.cdt.core.GASErrorParser" id="org.eclipse.cdt.build.core.settings.holder.254126955" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.778537114" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/COM"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/DMAE"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/GLB"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/Interrupt"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/MP"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/NFC"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/NormalDsg"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/Pin"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/SPI"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/trace"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/Xtensa"/>
+									<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/SATA"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/tools/RF-2014.1-win32/XtensaTools/lib/xcc/include"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RF-2014.1-win32/rfviatieloop16/xtensa-elf/arch/include"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RF-2014.1-win32/rfviatieloop16/xtensa-elf/include"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/tools/RF-2014.1-win32/XtensaTools/xtensa-elf/include"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RF-2014.1-win32/rfviatieloop16/xtensa-elf/include/xcc/c++"/>
+									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RF-2014.1-win32/rfviatieloop16/xtensa-elf/include/xcc/c++/xtensa-elf"/>
+								</option>
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.972435053" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CHAR_BIT__=8"/>
+									<listOptionValue builtIn="false" value="__FLT_EVAL_METHOD__=0"/>
+									<listOptionValue builtIn="false" value="__FINITE_MATH_ONLY__=0"/>
+									<listOptionValue builtIn="false" value="__GNUC_PATCHLEVEL__=0"/>
+									<listOptionValue builtIn="false" value="__UINTMAX_TYPE__=long"/>
+									<listOptionValue builtIn="false" value="__CHAR_UNSIGNED__=1"/>
+									<listOptionValue builtIn="false" value="__XCC__=11000"/>
+									<listOptionValue builtIn="false" value="__XTENSA_CALL0_ABI__=1"/>
+									<listOptionValue builtIn="false" value="__USER_LABEL_PREFIX__"/>
+									<listOptionValue builtIn="false" value="__XTENSA_EL__=1"/>
+									<listOptionValue builtIn="false" value="__XCC_MINOR__=1"/>
+									<listOptionValue builtIn="false" value="__REGISTER_PREFIX__"/>
+									<listOptionValue builtIn="false" value="__NO_INLINE__=1"/>
+									<listOptionValue builtIn="false" value="__XTENSA_SOFT_FLOAT__=1"/>
+									<listOptionValue builtIn="false" value="__SIZE_TYPE__=unsigned"/>
+									<listOptionValue builtIn="false" value="__ELF__=1"/>
+									<listOptionValue builtIn="false" value="__xtensa__=1"/>
+									<listOptionValue builtIn="false" value="__WCHAR_TYPE__=short"/>
+									<listOptionValue builtIn="false" value="__XTENSA__=1"/>
+									<listOptionValue builtIn="false" value="__INTMAX_TYPE__=long"/>
+									<listOptionValue builtIn="false" value="__XTENSA_SOFT_DOUBLE__=1"/>
+									<listOptionValue builtIn="false" value="__STDC__=1"/>
+									<listOptionValue builtIn="false" value="__GNUC_GNU_INLINE__=1"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.860086851" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="Xtensa.147805733.1771134715" name="reset_vector.S" rcbsApplicability="disable" resourcePath="firmware/HAL/Vector/reset_vector.S" toolsToInvoke="org.eclipse.cdt.build.core.settings.holder.756508321.1852702429">
+						<tool id="org.eclipse.cdt.build.core.settings.holder.756508321.1852702429" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder.756508321">
+							<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1660259700" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+								<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/COM"/>
+								<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/DMAE"/>
+								<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/GLB"/>
+								<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/Interrupt"/>
+								<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/MP"/>
+								<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/NFC"/>
+								<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/NormalDsg"/>
+								<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/Pin"/>
+								<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/SPI"/>
+								<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/trace"/>
+								<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/HAL/Xtensa"/>
+								<listOptionValue builtIn="false" value="D:/workspace/ROMC0/firmware/SATA"/>
+							</option>
+							<option id="org.eclipse.cdt.build.core.settings.holder.symbols.524868256" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols"/>
+							<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.460996486" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+						</tool>
+					</fileInfo>
+				</configuration>
+			</storageModule>
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="Xtensa.147805733" moduleId="org.eclipse.cdt.core.settings" name="Xtensa">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.tensilica.xide.cdt.XtensaELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.tensilica.xide.cdt.FlexLmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.tensilica.xide.cdt.TCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.tensilica.xide.cdt.XtLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.tensilica.xide.cdt.XCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="ROMC0.null.707631278" name="ROMC0"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="Xtensa.147805733">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

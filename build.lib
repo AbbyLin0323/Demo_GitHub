@@ -1,0 +1,99 @@
+#/*******************************************************************************
+#* Copyright (C), 2016 VIA Technologies, Inc. All Rights Reserved.              *
+#*                                                                              *
+#* This PROPRIETARY SOFTWARE is the property of VIA Technologies, Inc.          *
+#* and may contain trade secrets and/or other confidential information of VIA   *
+#* Technologies,Inc.                                                            *
+#* This file shall not be disclosed to any third party, in whole or in part,    *
+#* without prior written consent of VIA.                                        *
+#*                                                                              *
+#* THIS PROPRIETARY SOFTWARE AND ANY RELATED DOCUMENTATION ARE PROVIDED AS IS,  *
+#* WITH ALL FAULTS, AND WITHOUT WARRANTY OF ANY KIND EITHER EXPRESS OR IMPLIED, *
+#* AND VIA TECHNOLOGIES, INC. DISCLAIMS ALL EXPRESS OR IMPLIED WARRANTIES OF    *
+#* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR        *
+#* NON-INFRINGEMENT.                                                            *
+#********************************************************************************
+
+#
+# Build Folder to keep the final system images
+#
+REL_DIR=$(ROOT)\Bin\release
+REL_TIME=$(REL_DIR)\build.log
+DEV_DIR=$(ROOT)\Bin\develop
+DEV_TIME=$(DEV_DIR)\build.log
+
+#
+# Used for the build release
+# Remove $(ROOT)\bin folders
+# Create $(REL_DIR) folder
+#
+build_release:
+	$(eval RELEASE=TRUE)
+	$(if $(RELEASE), -rd /s /q $(REL_DIR),)	
+	$(if $(RELEASE), -mkdir $(REL_DIR),)	
+	$(if $(RELEASE),@echo +================================+>$(REL_TIME))
+	$(if $(RELEASE),@echo      Start Time : %time%>>$(REL_TIME))
+	$(call build_clean)
+
+build_end:
+	$(if $(RELEASE),@echo      Stop Time  : %time%>>$(REL_TIME))
+	$(if $(RELEASE),@echo +================================+>>$(REL_TIME))
+	$(if $(RELEASE),@type $(REL_TIME))
+	$(if $(RELEASE),@-del $(REL_TIME))
+
+#
+# Used for Developer to clean all of the output folders in $(ROOT)\bin
+# make dep
+#
+build_clean:
+	$(call build_clean)
+	$(if $(RELEASE), ,-mkdir $(DEV_DIR))	
+	$(if $(RELEASE), ,@echo +================================+>$(DEV_TIME))
+	$(if $(RELEASE), ,@echo      Start Time : %time%>>$(DEV_TIME))	
+	$(call build_dep)
+	$(if $(RELEASE), ,@echo      Stop Time  : %time%>>$(DEV_TIME))
+	$(if $(RELEASE), ,@echo +================================+>>$(DEV_TIME))
+	$(if $(RELEASE), ,@type $(DEV_TIME))
+	$(if $(RELEASE), ,@-del $(DEV_TIME))
+
+#
+# build the board system iamges by
+# make bootloader, MCU0/1/2 firmware, blscript for different boards
+# integrate the system images onto either $(DEV_DIR) or $(REL_DEV)
+# $1:HOST
+# $2:FLASH
+# $3:MACRO
+# $4:BOARD
+#
+define build_board
+	$(if $(RELEASE), ,@echo +================================+>$(DEV_TIME))
+	$(if $(RELEASE), ,@echo      Start Time : %time%>>$(DEV_TIME))
+	$(MAKE) -C bootloader all FLASH_IN=$2 MACRO_IN=$3
+	$(MAKE) -C firmware all HOST_IN=$1 MCU_IN=MCU0 FLASH_IN=$2 MACRO_IN=$3
+	$(MAKE) -C firmware all HOST_IN=$1 MCU_IN=MCU1 FLASH_IN=$2 MACRO_IN=$3
+	$(MAKE) -C firmware all HOST_IN=$1 MCU_IN=MCU2 FLASH_IN=$2 MACRO_IN=$3
+	$(if $(RELEASE), ,-mkdir $(DEV_DIR))
+	$(if $(filter INTEL_3D_TLC, $2), $(eval FLASH_OUT=3D_TLC), $(eval FLASH_OUT=$2))
+	for %%i in ($4) do $(MAKE) -C blscript all HOST_IN=$1 FLASH_IN=$2 BOARD_IN=%%i
+	for %%i in ($4) do ( \
+		copy $(ROOT)\Bin\Bin\%%i_$1_$(FLASH_OUT)_ASIC.bin $(if $(RELEASE), $(REL_DIR) &, $(DEV_DIR)) \
+		$(if $(RELEASE), mkdir $(REL_DIR)\elf\%%i &) \
+		$(if $(RELEASE), copy $(ROOT)\Bin\Bin\*.elf $(REL_DIR)\elf\%%i) \
+	)
+	$(if $(RELEASE), ,@echo      Stop Time  : %time%>>$(DEV_TIME))
+	$(if $(RELEASE), ,@echo +================================+>>$(DEV_TIME))
+	$(if $(RELEASE), ,@type $(DEV_TIME))
+	$(if $(RELEASE), ,@-del $(DEV_TIME))
+endef
+
+define build_clean
+	-rd /s /q $(ROOT)\Bin\bin
+	-rd /s /q $(ROOT)\Bin\list
+	-rd /s /q $(ROOT)\Bin\obj
+	-rd /s /q $(ROOT)\Bin\TraceLogFormat
+	-rd /s /q $(DEV_DIR)
+endef
+
+define build_dep
+	xt-make dep
+endef

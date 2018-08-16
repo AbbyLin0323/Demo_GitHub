@@ -1,0 +1,2 @@
+SATA#WholeChip#L85#normal_quickexit_pattern:abnormal_shutdown_pattern#/d SCRIPTS_AUTO_RUNNING
+SATA#WholeChip#TSB#normal_quickexit_pattern:abnormal_shutdown_pattern#/d SCRIPTS_AUTO_RUNNING

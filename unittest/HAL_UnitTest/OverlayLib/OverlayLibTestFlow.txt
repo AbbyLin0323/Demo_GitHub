@@ -1,0 +1,14 @@
+
+1.导入OverlayLibCode_and_LibLSP.xws到XtensaXplorer。编译出overlaylib1 和overlaylib2.
+
+2.修改GenLibBin.bat中Lib1和Lib2对应的ELF文件路径。如：D:\Xplorer-6.0.1-workspaces\overlaylib1\bin\viatie\Release\overlaylib1
+
+3.在viatie 的shell命令窗口中cd 到.\SSD-VT3514\unit_test\HAL_Test\OverlayLib路径下,运行GenLibBin.bat。产生overlaylib1和overlaylib1的bin文件。（overlaylib1.data 和 overlaylib2.data）
+
+4.修改脚本env.gdb在Predram初始化完成后分别存入overlaylib1.data、overlaylib2.data到DRAM地址0x40001000 和 0x40002000.
+
+5.选定MixVctor的测试pattern为OverlayLibTest，并编译。
+
+6.根据不同的测试平台修改env.gdb。
+
+7.运行。

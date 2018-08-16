@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="JTAG">
+      <UniqueIdentifier>{095b9993-5298-401d-87e8-586245c114e9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="atacmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dataverify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FTCSPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hardwareapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hior.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ioasync.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iospecify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pattern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="satafeature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vencmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Jtag\BaseDef.h">
+      <Filter>JTAG</Filter>
+    </ClInclude>
+    <ClInclude Include="Jtag\FT2232c.h">
+      <Filter>JTAG</Filter>
+    </ClInclude>
+    <ClInclude Include="Jtag\FT2232h.h">
+      <Filter>JTAG</Filter>
+    </ClInclude>
+    <ClInclude Include="Jtag\FT2232hMpsseJtag.h">
+      <Filter>JTAG</Filter>
+    </ClInclude>
+    <ClInclude Include="Jtag\FTCJTAG.h">
+      <Filter>JTAG</Filter>
+    </ClInclude>
+    <ClInclude Include="Jtag\FTD2XX.H">
+      <Filter>JTAG</Filter>
+    </ClInclude>
+    <ClInclude Include="Jtag\jtag_or32.h">
+      <Filter>JTAG</Filter>
+    </ClInclude>
+    <ClInclude Include="Jtag\stdafx.h">
+      <Filter>JTAG</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dataverify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="device.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hardwareapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hior.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ioasync.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iospecify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pattern.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="satafeature.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vencmd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Jtag\crc.c">
+      <Filter>JTAG</Filter>
+    </ClCompile>
+    <ClCompile Include="Jtag\FT2232c.cpp">
+      <Filter>JTAG</Filter>
+    </ClCompile>
+    <ClCompile Include="Jtag\FT2232h.cpp">
+      <Filter>JTAG</Filter>
+    </ClCompile>
+    <ClCompile Include="Jtag\FT2232hMpsseJtag.cpp">
+      <Filter>JTAG</Filter>
+    </ClCompile>
+    <ClCompile Include="Jtag\FTCJTAG.cpp">
+      <Filter>JTAG</Filter>
+    </ClCompile>
+    <ClCompile Include="Jtag\stdafx.cpp">
+      <Filter>JTAG</Filter>
+    </ClCompile>
+    <ClCompile Include="Jtag\jtag_or32.c">
+      <Filter>JTAG</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

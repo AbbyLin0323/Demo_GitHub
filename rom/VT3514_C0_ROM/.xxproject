@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xxProperties>
+<propertyGroup name="project.information">
+<version value="2.0"/>
+</propertyGroup>
+<propertyGroup name="build.property">
+<buildTarget defaultTarget="Debug"/>
+</propertyGroup>
+<propertyGroup name="make.exclusion.data">
+<makeExclusionEntries>
+<exclusionEntry data="/.*/bin/.*"/>
+</makeExclusionEntries>
+</propertyGroup>
+<propertyGroup name="build.auto.includes">
+<exportDirs autoConsumeDirs="true" includeDepDirs="true" mode="auto"/>
+</propertyGroup>
+<propertyGroup name="library.dependencies">
+<libraryDependencies targetMappingRule="2"/>
+</propertyGroup>
+</xxProperties>

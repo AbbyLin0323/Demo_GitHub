@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{697A6A9E-525A-4E90-8E78-31F296E5DBB5}</ProjectGuid>
+    <RootNamespace>XTMP_WinSim</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(XtensaToolsDir)\include;.\xtmp_env;..\..\..\unit_test\MixVector_MainFlow;..\..\..\firmware;..\..\..\firmware\COM;..\..\..\firmware\HAL;..\..\..\firmware\HAL\ChainMaintain;..\..\..\firmware\HAL\DataMonitor;..\..\..\firmware\HAL\HwDebug;..\..\..\firmware\HAL\DMAE;..\..\..\firmware\HAL\DSG;..\..\..\firmware\HAL\EM;..\..\..\firmware\HAL\Flash;..\..\..\firmware\HAL\GLB;..\..\..\firmware\HAL\GPIO;..\..\..\firmware\HAL\HCT;..\..\..\firmware\HAL\Head;..\..\..\firmware\HAL\HSG;..\..\..\firmware\HAL\IIC;..\..\..\firmware\HAL\Interrupt;..\..\..\firmware\HAL\MultiCore;..\..\..\firmware\HAL\SDC;..\..\..\firmware\HAL\NFC;..\..\..\firmware\HAL\ParamTable;..\..\..\firmware\HAL\PM;..\..\..\firmware\HAL\SE;..\..\..\firmware\HAL\SGE;..\..\..\firmware\HAL\SPI;..\..\..\firmware\HAL\Trace;..\..\..\firmware\HAL\UART;..\..\..\firmware\HAL\Xtensa;..\..\..\firmware\adapter\L0\SATA;..\..\..\firmware\adapter\L1\SATA;..\..\..\firmware\adapter\L2\SATA;..\..\..\firmware\adapter\L3\SATA;..\..\..\firmware\algorithm\Misc;..\..\..\firmware\algorithm\L0;..\..\..\firmware\algorithm\L0\ATALib;..\..\..\firmware\algorithm\L1;..\..\..\firmware\algorithm\L2;..\..\..\firmware\algorithm\L3;..\..\..\model;..\..\..\model\sgemodel;..\..\..\model\satamodel;..\..\..\model\dmaemodel;..\..\..\model\flashmodel;..\..\..\model\256fm_win32;..\..\..\model\AHCIHost;..\..\..\model\HostInterface;..\..\..\model\trace_log;..\..\..\model\search_engine;..\..\..\model\platform;..\..\..\model\checklistparser;..\..\..\model\HCTModel;..\..\..\model\verification;..\..\..\model\SimATALib;..\..\..\unit_test\L2_TableRebuildCheck;..\..\..\unit_test\L3_Test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MIX_VECTOR;XTMP;HOST_SATA;SIM_XTENSA;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/vmg /wd4996 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\usr\xtensa\XtDevTools\install\tools\RE-2014.5-win32\XtensaTools\lib\iss-vc110;C:\usr\xtensa\XtDevTools\install\tools\RE-2014.5-win32\XtensaTools\Tools\systemc\msvc110\SystemC\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>xtmpd.lib;SystemC.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(XtensaToolsDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SIM_XTENSA;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(XtensaToolsDir)\lib\iss-vc110;$(XtensaToolsDir)\Tools\systemc\msvc110\SystemC\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>xtmp.lib;systemc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\model\256fm_win32\bufman.c" />
+    <ClCompile Include="..\..\..\model\256fm_win32\cfmid.c" />
+    <ClCompile Include="..\..\..\model\256fm_win32\cfmodule.c" />
+    <ClCompile Include="..\..\..\model\256fm_win32\rsvfileman.c" />
+    <ClCompile Include="..\..\..\model\CheckListParser\action_define.c" />
+    <ClCompile Include="..\..\..\model\CheckListParser\base_pattern.c" />
+    <ClCompile Include="..\..\..\model\CheckListParser\checklist_parse.c" />
+    <ClCompile Include="..\..\..\model\CheckListParser\iniparser.c" />
+    <ClCompile Include="..\..\..\model\CheckListParser\nfc_Injerr.c" />
+    <ClCompile Include="..\..\..\model\dmaemodel\sim_DMAE.c" />
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_common.c" />
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_interface.c" />
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_shedule.c" />
+    <ClCompile Include="..\..\..\model\flashmodel\sim_nfccmd.c" />
+    <ClCompile Include="..\..\..\model\HostInterface\HostInterface.c" />
+    <ClCompile Include="..\..\..\model\HostInterface\HostModel.c" />
+    <ClCompile Include="..\..\..\model\platform\memory_access.c" />
+    <ClCompile Include="..\..\..\model\platform\sim_log.c" />
+    <ClCompile Include="..\..\..\model\platform\win_bootloader.c" />
+    <ClCompile Include="..\..\..\model\satamodel\sdc_common.c" />
+    <ClCompile Include="..\..\..\model\satamodel\simsatadev.c" />
+    <ClCompile Include="..\..\..\model\satamodel\simsatahost.c" />
+    <ClCompile Include="..\..\..\model\satamodel\simsatainterface.c" />
+    <ClCompile Include="..\..\..\model\search_engine\sim_search_engine.c" />
+    <ClCompile Include="..\..\..\model\sgemodel\sim_NormalDSG.c" />
+    <ClCompile Include="..\..\..\model\sgemodel\sim_SataDSG.c" />
+    <ClCompile Include="..\..\..\model\SimATALib\SimATA_HSCMDCallBack.c" />
+    <ClCompile Include="..\..\..\model\SimATALib\SimATA_Interface.c" />
+    <ClCompile Include="..\..\..\model\trace_log\system_statistic.c" />
+    <ClCompile Include="xtmp_env\fake_interface.c" />
+    <ClCompile Include="xtmp_env\getopt.c" />
+    <ClCompile Include="xtmp_env\sysc_driver.cxx" />
+    <ClCompile Include="xtmp_env\xtmp_bootloader.c" />
+    <ClCompile Include="xtmp_env\xtmp_localmem.c" />
+    <ClCompile Include="xtmp_env\xtmp_main.c" />
+    <ClCompile Include="xtmp_env\xtmp_options.c" />
+    <ClCompile Include="xtmp_env\xtmp_sysmem.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\model\256fm_win32\common_str.h" />
+    <ClInclude Include="..\..\..\model\256fm_win32\hfmid.h" />
+    <ClInclude Include="..\..\..\model\256fm_win32\hfmodule.h" />
+    <ClInclude Include="..\..\..\model\AHCIHost\AHCI_HostModel.h" />
+    <ClInclude Include="..\..\..\model\CheckListParser\action_define.h" />
+    <ClInclude Include="..\..\..\model\CheckListParser\base_pattern.h" />
+    <ClInclude Include="..\..\..\model\CheckListParser\checklist_parse.h" />
+    <ClInclude Include="..\..\..\model\CheckListParser\hscmd_parse.h" />
+    <ClInclude Include="..\..\..\model\CheckListParser\iniparser.h" />
+    <ClInclude Include="..\..\..\model\dmaemodel\sim_DMAE.h" />
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_common.h" />
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_config.h" />
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_interface.h" />
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_shedule.h" />
+    <ClInclude Include="..\..\..\model\flashmodel\sim_nfccmd.h" />
+    <ClInclude Include="..\..\..\model\HostInterface\HostInc.h" />
+    <ClInclude Include="..\..\..\model\HostInterface\HostModel.h" />
+    <ClInclude Include="..\..\..\model\HostInterface\HostTrimCmd.h" />
+    <ClInclude Include="..\..\..\model\platform\memory_access.h" />
+    <ClInclude Include="..\..\..\model\platform\model_config.h" />
+    <ClInclude Include="..\..\..\model\platform\sim_log.h" />
+    <ClInclude Include="..\..\..\model\platform\win_bootloader.h" />
+    <ClInclude Include="..\..\..\model\platform\xt_library.h" />
+    <ClInclude Include="..\..\..\model\satamodel\sdc_common.h" />
+    <ClInclude Include="..\..\..\model\satamodel\simsatadev.h" />
+    <ClInclude Include="..\..\..\model\satamodel\Simsatahost.h" />
+    <ClInclude Include="..\..\..\model\satamodel\simsatainc.h" />
+    <ClInclude Include="..\..\..\model\satamodel\simsatainterface.h" />
+    <ClInclude Include="..\..\..\model\satamodel\simsataloc.h" />
+    <ClInclude Include="..\..\..\model\search_engine\sim_search_engine.h" />
+    <ClInclude Include="..\..\..\model\sgemodel\sim_NormalDSG.h" />
+    <ClInclude Include="..\..\..\model\sgemodel\sim_SataDSG.h" />
+    <ClInclude Include="..\..\..\model\SimATALib\SimATACmd.h" />
+    <ClInclude Include="..\..\..\model\SimATALib\SimATA_HSCMDCallBack.h" />
+    <ClInclude Include="..\..\..\model\SimATALib\SimATA_Interface.h" />
+    <ClInclude Include="..\..\..\model\trace_log\system_statistic.h" />
+    <ClInclude Include="xtmp_env\getopt.h" />
+    <ClInclude Include="xtmp_env\xtmp_bootloader.h" />
+    <ClInclude Include="xtmp_env\xtmp_common.h" />
+    <ClInclude Include="xtmp_env\xtmp_config.h" />
+    <ClInclude Include="xtmp_env\xtmp_localmem.h" />
+    <ClInclude Include="xtmp_env\xtmp_options.h" />
+    <ClInclude Include="xtmp_env\xtmp_sysmem.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xtmp_sim", "test_iss.vcxproj", "{1B082F31-CBD1-41A5-B0C0-F9490B27F2DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B082F31-CBD1-41A5-B0C0-F9490B27F2DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1B082F31-CBD1-41A5-B0C0-F9490B27F2DD}.Debug|Win32.Build.0 = Debug|Win32
+		{1B082F31-CBD1-41A5-B0C0-F9490B27F2DD}.Release|Win32.ActiveCfg = Release|Win32
+		{1B082F31-CBD1-41A5-B0C0-F9490B27F2DD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+1. checklist命名规则
+1）basic checklist
+checklist_%pattern type%
+
+2）extend checklist
+checklist_%flash%_%fcmd type%_%sub fcmd type%_%blk mode%_%flash addr%.gdb
+
+如有必要添加字段，则加在最后。
+
+
+2. checklist pool:
+以下文件路径用于存放通用的checklist files
+1）basic checklist
+%ROOTPATH%\blscript\checklist_pool\nfc_basic_checklist
+
+2）extend checklist
+%ROOTPATH%\blscript\checklist_pool\nfc_ext_checklist
+
+
+3. checklist执行
+1）执行路径：
+当前ENV对应的blscript，如%ROOTPATH%\blscript\VT3084-128G1L2P-TSOP_NVME_TSB_2D_TLC
+
+2）执行顺序：
+checklist_files.gdb中source文件的顺序即test pattern执行顺序。
+
+
+4. usage
+1) 进入checklist pool目录，定制需要的checklist pattern，有两种方法：
+a. 选取需要的files，在执行路径\checklist_files.gdb文件中依次source所需checklist；
+b. 使用根目录下的Checklist_Gen_Console.exe定制新的checklist和checklist_files.gdb。
+
+2）运行FW至断点处，在GDB中source Load_checklist.gdb，完成后continue程序运行。
+

@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="xtmp_env">
+      <UniqueIdentifier>{e1f2dfb3-ff94-43bf-8b7b-dbdf0514d493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model">
+      <UniqueIdentifier>{b7b446a5-8fb7-4862-aa3d-071581508f29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\256fm_win32">
+      <UniqueIdentifier>{44d63acc-08dc-4831-99c8-fbdf18fd41e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\CheckListParser">
+      <UniqueIdentifier>{dc7448ae-ca01-4020-a7e5-29f6bc7e3860}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\flashmodel">
+      <UniqueIdentifier>{ca2a4ac4-157b-4ec0-be74-81b8ec1b4497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\HostInterface">
+      <UniqueIdentifier>{0b0d8abe-26fe-4e2e-ac63-5e96bd0b43c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\platform">
+      <UniqueIdentifier>{644020ec-12d0-4856-abbf-7326293cec49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\satamodel">
+      <UniqueIdentifier>{a7486a63-f3e9-4fc2-b21d-d70123a053cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\search_engine">
+      <UniqueIdentifier>{a397e2e6-1e5f-4cba-b3a4-00a61c41203f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\SimATALib">
+      <UniqueIdentifier>{74b352b4-547f-4cdb-a089-dcdc4696c1a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\trace_log">
+      <UniqueIdentifier>{b64baf30-2657-42aa-8bf7-69558215927f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\dmaemodel">
+      <UniqueIdentifier>{50ddd261-161d-4c23-8bda-21a8da518511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\sgemodel">
+      <UniqueIdentifier>{c174ffdc-ddce-454a-a172-6ee520d74fe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\AHCIHost">
+      <UniqueIdentifier>{8001fbcc-4b76-4ad5-914d-1b484290c569}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="xtmp_env\getopt.c">
+      <Filter>xtmp_env</Filter>
+    </ClCompile>
+    <ClCompile Include="xtmp_env\sysc_driver.cxx">
+      <Filter>xtmp_env</Filter>
+    </ClCompile>
+    <ClCompile Include="xtmp_env\xtmp_localmem.c">
+      <Filter>xtmp_env</Filter>
+    </ClCompile>
+    <ClCompile Include="xtmp_env\xtmp_main.c">
+      <Filter>xtmp_env</Filter>
+    </ClCompile>
+    <ClCompile Include="xtmp_env\xtmp_options.c">
+      <Filter>xtmp_env</Filter>
+    </ClCompile>
+    <ClCompile Include="xtmp_env\xtmp_sysmem.c">
+      <Filter>xtmp_env</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\256fm_win32\bufman.c">
+      <Filter>model\256fm_win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\256fm_win32\cfmid.c">
+      <Filter>model\256fm_win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\256fm_win32\cfmodule.c">
+      <Filter>model\256fm_win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\256fm_win32\rsvfileman.c">
+      <Filter>model\256fm_win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\CheckListParser\action_define.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\CheckListParser\base_pattern.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\CheckListParser\checklist_parse.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\CheckListParser\iniparser.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\CheckListParser\nfc_Injerr.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\dmaemodel\sim_DMAE.c">
+      <Filter>model\dmaemodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_common.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_interface.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_shedule.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\flashmodel\sim_nfccmd.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\HostInterface\HostInterface.c">
+      <Filter>model\HostInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\HostInterface\HostModel.c">
+      <Filter>model\HostInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\trace_log\system_statistic.c">
+      <Filter>model\trace_log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\SimATALib\SimATA_HSCMDCallBack.c">
+      <Filter>model\SimATALib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\SimATALib\SimATA_Interface.c">
+      <Filter>model\SimATALib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\search_engine\sim_search_engine.c">
+      <Filter>model\search_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\satamodel\sdc_common.c">
+      <Filter>model\satamodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\satamodel\simsatadev.c">
+      <Filter>model\satamodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\satamodel\simsatahost.c">
+      <Filter>model\satamodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\satamodel\simsatainterface.c">
+      <Filter>model\satamodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\platform\memory_access.c">
+      <Filter>model\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\platform\sim_log.c">
+      <Filter>model\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\platform\win_bootloader.c">
+      <Filter>model\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\sgemodel\sim_NormalDSG.c">
+      <Filter>model\sgemodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\sgemodel\sim_SataDSG.c">
+      <Filter>model\sgemodel</Filter>
+    </ClCompile>
+    <ClCompile Include="xtmp_env\fake_interface.c">
+      <Filter>xtmp_env</Filter>
+    </ClCompile>
+    <ClCompile Include="xtmp_env\xtmp_bootloader.c">
+      <Filter>xtmp_env</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="xtmp_env\getopt.h">
+      <Filter>xtmp_env</Filter>
+    </ClInclude>
+    <ClInclude Include="xtmp_env\xtmp_common.h">
+      <Filter>xtmp_env</Filter>
+    </ClInclude>
+    <ClInclude Include="xtmp_env\xtmp_config.h">
+      <Filter>xtmp_env</Filter>
+    </ClInclude>
+    <ClInclude Include="xtmp_env\xtmp_localmem.h">
+      <Filter>xtmp_env</Filter>
+    </ClInclude>
+    <ClInclude Include="xtmp_env\xtmp_options.h">
+      <Filter>xtmp_env</Filter>
+    </ClInclude>
+    <ClInclude Include="xtmp_env\xtmp_sysmem.h">
+      <Filter>xtmp_env</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\256fm_win32\common_str.h">
+      <Filter>model\256fm_win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\256fm_win32\hfmid.h">
+      <Filter>model\256fm_win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\256fm_win32\hfmodule.h">
+      <Filter>model\256fm_win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\CheckListParser\action_define.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\CheckListParser\base_pattern.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\CheckListParser\checklist_parse.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\CheckListParser\hscmd_parse.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\CheckListParser\iniparser.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\dmaemodel\sim_DMAE.h">
+      <Filter>model\dmaemodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_common.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_config.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_interface.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_shedule.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\flashmodel\sim_nfccmd.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\HostInterface\HostInc.h">
+      <Filter>model\HostInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\HostInterface\HostModel.h">
+      <Filter>model\HostInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\HostInterface\HostTrimCmd.h">
+      <Filter>model\HostInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\trace_log\system_statistic.h">
+      <Filter>model\trace_log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\SimATALib\SimATA_HSCMDCallBack.h">
+      <Filter>model\SimATALib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\SimATALib\SimATA_Interface.h">
+      <Filter>model\SimATALib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\SimATALib\SimATACmd.h">
+      <Filter>model\SimATALib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\search_engine\sim_search_engine.h">
+      <Filter>model\search_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\satamodel\sdc_common.h">
+      <Filter>model\satamodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\satamodel\simsatadev.h">
+      <Filter>model\satamodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\satamodel\Simsatahost.h">
+      <Filter>model\satamodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\satamodel\simsatainc.h">
+      <Filter>model\satamodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\satamodel\simsatainterface.h">
+      <Filter>model\satamodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\satamodel\simsataloc.h">
+      <Filter>model\satamodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\platform\memory_access.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\platform\model_config.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\platform\sim_log.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\platform\win_bootloader.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\platform\xt_library.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\sgemodel\sim_NormalDSG.h">
+      <Filter>model\sgemodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\sgemodel\sim_SataDSG.h">
+      <Filter>model\sgemodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\AHCIHost\AHCI_HostModel.h">
+      <Filter>model\AHCIHost</Filter>
+    </ClInclude>
+    <ClInclude Include="xtmp_env\xtmp_bootloader.h">
+      <Filter>xtmp_env</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+请在dos环境下进入此目录，shell下执行
+移除plx驱动
+PlxInstall.bat remove
+安装plx驱动
+PlxInstall.bat install

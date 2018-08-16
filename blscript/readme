@@ -1,0 +1,11 @@
+The folder is consist of $(BOARD)_$(HOST)_$(FLASH)
+$(HOST), $(FLASH), $(BOARD) are defined as in config.mk
+$(HOST) = SATA | NVME
+$(FLASH) = TSB_2D_TLC | L95 | TSB_3D_TLC | TSB_FOURPLN
+$(BOARD) = VT6739B-128G1L4P
+    BOARD name is composited of $(CRB)-xxxGxLxP.
+    xxxG : drive capacity.
+    xL : LUN per CE.
+    xP : Pln per LUN.
+    For example : VT6739B-128G1L4P.
+

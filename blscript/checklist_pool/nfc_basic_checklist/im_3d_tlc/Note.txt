@@ -1,0 +1,12 @@
+# Notes for IM 3D TLC checklist configuration
+
+1. bsLowPageMode should always 0, will be delete later.
+
+2. Blk mode should follow below layout:
+TLC blk : 0-455;
+SLC BLK : 456-498;
+RSV BLK for checklist: 499-511 (Don't use these blocks).
+
+3. Single plane operation not support TLC mode now.
+
+4. Raw data read: Winsim not support; NFC won't update RED, just put it follow 16th KB msg.

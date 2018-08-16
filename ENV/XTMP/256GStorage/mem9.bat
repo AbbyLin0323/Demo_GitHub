@@ -1,0 +1,1 @@
+manmem.exe -N satacom3 -S 1073741824

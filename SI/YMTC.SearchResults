@@ -1,0 +1,4 @@
+---- bsRTSB3dTlc Matches (3 in 2 files) ----
+HAL_FlashDriverBasic.c (f:\03-ut_src\a2\ymtc\firmware\hal\nfc):    if (TRUE == pNfcPgCfg->bsRTSB3dTlc)
+HAL_FlashDriverBasic.c (f:\03-ut_src\a2\ymtc\firmware\hal\nfc):    return (1 == pNfcPgCfg->bsRTSB3dTlc) ? TRUE : FALSE;
+HAL_FlashDriverBasic.h (f:\03-ut_src\a2\ymtc\firmware\hal\nfc):    U32 bsRTSB3dTlc         : 1;    // 1: TSB TLC mode, for low/middle/high page select

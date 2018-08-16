@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>xtmp_sim</ProjectName>
+    <ProjectGuid>{1B082F31-CBD1-41A5-B0C0-F9490B27F2DD}</ProjectGuid>
+    <RootNamespace>test_iss</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/vmg /wd4996 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\COM;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\Config;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\ChainMaintain;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\DataMonitor;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\Debug;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\DMAE;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\DRAM;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\DSG;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\EM;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\Flash;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\GLB;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\GPIO;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\HCT;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\HSG;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\IIC;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\Interrupt;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\MultiCore;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\NFC;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\ParamTable;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\PM;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\SE;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\SGE;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\SPI;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\Trace;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\UART;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\Xtensa;$(ProjectDir)\xtmp_env;$(ProjectDir)\model;$(ProjectDir)\model\256fm_win32;$(ProjectDir)\model\AHCIHost;$(ProjectDir)\model\CheckListParser;$(ProjectDir)\model\dmaemodel;$(ProjectDir)\model\flashmodel;$(ProjectDir)\model\MixVector_pattern;$(ProjectDir)\model\platform;$(ProjectDir)\model\search_engine;$(ProjectDir)\model\sgemodel;$(ProjectDir)\model\trace_log;$(XtDevTools)\install\tools\RE-2014.5-win32\XtensaTools\include;$(XtDevTools)\install\tools\RE-2014.5-win32\XtensaTools\Tools\systemc\src;$(XtDevTools)\install\tools\RE-2014.5-win32\XtensaTools\lib\iss-vc110;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>AHCI_INT;SIM_XTENSA;XTENSA_SYSTEM="c:/usr/xtensa/XtDevTools/install/tools/RE-2014.5-win32/XtensaTools/config";_BIND_TO_CURRENT_CRT_VERSION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>xtmpd.lib;systemc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)xtmp_sim.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(XtDevTools)\install\tools\RE-2014.5-win32\XtensaTools\Tools\systemc\msvc110\SystemC\Debug;$(XtDevTools)\install\tools\RE-2014.5-win32\XtensaTools\lib\iss-vc110;C:\usr\xtensa\XtDevTools\install\tools\RE-2014.5-win32\XtensaTools\lib\iss-vc110;C:\usr\xtensa\XtDevTools\install\tools\RE-2014.5-win32\XtensaTools\Tools\systemc\msvc110\SystemC\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>AHCI_INT;SIM_XTENSA;XTENSA_SYSTEM="C:/usr/xtensa/XtDevTools/install/tools/RE-2014.5-win32/XtensaTools/config";_BIND_TO_CURRENT_CRT_VERSION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\COM;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\Config;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\ChainMaintain;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\DataMonitor;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\Debug;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\DMAE;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\DRAM;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\DSG;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\EM;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\Flash;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\GLB;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\GPIO;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\HCT;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\HSG;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\IIC;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\Interrupt;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\MultiCore;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\NFC;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\ParamTable;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\PM;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\SE;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\SGE;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\SPI;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\Trace;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\UART;c:\usr\xtensa\Xplorer-5.0.5-workspaces\workspace\MixVector\firmware\HAL\Xtensa;$(ProjectDir)\xtmp_env;$(ProjectDir)\model;$(ProjectDir)\model\256fm_win32;$(ProjectDir)\model\AHCIHost;$(ProjectDir)\model\CheckListParser;$(ProjectDir)\model\dmaemodel;$(ProjectDir)\model\flashmodel;$(ProjectDir)\model\MixVector_pattern;$(ProjectDir)\model\platform;$(ProjectDir)\model\search_engine;$(ProjectDir)\model\sgemodel;$(ProjectDir)\model\trace_log;$(XtDevTools)\install\tools\RE-2014.5-win32\XtensaTools\include;$(XtDevTools)\install\tools\RE-2014.5-win32\XtensaTools\Tools\systemc\src;$(XtDevTools)\install\tools\RE-2014.5-win32\XtensaTools\lib\iss-vc110;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalOptions>/vmg /wd4996 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(XtDevTools)\install\tools\RE-2014.5-win32\XtensaTools\Tools\systemc\msvc110\SystemC\Release;$(XtDevTools)\install\tools\RE-2014.5-win32\XtensaTools\lib\iss-vc110;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>xtmpd.lib;systemc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="model\256fm_win32\bufman.c" />
+    <ClCompile Include="model\256fm_win32\cfmid.c" />
+    <ClCompile Include="model\256fm_win32\cfmodule.c" />
+    <ClCompile Include="model\256fm_win32\rsvfileman.c" />
+    <ClCompile Include="model\AHCIHost\AHCI_ControllerInterface.c" />
+    <ClCompile Include="model\AHCIHost\AHCI_ControllerModel.c" />
+    <ClCompile Include="model\AHCIHost\AHCI_HostModel.c" />
+    <ClCompile Include="model\CheckListParser\action_define.c" />
+    <ClCompile Include="model\CheckListParser\base_pattern.c" />
+    <ClCompile Include="model\CheckListParser\checklist_parse.c" />
+    <ClCompile Include="model\CheckListParser\iniparser.c" />
+    <ClCompile Include="model\CheckListParser\nfc_Injerr.c" />
+    <ClCompile Include="model\dmaemodel\sim_DMAE.c" />
+    <ClCompile Include="model\flashmodel\sim_flash_common.c" />
+    <ClCompile Include="model\flashmodel\sim_flash_interface.c" />
+    <ClCompile Include="model\flashmodel\sim_flash_shedule.c" />
+    <ClCompile Include="model\flashmodel\sim_nfccmd.c" />
+    <ClCompile Include="model\MixVector_pattern\crc32.c" />
+    <ClCompile Include="model\MixVector_pattern\HostModel.c" />
+    <ClCompile Include="model\MixVector_pattern\MixVector_HostApp.c" />
+    <ClCompile Include="model\MixVector_pattern\verify_host_pattern.c" />
+    <ClCompile Include="model\platform\memory_access.c" />
+    <ClCompile Include="model\platform\win_bootloader.c" />
+    <ClCompile Include="model\search_engine\sim_search_engine.c" />
+    <ClCompile Include="model\sgemodel\sim_HSG.c" />
+    <ClCompile Include="model\sgemodel\sim_NormalDSG.c" />
+    <ClCompile Include="model\sgemodel\sim_SGE.c" />
+    <ClCompile Include="model\trace_log\system_statistic.c" />
+    <ClCompile Include="xtmp_env\getopt.c" />
+    <ClCompile Include="xtmp_env\sysc_driver.cxx" />
+    <ClCompile Include="xtmp_env\xtmp_localmem.c" />
+    <ClCompile Include="xtmp_env\xtmp_main.c" />
+    <ClCompile Include="xtmp_env\xtmp_options.c" />
+    <ClCompile Include="xtmp_env\xtmp_sysmem.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="model\256fm_win32\common_str.h" />
+    <ClInclude Include="model\256fm_win32\hfmid.h" />
+    <ClInclude Include="model\256fm_win32\hfmodule.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_AhciSpec.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_ATACmdCode.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_ControllerInterface.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_ControllerModel.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_HostDefine.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_HostModel.h" />
+    <ClInclude Include="model\AHCIHost\AHCI_HostModelVar.h" />
+    <ClInclude Include="model\CheckListParser\action_define.h" />
+    <ClInclude Include="model\CheckListParser\base_pattern.h" />
+    <ClInclude Include="model\CheckListParser\checklist_parse.h" />
+    <ClInclude Include="model\CheckListParser\hscmd_parse.h" />
+    <ClInclude Include="model\CheckListParser\iniparser.h" />
+    <ClInclude Include="model\dmaemodel\sim_DMAE.h" />
+    <ClInclude Include="model\flashmodel\sim_flash_common.h" />
+    <ClInclude Include="model\flashmodel\sim_flash_config.h" />
+    <ClInclude Include="model\flashmodel\sim_flash_interface.h" />
+    <ClInclude Include="model\flashmodel\sim_flash_shedule.h" />
+    <ClInclude Include="model\flashmodel\sim_nfccmd.h" />
+    <ClInclude Include="model\MixVector_pattern\crc32.h" />
+    <ClInclude Include="model\MixVector_pattern\HostInc.h" />
+    <ClInclude Include="model\MixVector_pattern\HostModel.h" />
+    <ClInclude Include="model\MixVector_pattern\HostTrimCmd.h" />
+    <ClInclude Include="model\MixVector_pattern\MixVector_HostApp.h" />
+    <ClInclude Include="model\MixVector_pattern\Verify_host_pattern.h" />
+    <ClInclude Include="model\model_common.h" />
+    <ClInclude Include="model\platform\memory_access.h" />
+    <ClInclude Include="model\platform\model_config.h" />
+    <ClInclude Include="model\platform\win_bootloader.h" />
+    <ClInclude Include="model\search_engine\sim_search_engine.h" />
+    <ClInclude Include="model\sgemodel\sim_HSG.h" />
+    <ClInclude Include="model\sgemodel\sim_NormalDSG.h" />
+    <ClInclude Include="model\sgemodel\sim_SGE.h" />
+    <ClInclude Include="model\trace_log\system_statistic.h" />
+    <ClInclude Include="xtmp_env\getopt.h" />
+    <ClInclude Include="xtmp_env\xtmp_common.h" />
+    <ClInclude Include="xtmp_env\xtmp_config.h" />
+    <ClInclude Include="xtmp_env\xtmp_localmem.h" />
+    <ClInclude Include="xtmp_env\xtmp_options.h" />
+    <ClInclude Include="xtmp_env\xtmp_sysmem.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

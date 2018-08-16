@@ -1,0 +1,4 @@
+1.input中需要放MCU0和MCU12的log_format文件，分别命名为log_format_file0.ini和log_format_file12.ini，另外需要放置HAL_TraceLog.h文件。
+2.output中会存放MCU0/MCU1/MCU2的data文件，每次运行会覆盖之前的文件，还会存放TraceLogReport文件，文件会按照时间命名，不会覆盖之前的文件。
+3.必须以管理员身份运行exe，按照提示选择即可得到data文件和TraceLogReport文件。
+4.调试的host必须安装ftdi驱动(jtag驱动)

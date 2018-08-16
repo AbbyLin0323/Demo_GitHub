@@ -1,0 +1,1 @@
+@PowerShell -command "& %ReportScripts%\SendMail\SendMail.ps1" %AutoSim% %LogTime% %CommonParaFile%

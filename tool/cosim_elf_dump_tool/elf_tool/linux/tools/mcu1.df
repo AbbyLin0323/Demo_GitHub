@@ -1,0 +1,5 @@
+m1_dsram0.preload           32  1	64
+mx_is_remmxisram0.preload	32  2	64
+mx_is_remmxisram1.preload	32  2	64
+mx_is_remmxisram2.preload	32  2	64
+mx_is_remmxisram3.preload	32  2	64

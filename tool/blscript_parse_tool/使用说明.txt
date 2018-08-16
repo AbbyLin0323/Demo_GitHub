@@ -1,0 +1,146 @@
+bootloader parameter compile工具使用说明：
+
+1. 编辑blscript_parse.bat, 修改exe的3个参数保存后，直接双击bat即可运行。
+
+   第1个参数：
+   0: *.cfg --> *.bin，正向编译
+   1: *.bin --> *.cfg，反向编译
+   
+   (1) 当第1个参数设为正向编译时：
+   第2个参数：
+   即将生成的4K parameter binary文件名。
+   第3个参数：
+   main.cfg所在的目录，基于exe所在目录。
+
+   (2) 当第1个参数设为反向编译时：
+   第2个参数：
+   要读取的bootloader binary文件名，需要放在output文件夹中。
+   第3个参数：
+   NULL.
+
+   例如正向编译：
+   bl_parameter_compile.exe 0 BootLoader_Parameter.bin \CRB_A
+   => 从exe所在目录的CRB_A文件夹中读取main.cfg开始编译，在output文件夹中生成4K大小的Bootloader_Parameter.bin。
+
+   反向编译：
+   bl_parameter_compile.exe 1 BootLoader_L95_C0_ASIC.bin   
+   => 解析BootLoader_L95_C0_ASIC.bin中4K parameter（除了FTABLE和PTABLE）至output\main_parse.cfg中。
+      以end为结束符，所以在4K parameter结尾务必加上结束命令end。
+
+
+2. 关于输入和输出说明：
+   
+   (1) 待翻译的文件后缀为.cfg，从main.cfg入手，开始编译main.cfg包含的文件。
+
+   (2) main.cfg必须以end结束。
+
+   (3) ftableid写在需要存放到REG_LIST中的每个*.cfg文件里，.cfg文件任何位置即可。
+
+   (4) 所有.cfg文件存放在和exe同一级目录下的子目录或者同一级目录中。
+
+   (5) 每个.cfg文件编译生成一个同名的.lst文件, 存放在和exe同一级目录下的output文件夹中。
+
+   (6) 生成的4K parameter文件放在output文件夹中；反向编译时，待翻译的32K bootloader binary也需放在output文件夹中。
+   
+   (7) 需要放入REG_LIST的cfg文件均要在main.cfg中include, ptable.cfg也需要在main.cfg中include.
+
+   (8) 反向编译生成的文件为main_parse.cfg，存放在和exe同一级目录下的output文件夹中。
+
+   (9) 若output目录不存在，程序会自动新建一个output文件夹；
+       若output目录存在，会先删除目录中的*.lst文件。
+
+   (10) 目录结构如下：
+blscript\
+ hw_init\
+   + clockgating\
+   + dram\
+   + global\
+   + nfc\
+   + sdc\
+ CRB_A\
+   + clockgating\
+   + main.cfg
+   + ptable.cfg
+ CRB_B\
+   + dram\
+   + main.cfg
+   + ptable.cfg
+ EVB_TP\
+   + nfc\
+   + main.cfg
+   + ptable.cfg
+ EVB_BJ\
+   + main.cfg
+   + ptable.cfg
+ output\
+   + *.lst
+   + Bootloader_Parameter.bin
+   + Bootloader.bin
+   + main_parse.cfg
+
+ bl_parameter_compile.exe
+ blscript_parse.bat
+
+3. 运算符支持&，|，~，（，），<<，>>，+，-
+   
+   且逻辑运算字符串之间不要留有空格:
+
+   写成：memw32 (45678900&ffff0000) 12345678   正常识别；
+   写成  memw32 (45678900 & ffff0000) 12345678 无法正常识别。
+
+4. 关于数值处理的进制：
+   
+   setdec str_id DATA
+   udelay DATA
+   mdelay DATA
+   ver DATA.DATA.DATAu
+
+   以上命令中的‘DATA’按照10进制读取（数据开头不要带0x），其他任何数据均按照16进制读取（数据开头需要带0x）；
+
+5. 关于tool中数量限制说明：
+   
+   (1) define定义宏最多为512个；
+
+   (2) 一行最长为1024个字符；
+
+   (3) opcode长度最长为10个字符；
+
+   (4) opcode后面的参数最长为500
+
+   (5) strid/hexid最多有256个，且同一个strid对于setstr只能出现一次，同一个hexid对sethex\setdec命令只能出现一次；
+
+6. setstr str_id "string"：string必须用双引号括起来，如果在string中需要有双引号，写成：
+   setstr str_id "str\"ing"  
+
+7. ptable.cfg 只需要用到include, define和ptmemset三个伪指令。
+
+10.目前支持23个opcode：
+(1) memw32
+(2) memw16
+(3) memw8
+(4) setbit32
+(5) setbit16
+(6) setbit8
+(7) clrbit32
+(8) clrbit16
+(9) clrbit8
+(10) udelay
+(11) mdelay
+(12) mwait32
+(13) mwait16
+(14) mwait8
+(15) setstr
+(16) sethex/setdec
+(17) ver
+(18) nfcinit
+(19) nfcreset
+(20) nfcupdate
+(21) nfcset
+(22) venderop
+(23) end
+
+支持4个伪指令：
+(1) include
+(2) define
+(3) ftableid
+(4) setptable

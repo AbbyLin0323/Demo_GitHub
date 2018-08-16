@@ -1,0 +1,11 @@
+swlib_sample.exe是通过swlib产生的mpt demo的可执行文件。
+mpt demo依赖fw binary和bootloader binary
+fw binary：
+特定平台 特定接口 特定flash产生的fw二进制文件，可以通过编译产生
+bootloader binary:
+必须通过jtag脚本（llf.bat）产生，在加载完llf.bat后不用按"c"来执行脚本，
+通过输入dump binary memory bl_b0_sata.bin 0xfff00000 0xfff04000生成bootloader
+的二进制文件
+将fw.bin和bootloader.bin拷贝至mp_tool目录，执行exe即可。
+
+注意：调试的host必须安装ftdi驱动(jtag驱动)

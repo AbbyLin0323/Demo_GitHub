@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\logtrace_demo">
+      <UniqueIdentifier>{8e29baaa-6c56-4283-9dc9-1921ab62958b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flash_demo">
+      <UniqueIdentifier>{d11aad55-eb1d-4243-9618-54aed224c97c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\plx_demo">
+      <UniqueIdentifier>{cfbd9619-669b-4006-9bd2-5eb88bcbb20c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pcie_enum_demo">
+      <UniqueIdentifier>{044d9baa-b8b6-4605-beb7-8c88abd9db2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mpt_demo">
+      <UniqueIdentifier>{875a3797-3ddc-4c8b-941e-ec6dc9b3945d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sata_rom_demo">
+      <UniqueIdentifier>{f28d1781-c27e-40c9-a01c-19c727fea8e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\uart_rom_demo">
+      <UniqueIdentifier>{f486ec6f-7dbd-4875-943c-0afb1ad7a582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fw_update_demo">
+      <UniqueIdentifier>{737215de-2921-4bfd-aba8-4ac592b7e0f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="swlib_sample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logtrace_demo\logtrace_demo.cpp">
+      <Filter>Source Files\logtrace_demo</Filter>
+    </ClCompile>
+    <ClCompile Include="flash_demo\flash_demo.cpp">
+      <Filter>Source Files\flash_demo</Filter>
+    </ClCompile>
+    <ClCompile Include="plx_demo\plx_demo.cpp">
+      <Filter>Source Files\plx_demo</Filter>
+    </ClCompile>
+    <ClCompile Include="pcie_enum_demo\pcie_enum_demo.cpp">
+      <Filter>Source Files\pcie_enum_demo</Filter>
+    </ClCompile>
+    <ClCompile Include="mptool_demo\mpt_demo.cpp">
+      <Filter>Source Files\mpt_demo</Filter>
+    </ClCompile>
+    <ClCompile Include="mptool_demo\mpt_ddr.cpp">
+      <Filter>Source Files\mpt_demo</Filter>
+    </ClCompile>
+    <ClCompile Include="mptool_demo\mpt_fw_stage.cpp">
+      <Filter>Source Files\mpt_demo</Filter>
+    </ClCompile>
+    <ClCompile Include="mptool_demo\mpt_rom_stage.cpp">
+      <Filter>Source Files\mpt_demo</Filter>
+    </ClCompile>
+    <ClCompile Include="sata_rom_test_demo\sata_rom_test_demo.cpp">
+      <Filter>Source Files\sata_rom_demo</Filter>
+    </ClCompile>
+    <ClCompile Include="logtrace_demo\logtrace_function.cpp">
+      <Filter>Source Files\logtrace_demo</Filter>
+    </ClCompile>
+    <ClCompile Include="logtrace_demo\logtrace_parser.cpp">
+      <Filter>Source Files\logtrace_demo</Filter>
+    </ClCompile>
+    <ClCompile Include="uart_rom_test_demo\uart_rom_test_demo.cpp">
+      <Filter>Source Files\uart_rom_demo</Filter>
+    </ClCompile>
+    <ClCompile Include="fwupdate_demo\fw_update.cpp">
+      <Filter>Source Files\fw_update_demo</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

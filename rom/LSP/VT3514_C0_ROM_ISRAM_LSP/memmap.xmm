@@ -1,0 +1,158 @@
+//  Memory map file to generate linker scripts for programs run on the ISS.
+
+// $Id: //depot/rel/Eaglenest/Xtensa/SWConfig/ldscripts/sim.parm#1 $
+
+// Customer ID=5586; Build=0x517f9; Copyright (c) 2004-2007 by Tensilica Inc.  ALL RIGHTS RESERVED.
+// These coded instructions, statements, and computer programs are the
+// copyrighted works and confidential proprietary information of Tensilica Inc.
+// They may not be modified, copied, reproduced, distributed, or disclosed to
+// third parties in any manner, medium, or form, in whole or in part, without
+// the prior written consent of Tensilica Inc.
+
+
+// A memory map is a sequence of memory descriptions and
+// optional parameter assignments.
+//
+// Each memory description has the following format:
+//   BEGIN <name>
+//     <addr> [,<paddr>] : <mem-type> : <mem-name> : <size> [,<psize>]
+//                       : [writable] [,executable] [,device] ;
+//     <segment>*
+//   END <name>
+//
+// where each <segment> description has the following format:
+//     <seg-name> : F|C : <start-addr> - <end-addr> [ : STACK ] [ : HEAP ]
+//                : <section-name>* ;
+//
+// Each parameter assignment is a keyword/value pair in the following format:
+//   <keyword> = <value>                (no spaces in <value>)
+// or
+//   <keyword> = "<value>"              (spaces allowed in <value>)
+//
+// The following primitives are also defined:
+//   PLACE SECTIONS( <section-name>* ) { WITH_SECTION(<section-name>)
+//                                       | IN_SEGMENT(<seg-name>) }
+//
+//   NOLOAD <section-name1> [ <section-name2> ... ]
+//
+// Please refer to the Xtensa LSP Reference Manual for more details.
+//
+
+BEGIN apb
+0xffe07000: sysrom : apb : 0x9000 :  ;
+ apb_0 : F : 0xffe07000 - 0xffe0ffff : ;
+END apb
+BEGIN dram0
+0x1ff80000: dataRam : dram0 : 0x40000 : writable ;
+ dram0_blank_60K : F : 0x1ff95000 - 0x1ffa3fff : ;
+ dram0_blank_96K : F : 0x1ffa8000 - 0x1ffbffff : ;
+ dram0_data : F : 0x1ffa4800 - 0x1ffa7fff : .rodata .data .bss;
+ dram0_em_lba : F : 0x1ff90000 - 0x1ff93fff : ;
+ dram0_ldpc_n1 : F : 0x1ff87800 - 0x1ff87fff : ;
+ dram0_hsg : F : 0x1ff84000 - 0x1ff86fff : ;
+ dram0_prcq : F : 0x1ff8c000 - 0x1ff8ffff : ;
+ dram0_ldpc_sv : F : 0x1ff94000 - 0x1ff94fff : ;
+ dram0_sgeq : F : 0x1ff87000 - 0x1ff877ff : ;
+ dram0_dsg : F : 0x1ff88000 - 0x1ff89fff : ;
+ dram0_reg : F : 0x1ff80000 - 0x1ff83fff : ;
+ dram0_nfcq : F : 0x1ff8a000 - 0x1ff8bfff : ;
+ dram0_stack : C : 0x1ffa4000 - 0x1ffa47ff :  STACK : ;
+END dram0
+BEGIN dram1
+0x1ffc0000: dataRam : dram1 : 0x40000 : writable ;
+ dram1_blank_128K : F : 0x1ffe0000 - 0x1fffffff : ;
+ dram1_blank_32K : F : 0x1ffc0000 - 0x1ffc7fff : ;
+ dram1_mcu012_share : F : 0x1ffd8000 - 0x1ffdffff : ;
+ dram1_mcu01_share : F : 0x1ffcf000 - 0x1ffcffff : ;
+ dram1_mcu02_share : F : 0x1ffd7000 - 0x1ffd7fff : ;
+ dram1_mcu1_alloc : F : 0x1ffc8000 - 0x1ffcefff : ;
+ dram1_mcu2_alloc : F : 0x1ffd0000 - 0x1ffd6fff : ;
+END dram1
+BEGIN iram0
+0x20000000: instRam : iram0 : 0x80000 : executable, writable ;
+ iram0_AltReset_text : F : 0x20000400 - 0x200006ff : .ResetVector.text;
+ iram0_DebugExc_lit : C : 0x20000278 - 0x2000027f : .DebugExceptionVector.literal;
+ iram0_DebugExc_text : F : 0x20000280 - 0x200002b7 : .DebugExceptionVector.text;
+ iram0_DoubleExc_lit : C : 0x20000378 - 0x200003bf : .DoubleExceptionVector.literal;
+ iram0_DoubleExc_text : F : 0x200003c0 - 0x200003ff : .DoubleExceptionVector.text;
+ iram0_KernelExc_lit : C : 0x200002f8 - 0x200002ff : .KernelExceptionVector.literal;
+ iram0_KernelExc_text : F : 0x20000300 - 0x20000337 : .KernelExceptionVector.text;
+ iram0_Level2Int_lit : C : 0x20000178 - 0x2000017f : .Level2InterruptVector.literal;
+ iram0_Level2Int_text : F : 0x20000180 - 0x200001b7 : .Level2InterruptVector.text;
+ iram0_Level3Int_lit : C : 0x200001b8 - 0x200001bf : .Level3InterruptVector.literal;
+ iram0_Level3Int_text : F : 0x200001c0 - 0x200001f7 : .Level3InterruptVector.text;
+ iram0_Level4Int_lit : C : 0x200001f8 - 0x200001ff : .Level4InterruptVector.literal;
+ iram0_Level4Int_text : F : 0x20000200 - 0x20000237 : .Level4InterruptVector.text;
+ iram0_Level5Int_lit : C : 0x20000238 - 0x2000023f : .Level5InterruptVector.literal;
+ iram0_Level5Int_text : F : 0x20000240 - 0x20000277 : .Level5InterruptVector.text;
+ iram0_NMIExc_lit : C : 0x200002b8 - 0x200002bf : .NMIExceptionVector.literal;
+ iram0_NMIExc_text : F : 0x200002c0 - 0x200002f7 : .NMIExceptionVector.text;
+ iram0_UserExc_lit : C : 0x20000338 - 0x2000033f : .UserExceptionVector.literal;
+ iram0_UserExc_text : F : 0x20000340 - 0x20000377 : .UserExceptionVector.text;
+ iram0_Window_text : F : 0x20000000 - 0x20000177 : .WindowVectors.text;
+ iram0_blank_480K : F : 0x20008000 - 0x2007ffff : ;
+ iram0_text : C : 0x20000900 - 0x200068ff : .literal .text;
+ iram0_AltMemoryExc_lit : C : 0x20000700 - 0x2000072f : .MemoryExceptionVector.literal;
+ iram0_AltMemoryExc_text : F : 0x20000730 - 0x200008af : .MemoryExceptionVector.text;
+ iram0_test_lit : C : 0x20006900 - 0x2000690f : OTFB.literal;
+ iram0_test : C : 0x20006910 - 0x20007d0f : OTFB.text;
+END iram0
+BEGIN otfb
+0xfff00000: sysram : otfb : 0x60000 : writable ;
+ otfb_bootloader : F : 0xfff00000 - 0xfff03fff : ;
+ otfb_mcu0_fw_alloc : C : 0xfff0f400 - 0xfff0f7ff : ;
+ otfb_mcu1_cache_status : F : 0xfff04400 - 0xfff05bff : ;
+ otfb_mcu1_fw_alloc : C : 0xfff0f800 - 0xfff0fbff : ;
+ otfb_mcu1_red : F : 0xfff07400 - 0xfff0b3ff : ;
+ otfb_mcu1_ssu0 : F : 0xfff04000 - 0xfff041ff : ;
+ otfb_mcu2_cache_status : F : 0xfff05c00 - 0xfff073ff : ;
+ otfb_mcu2_fw_alloc : C : 0xfff0fc00 - 0xfff0ffff : ;
+ otfb_mcu2_red : C : 0xfff0b400 - 0xfff0f3ff : ;
+ otfb_mcu2_ssu0 : F : 0xfff04200 - 0xfff043ff : ;
+ otfb_sge_on_the_fly : C : 0xfff20000 - 0xfff5ffff : ;
+ otfb_fw_rsvd_64K : F : 0xfff10000 - 0xfff1ffff : ;
+END otfb
+BEGIN rom
+0xffe00000: sysrom : rom : 0x6000 : executable ;
+ rom_DefaultReset_text : F : 0xffe00000 - 0xffe002ff : ;
+ rom_data_text : C : 0xffe00500 - 0xffe05fbf : ;
+ rom_DefaultMemoryExc_lit : C : 0xffe00300 - 0xffe0032f : ;
+ rom_DefaultMemoryExc_text : F : 0xffe00330 - 0xffe004af : ;
+ rom_func_table : C : 0xffe05fc0 - 0xffe05fff : rom_func_table;
+END rom
+BEGIN spi
+0xc0000000: sysram : spi : 0x10000000 : writable, executable ;
+ spi_0 : F : 0xc0000000 - 0xcfffffff : ;
+END spi
+BEGIN sram_4
+0x40000000: sysram : sram_4 : 0x40000000 : executable, writable ;
+ sram_align_rsvd : F : 0x40110000 - 0x4011ffff : ;
+ sram_bootloader_llf : F : 0x40040000 - 0x40043fff : ;
+ sram_mcu012_dsram1_backup : F : 0x400e8000 - 0x400fffff : ;
+ sram_mcu0_alloc_buff : F : 0x40120000 - 0x403fffff : ;
+ sram_mcu0_data_text : F : 0x4004c000 - 0x4006bfff : .mcu0dram.data .mcu0dram.literal .mcu0dram.text;
+ sram_mcu0_dsram0_backup : F : 0x400b4000 - 0x400b7fff : ;
+ sram_mcu0_entrance_lit : F : 0x40048000 - 0x4004800f : .mcu0entrance.literal;
+ sram_mcu0_entrance_text : F : 0x40048010 - 0x4004801f : .mcu0entrance.text;
+ sram_mcu0_head : F : 0x40048020 - 0x4004bfff : .mcu0head.literal .mcu0head.text;
+ sram_mcu0_isram_backup : F : 0x400c8000 - 0x400cffff : ;
+ sram_mcu12_isram_backup : F : 0x400d0000 - 0x400e7fff : ;
+ sram_mcu12_rodata : F : 0x4006c000 - 0x40073fff : ;
+ sram_mcu12_text : F : 0x40074000 - 0x400b3fff : ;
+ sram_mcu1_alloc_buff : F : 0x40400000 - 0x501fffff : ;
+ sram_mcu1_dsram0_backup : F : 0x400b8000 - 0x400bffff : ;
+ sram_mcu2_alloc_buff : F : 0x50200000 - 0x5fffffff : ;
+ sram_mcu2_dsram0_backup : F : 0x400c0000 - 0x400c7fff : ;
+ sram_no_memory_512M : F : 0x60000000 - 0x7fffffff : ;
+ sram_otfb64K_backup : F : 0x40100000 - 0x4010ffff : ;
+ sram_para_table : F : 0x40044000 - 0x40047fff : ;
+ sram_rsvd_256K : F : 0x40000000 - 0x4003ffff : ;
+END sram_4
+BEGIN sram_8
+0x80000000: sysram : sram_8 : 0x40000000 : executable, writable ;
+ sram_remap8 : C : 0x80000000 - 0xbfffffff : ;
+END sram_8
+INCLUDE_XT2000_MEMORIES=try
+VECBASE=0x20000000
+VECSELECT=1
+NOLOAD OTFB.literal OTFB.text

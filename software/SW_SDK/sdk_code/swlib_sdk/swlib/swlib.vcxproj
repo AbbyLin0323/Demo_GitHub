@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4195E2FD-2DAF-46CF-BA52-69FA2D14E75F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>swlib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)LibDir\</OutDir>
+    <IncludePath>$(SolutionDir)Include_Common\;$(VCInstallDir)PlatformSDK\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)Include_Common\;$(VCInstallDir)PlatformSDK\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)LibDir\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(SolutionDir)LibDir\$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\host_api_lib\host_api\ahci\ahci.h" />
+    <ClInclude Include="src\host_api_lib\host_api\ahci\hal_ahci.h" />
+    <ClInclude Include="src\host_api_lib\host_api\ahci\ioctrl_ahci.h" />
+    <ClInclude Include="src\host_api_lib\host_api\host_api.h" />
+    <ClInclude Include="src\host_api_lib\host_api\host_api_define.h" />
+    <ClInclude Include="src\host_api_lib\host_api\host_api_misc.h" />
+    <ClInclude Include="src\host_api_lib\host_api\nvme\hal_nvme.h" />
+    <ClInclude Include="src\host_api_lib\host_api\nvme\ioctrl_nvme.h" />
+    <ClInclude Include="src\host_api_lib\host_api\nvme\nvme.h" />
+    <ClInclude Include="src\host_api_lib\host_api\scsi\hal_scsi.h" />
+    <ClInclude Include="src\host_api_lib\host_api\scsi\ioctrl_scsi.h" />
+    <ClInclude Include="src\host_api_lib\host_api\scsi\ntddscsi.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\host_api_lib\host_api\ahci\hal_ahci.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api\ahci\ioctrl_ahci.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api\host_api.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api\nvme\hal_nvme.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api\nvme\ioctrl_nvme.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api\scsi\hal_scsi.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api\scsi\ioctrl_scsi.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api\uart\hal_uart.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api\uart\ioctrl_uart.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api_disk_detect\host_detect_ahci\host_ahci_detect.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api_disk_detect\host_detect_nvme\host_nvme_detect.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api_disk_detect\host_detect_sata\host_sata_detect.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api_disk_detect\host_detect_uart\host_uart_detect.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api_disk_detect\host_detect_usb\host_usb_detect.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api_disk_detect\host_disk_detect.cpp" />
+    <ClCompile Include="src\host_api_lib\host_api_ext\host_api_ext.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

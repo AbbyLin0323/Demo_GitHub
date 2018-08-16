@@ -1,0 +1,65 @@
+:#工程总名称
+set ProjectNameofTotal=VT3514_MultiMode
+
+:#log文件存储路径
+set DestinationPath=\\bjna02\SSD\Software\AutoTestLog
+
+:#git下载代码路径
+set GitPath=http://mce-tfs02:8080/tfs/defaultcollection/_git/SSD-VT3514
+
+:#git branch名称
+set GitBranchName=V0_FW_Dev
+
+:#目标邮箱地址、邮件主题、抄送地址，邮件主题词与词之间用+连接，不可使用空格,邮件中+会换成空格
+set MailTheme=VT3514_MultiMode+Simulation+Result
+:#set DestinationBox=SSDBJFirmware@via.com.tw
+:#set CcBox=SeanGao@via.com.tw:ZoeWen@via.com.tw:StevenChang@via.com.tw:#SSD-Product Development-Software-SW2
+set DestinationBox=alphaliu@viatech.com.cn
+set CcBox=alphaliu@viatech.com.cn
+
+:#用户邮箱名、密码，用之前改成自己的
+set SourceBox=alphaliu@viatech.com.cn
+set SourceBoxKey=xjliu1988516
+
+:#pclint switch
+set PclintSwitch=ON
+
+:#simian switch
+set SimianSwitch=OFF
+
+:#simian检查行数下限
+set Threshold=10
+
+:#simian检查目标文件类型
+set Includes=**\*.c
+
+:#编译版本参数
+set Compilepara1=Release
+set Compilepara2=x64
+
+:#L1_FAKE宏开关
+set L1_Fake_Switch=OFF
+
+:#L2_FAKE宏开关
+set L2_Fake_Switch=OFF
+
+:#是否running exe，1则running
+set RunningorNot=0
+
+:#distributed_running时用到的参数：执行端IP地址和网盘暂存路径
+set ServerAddresses=10.2.136.6:10.2.136.11:10.2.136.13:10.2.136.14:10.2.136.15:127.0.0.1
+set NetDiskPath=D:\Distributed_Controller\
+
+:#msbuild/pcLint/simian路径
+set SetEnviormentVariablesBatPath="C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\vcvars32.bat"
+set LintExePath=C:\PcLintAssistant
+set SysLibPath=C:\vc_include
+set SimianPath=C:\simian
+
+:#Xplorer/Lisence路径
+set SwTools=C:\usr\xtensa\XtDevTools\install\tools\RF-2014.1-win32\XtensaTools
+set XtensaSystem=C:\usr\xtensa\XtDevTools\install\builds\RF-2014.1-win32\rfviatieloop16\config
+set CoreName=rfviatieloop16
+set BatPath=C:\usr\xtensa\XtDevTools\install\tools\RF-2014.1-win32\XtensaTools\Tools\misc\xtensaenv.bat
+set CorePath=C:\usr\xtensa\XtDevTools\install\builds\RF-2014.1-win32\rfviatieloop16
+set LicenceBat=C:\usr\xtensa\license\i86_n3\start_license.bat

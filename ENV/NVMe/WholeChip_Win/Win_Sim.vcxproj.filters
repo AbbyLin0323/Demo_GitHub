@@ -1,0 +1,1447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="firmware">
+      <UniqueIdentifier>{1c229ad4-03b6-4824-a718-9000859593d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL">
+      <UniqueIdentifier>{28d3c296-2111-4fa7-874e-3981ae499654}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\COM">
+      <UniqueIdentifier>{d605d70e-d6f8-4d14-90e7-ca2d3a9baaad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model">
+      <UniqueIdentifier>{3d840fbe-d483-495c-b943-2c6bf225ab7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\256fm_x64">
+      <UniqueIdentifier>{e20806a9-dfe0-4132-be98-d19d03e2d6ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\flashmodel">
+      <UniqueIdentifier>{1bbe2a59-c901-42c5-8fde-33eb60bbe5ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\sgemodel">
+      <UniqueIdentifier>{482a6310-c912-4758-9a53-467223937aab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\trace_log">
+      <UniqueIdentifier>{193e8d26-4089-46a3-b770-293aa23ac5b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\platform">
+      <UniqueIdentifier>{f1984a76-ffb3-472e-bdcc-b4c9d0558452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\HostInterface">
+      <UniqueIdentifier>{6313ec1a-6897-4773-a6cf-026b5ef41d87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\CheckListParser">
+      <UniqueIdentifier>{dc8b9785-0d46-4c6d-93fe-ae0bcf076648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\DMAEModel">
+      <UniqueIdentifier>{105e720d-4ce1-4ac8-9f31-b1bac5c43310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\search_engine">
+      <UniqueIdentifier>{fb48e66e-a4f4-4057-9077-4a7399747283}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\Config">
+      <UniqueIdentifier>{e107ea28-bd9a-465a-b6a4-05b3adefd615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\algorithm">
+      <UniqueIdentifier>{5c7cdb5c-789a-48e7-a7f5-93dcda2be60b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\algorithm\L0">
+      <UniqueIdentifier>{5c7df1b9-0eee-4659-bf2c-a85f7b64464f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\algorithm\L1">
+      <UniqueIdentifier>{7861366e-85bb-46b4-a1e2-fc19b0d8ed77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\algorithm\L2">
+      <UniqueIdentifier>{756d89d8-1e44-4d40-ba27-a242bf5d61ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\algorithm\L3">
+      <UniqueIdentifier>{0e6a873c-1f05-4afe-b2ef-3eb546bf11a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\adapter">
+      <UniqueIdentifier>{d60f99cb-e146-4034-bd84-299dae29f1a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\algorithm\Misc">
+      <UniqueIdentifier>{cccac741-61eb-4c82-a7a5-a6e15c71b842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\ChainMaintain">
+      <UniqueIdentifier>{b9cf8760-497d-4937-9793-7c5f0d50d1a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\DataMonitor">
+      <UniqueIdentifier>{f39f86ef-877a-4473-92a8-2a0c5ffa7be0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\DMAE">
+      <UniqueIdentifier>{f1ed7697-5d6f-4101-bd61-1ad8b4fc52cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\DSG">
+      <UniqueIdentifier>{513baa4a-23f4-4d5d-b733-1e0d3530cbb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\EM">
+      <UniqueIdentifier>{03d6032a-c9f9-43a2-b735-cb7d89bddc0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\Flash">
+      <UniqueIdentifier>{ddcd78df-16ce-4bbe-9a7f-0d46ec3b2013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\GLB">
+      <UniqueIdentifier>{12adc1a4-f87d-46e9-a0d0-efa17578f31b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\GPIO">
+      <UniqueIdentifier>{418f9965-35f5-4174-b12f-70f879b2daa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\HCT">
+      <UniqueIdentifier>{face4aba-ff28-41ba-9949-4a125e843182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\HSG">
+      <UniqueIdentifier>{5a72aed2-8a34-4403-ade9-e99db376ecc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\IIC">
+      <UniqueIdentifier>{ff019963-b460-451d-bdfe-34ffc9fb8619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\Interrupt">
+      <UniqueIdentifier>{74c252c5-c810-4cd1-94c8-91296b8bf738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\MultiCore">
+      <UniqueIdentifier>{d198542e-95a3-43f9-9aa5-bf026f306641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\SE">
+      <UniqueIdentifier>{3c9437a6-a5e4-47b3-aa6e-d8d40b3ed432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\NFC">
+      <UniqueIdentifier>{ff0395e9-56fc-4f68-bf92-7b7da80755ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\Xtensa">
+      <UniqueIdentifier>{f44519c6-5a60-409e-b5ce-e5423ce06326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\Trace">
+      <UniqueIdentifier>{23c7a153-dfaf-4ed6-a306-dd356925f8db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\SPI">
+      <UniqueIdentifier>{ae43758d-c512-4971-a99c-fff4aea0c7a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\SGE">
+      <UniqueIdentifier>{1555a582-91f7-4a1a-919c-a45c3752ecbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\ParamTable">
+      <UniqueIdentifier>{13d2cb68-01e8-46b7-b29e-9dabf6b65974}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\HCTModel">
+      <UniqueIdentifier>{7b5f4951-4637-423a-a81e-c52ab2fc4f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\adapter\L0_NVMe">
+      <UniqueIdentifier>{eda3ef9d-1131-40b6-88ef-62828687b955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\adapter\L1_NVMe">
+      <UniqueIdentifier>{56a006b1-d149-4107-a1e4-d812f3dff01d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\adapter\L2_NVMe">
+      <UniqueIdentifier>{f128252f-7ecb-4c4c-8bee-b7fd1a2540a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\adapter\L3_NVMe">
+      <UniqueIdentifier>{279d287c-c774-42bc-bb27-2ef46892de50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\NVMeDeviceModel">
+      <UniqueIdentifier>{1fedbe0f-f7dc-450a-a7a3-6dc518904254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\Timer">
+      <UniqueIdentifier>{4dce0ebb-f8a0-4d6a-96f2-deba3af52a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\NVMeHostModel">
+      <UniqueIdentifier>{8b4e67a4-ea59-401c-9c5d-59bc4360ef58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\HwDebug">
+      <UniqueIdentifier>{da7aea7a-90d9-4429-a8f1-f9ce768cd3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\XOR">
+      <UniqueIdentifier>{87d86b7a-a522-45ba-9c82-3d02afdd1049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\XORModel">
+      <UniqueIdentifier>{6efe579d-f980-4848-aa31-0dd8a3bc5442}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\LDPC">
+      <UniqueIdentifier>{ab560012-49a4-4fef-b627-a66a89354608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest">
+      <UniqueIdentifier>{b57f897b-72f6-4aff-bdfc-61d1f465df2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\HAL_UnitTest">
+      <UniqueIdentifier>{43d05d1d-5d52-4483-bf8c-3baa188baf56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\L2_TableRebuildCheck">
+      <UniqueIdentifier>{cd1f1d41-35e9-4ee6-8dc8-8072afab2d72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\L3_UnitTest">
+      <UniqueIdentifier>{387bb418-b377-4bcb-8924-4b50655d461a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\HAL_UnitTest\FlashDriver">
+      <UniqueIdentifier>{a3855ca9-027a-4d97-becc-28fe7150c300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\HAL_UnitTest\NFC">
+      <UniqueIdentifier>{42561efa-d066-489c-a4ef-0f40ca17e26f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\HAL_UnitTest\XOR">
+      <UniqueIdentifier>{1a2ef1a9-f9d3-43f4-b38a-183590731b7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\L3_UnitTest\L3BbtTest">
+      <UniqueIdentifier>{5386cb64-0184-4f4f-980f-1ea364a21ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\L3_UnitTest\L3FCmdTest">
+      <UniqueIdentifier>{cc964543-e78b-491d-958b-6a59d0a7d734}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\L3_UnitTest\L3StressTest">
+      <UniqueIdentifier>{79003802-2f09-421f-8af8-3f692ed7c595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\L3_UnitTest\L3XorTest">
+      <UniqueIdentifier>{80d677c6-e55e-402e-91e4-7448d3dbe778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="firmware\HAL\DecSts">
+      <UniqueIdentifier>{fd05675a-af32-4fd4-a819-33d32ca79934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\L3_UnitTest\L3Seq4kRTest">
+      <UniqueIdentifier>{5a08ca41-0c94-4410-8d7e-3db063d34b1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\L3_UnitTest\L3StressTest\L3RdStressTest">
+      <UniqueIdentifier>{5ad5426c-3b83-4b51-82cb-21abaaec4890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\L3_UnitTest\L3StressTest\L3MixStressTest">
+      <UniqueIdentifier>{6348992a-0741-4ac0-9adc-23ebd169ee6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\L3_UnitTest\L3LLFBootTest">
+      <UniqueIdentifier>{e9c08a02-2411-4d10-bcdb-6981dd8bd458}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\BkEnd_TestMain">
+      <UniqueIdentifier>{17411a57-f767-4bdf-a5dd-161c33842617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\L3_UnitTest\RDT">
+      <UniqueIdentifier>{db62a423-56c5-4ac0-99c2-fd024a4069eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\HAL_UnitTest\LDPC">
+      <UniqueIdentifier>{d3e8351a-7ea8-4d00-850b-764477f4f08e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\256fm_x64\TSB_FOURPLN">
+      <UniqueIdentifier>{f55d5d3e-60a1-4ee2-b9c5-a578ffaeba0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\256fm_x64\TSB_2D_TLC">
+      <UniqueIdentifier>{3ebfafea-2d3c-4d72-a24e-a52b295806a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\256fm_x64\TSB_3D_TLC">
+      <UniqueIdentifier>{8ad2f2a9-f3ae-4791-8c6a-0bcf94af0aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\256fm_x64\MICRON_MLC_L95">
+      <UniqueIdentifier>{ced75c47-bcae-4058-911a-0a4abe208b4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\DECstsModel">
+      <UniqueIdentifier>{186d8317-60a1-4ee9-b20b-b89cc8d54f1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\256fm_x64\INTEL_3D_TLC">
+      <UniqueIdentifier>{69d9c5c8-43ad-4c11-b7b4-8a0a8904b50c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\HAL_UnitTest\NFC\NFC_EXT">
+      <UniqueIdentifier>{0459c160-8a95-44d6-9f25-217827900372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\HAL_UnitTest\NFC\NFC_BASIC">
+      <UniqueIdentifier>{3db81e29-77fe-4451-a34a-e0df05ab726e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest\HAL_UnitTest\NFC\NFC_EXT\INTEL_3D_TLC">
+      <UniqueIdentifier>{1e753039-1e47-419a-870e-0093bfe3163b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\model\256fm_x64\flash_meminterface.h">
+      <Filter>model\256fm_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\256fm_x64\flash_mid.h">
+      <Filter>model\256fm_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_common.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_config.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_interface.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_shedule.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\flashmodel\sim_nfccmd.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\sgemodel\sim_HSG.h">
+      <Filter>model\sgemodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\sgemodel\sim_NormalDSG.h">
+      <Filter>model\sgemodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\sgemodel\sim_SGE.h">
+      <Filter>model\sgemodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\trace_log\system_statistic.h">
+      <Filter>model\trace_log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\platform\memory_access.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\CheckListParser\base_pattern.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\CheckListParser\checklist_parse.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\CheckListParser\iniparser.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\HostInterface\HostInc.h">
+      <Filter>model\HostInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\HostInterface\HostModel.h">
+      <Filter>model\HostInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\HostInterface\HostTrimCmd.h">
+      <Filter>model\HostInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\platform\xt_library.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\platform\model_config.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\CheckListParser\action_define.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\model_common.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\dmaemodel\sim_DMAE.h">
+      <Filter>model\DMAEModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\search_engine\sim_search_engine.h">
+      <Filter>model\search_engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\CheckListParser\nfc_Injerr.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\platform\win_bootloader.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\CheckListParser\hscmd_parse.h">
+      <Filter>model\CheckListParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\platform\COM_MainSche.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\COM\BaseDef.h">
+      <Filter>firmware\COM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\COM\COM_Memory.h">
+      <Filter>firmware\COM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\COM\COM_QWord.h">
+      <Filter>firmware\COM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\L0_Config.h">
+      <Filter>firmware\algorithm\L0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\L0_Interface.h">
+      <Filter>firmware\algorithm\L0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Buffer.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Cache.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_CacheStatus.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Debug.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_GlobalInfo.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Inc.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Interface.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_PlatformDefine.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_RdPreFetch.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Schedule.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_SCmdInterface.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_SpecialSCMD.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_SubCmdProc.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Trim.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Boot.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Debug.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Defines.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_ErrorHandling.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Evaluater.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_FTL.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_FullRecovery.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_GCManager.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Init.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_LLF.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_PBIT.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_PMTI.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_PMTManager.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_PMTPage.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_RPMT.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_RT.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Schedule.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_SearchEngine.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Shutdown.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_StaticWL.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_StripeInfo.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_TableBlock.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_TblChk.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Thread.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Trim.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_VBT.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_BufAddr.h">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_DataMonitor.h">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_Debug.h">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_Event.h">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\HAL_Inc.h">
+      <Filter>firmware\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\ChainMaintain\HAL_ChainMaintain.h">
+      <Filter>firmware\HAL\ChainMaintain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\DataMonitor\HAL_NfcDataCheck.h">
+      <Filter>firmware\HAL\DataMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\DMAE\HAL_Dmae.h">
+      <Filter>firmware\HAL\DMAE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\DSG\HAL_NormalDSG.h">
+      <Filter>firmware\HAL\DSG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\Flash\HAL_FlashChipDefine.h">
+      <Filter>firmware\HAL\Flash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\Flash\HAL_FlashCmd.h">
+      <Filter>firmware\HAL\Flash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\GLB\HAL_GLBReg.h">
+      <Filter>firmware\HAL\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\GLB\HAL_HostInterface.h">
+      <Filter>firmware\HAL\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\GLB\HAL_MemoryMap.h">
+      <Filter>firmware\HAL\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\GPIO\HAL_GPIO.h">
+      <Filter>firmware\HAL\GPIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\HCT\HAL_HCT.h">
+      <Filter>firmware\HAL\HCT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\HSG\HAL_HSG.h">
+      <Filter>firmware\HAL\HSG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\Interrupt\HAL_Interrupt.h">
+      <Filter>firmware\HAL\Interrupt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\MultiCore\HAL_MultiCore.h">
+      <Filter>firmware\HAL\MultiCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\NFC\HAL_FlashDriverBasic.h">
+      <Filter>firmware\HAL\NFC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\NFC\HAL_FlashDriverExt.h">
+      <Filter>firmware\HAL\NFC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\ParamTable\HAL_ParamTable.h">
+      <Filter>firmware\HAL\ParamTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\SE\HAL_SearchEngine.h">
+      <Filter>firmware\HAL\SE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\SGE\HAL_SGE.h">
+      <Filter>firmware\HAL\SGE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\Trace\HAL_TraceLog.h">
+      <Filter>firmware\HAL\Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\Xtensa\HAL_Xtensa.h">
+      <Filter>firmware\HAL\Xtensa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_Debug.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_Interface.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_Schedule.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\HCTModel\Sim_HCT.h">
+      <Filter>model\HCTModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\NVMeDeviceModel\NVME_ControllerModel.h">
+      <Filter>model\NVMeDeviceModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\NVMeDeviceModel\NVME_HostCommand.h">
+      <Filter>model\NVMeDeviceModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\NVMeDeviceModel\NVME_HSCMDCallBack.h">
+      <Filter>model\NVMeDeviceModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\NVMeHostModel\nvme.h">
+      <Filter>model\NVMeHostModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\NVMeHostModel\nvmeReg.h">
+      <Filter>model\NVMeHostModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\NVMeHostModel\nvmeStd.h">
+      <Filter>model\NVMeHostModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\Timer\HAL_HCmdTimer.h">
+      <Filter>firmware\HAL\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\COM\COM_BitMask.h">
+      <Filter>firmware\COM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_DWA.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\L0_ViaCmd.h">
+      <Filter>firmware\algorithm\L0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_ViaCmd.h">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\L0_Event.h">
+      <Filter>firmware\algorithm\L0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\L0_TaskManager.h">
+      <Filter>firmware\algorithm\L0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L0\L0_TrimProcess.h">
+      <Filter>firmware\algorithm\L0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_SMSG.h">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Erase.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L1\L1_Ramdisk.h">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\config\Proj_Config.h">
+      <Filter>firmware\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\Config\Disk_Config.h">
+      <Filter>firmware\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L0\NVMe\HAL_NVME.h">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMe.h">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeAdminCmd.h">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeDataIO.h">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeErrHandle.h">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeHCT.h">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeISR.h">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeNVMCmd.h">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeSchedule.h">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L0\NVMe\NvmeSpec.h">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L1\NVMe\L1_NVMeIO.h">
+      <Filter>firmware\adapter\L1_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L2\NVMe\L2_NVMe.h">
+      <Filter>firmware\adapter\L2_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\HwDebug\HAL_HwDebug.h">
+      <Filter>firmware\HAL\HwDebug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_TableBBT.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Ramdisk.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\256fm_x64\flash_opinfo.h">
+      <Filter>model\256fm_x64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_ReadDisturb.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\XOR\HAL_XOR.h">
+      <Filter>firmware\HAL\XOR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\XOR\HAL_XOR_Common.h">
+      <Filter>firmware\HAL\XOR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\XORModel\Sim_XOR_Common.h">
+      <Filter>model\XORModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\XORModel\Sim_XOR_Interface.h">
+      <Filter>model\XORModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\XORModel\Sim_XOR_Schedule.h">
+      <Filter>model\XORModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\LDPC\HAL_LdpcEngine.h">
+      <Filter>firmware\HAL\LDPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\LDPC\HAL_LdpcMatrix.h">
+      <Filter>firmware\HAL\LDPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\LDPC\HAL_LdpcSoftDec.h">
+      <Filter>firmware\HAL\LDPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_FCMDQ.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\FlashDriver\FlashDriver_Test.h">
+      <Filter>unittest\HAL_UnitTest\FlashDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\L2_TableRebuildCheck\L2_SimRebuildTable.h">
+      <Filter>unittest\L2_TableRebuildCheck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\L2_TableRebuildCheck\L2_SimTablecheck.h">
+      <Filter>unittest\L2_TableRebuildCheck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_Interface.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\DecSts\HAL_DecStsReport.h">
+      <Filter>firmware\HAL\DecSts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Common.h">
+      <Filter>unittest\HAL_UnitTest\XOR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Config.h">
+      <Filter>unittest\HAL_UnitTest\XOR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Nfc_Interface.h">
+      <Filter>unittest\HAL_UnitTest\XOR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Schedule.h">
+      <Filter>unittest\HAL_UnitTest\XOR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\BkEnd_TestMain\BkEnd_TestMain.h">
+      <Filter>unittest\BkEnd_TestMain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L2\L2_TLCMerge.h">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\LDPC\TEST_LdpcSoftDec.h">
+      <Filter>unittest\HAL_UnitTest\LDPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\EM\HAL_EncriptionModule.h">
+      <Filter>firmware\HAL\EM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_BufMgr.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_DataRecover.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_Debug.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_ErrHBasic.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_ErrHExtend.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_FCMDQ.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_FlashMonitor.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_HostAdapter.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_Init.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_Interface.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_Schedule.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\L3\L3_SoftDecoder.h">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\algorithm\Misc\FW_SDL.h">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3BbtTest\BBT_Test.h">
+      <Filter>unittest\L3_UnitTest\L3BbtTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3FCmdTest\FCMD_Test.h">
+      <Filter>unittest\L3_UnitTest\L3FCmdTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3LLFBootTest\LLFBoot_Test.h">
+      <Filter>unittest\L3_UnitTest\L3LLFBootTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3Seq4kRTest\Seq4KR_Test.h">
+      <Filter>unittest\L3_UnitTest\L3Seq4kRTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\RDT\RDT.h">
+      <Filter>unittest\L3_UnitTest\RDT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3StressTest\L3MixStressTest\MixStress_Test.h">
+      <Filter>unittest\L3_UnitTest\L3StressTest\L3MixStressTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3StressTest\L3RdStressTest\ReadStress_Test.h">
+      <Filter>unittest\L3_UnitTest\L3StressTest\L3RdStressTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\256fm_x64\TSB_FOURPLN\flash_special_interface.h">
+      <Filter>model\256fm_x64\TSB_FOURPLN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\256fm_x64\TSB_2D_TLC\flash_special_interface.h">
+      <Filter>model\256fm_x64\TSB_2D_TLC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\256fm_x64\TSB_3D_TLC\flash_special_interface.h">
+      <Filter>model\256fm_x64\TSB_3D_TLC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\256fm_x64\MICRON_MLC_L95\flash_special_interface.h">
+      <Filter>model\256fm_x64\MICRON_MLC_L95</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\flashmodel\sim_flash_status.h">
+      <Filter>model\flashmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\platform\single_list.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\platform\sim_log.h">
+      <Filter>model\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\L3_UnitTest\L3XorTest\Xor_Test.h">
+      <Filter>unittest\L3_UnitTest\L3XorTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\adapter\L3\NVMe\L3_NVMe.h">
+      <Filter>firmware\adapter\L3_NVMe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\DECstsModel\Sim_DEC_Status.h">
+      <Filter>model\DECstsModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\model\256fm_x64\INTEL_3D_TLC\flash_special_interface.h">
+      <Filter>model\256fm_x64\INTEL_3D_TLC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcCheckList.h">
+      <Filter>unittest\HAL_UnitTest\NFC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcConfig.h">
+      <Filter>unittest\HAL_UnitTest\NFC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcMCU1.h">
+      <Filter>unittest\HAL_UnitTest\NFC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcMCU2.h">
+      <Filter>unittest\HAL_UnitTest\NFC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcFuncBasic.h">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_BASIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcPattGenBasic.h">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_BASIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcPattQ.h">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_BASIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcExtDataCheck.h">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcFCMDQ.h">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcFuncExt.h">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcLLF.h">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcPattExtInsert.h">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcPattGenExt.h">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\IIC\HAL_IIC.h">
+      <Filter>firmware\HAL\IIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\firmware\HAL\IIC\HAL_TemperatureSensor.h">
+      <Filter>firmware\HAL\IIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\INTEL_3D_TLC\TEST_NfcFlashTypeAdapter.h">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT\INTEL_3D_TLC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcPerformance.h">
+      <Filter>unittest\HAL_UnitTest\NFC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcPattBasicInsert.h">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_BASIC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\model\256fm_x64\flash_meminterface.c">
+      <Filter>model\256fm_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_common.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_interface.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_shedule.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\flashmodel\sim_nfccmd.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\sgemodel\sim_HSG.c">
+      <Filter>model\sgemodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\sgemodel\sim_NormalDSG.c">
+      <Filter>model\sgemodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\sgemodel\sim_SGE.c">
+      <Filter>model\sgemodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\trace_log\system_statistic.c">
+      <Filter>model\trace_log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\platform\memory_access.c">
+      <Filter>model\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\CheckListParser\base_pattern.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\CheckListParser\checklist_parse.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\CheckListParser\iniparser.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\HostInterface\HostModel.c">
+      <Filter>model\HostInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\platform\xt_library.c">
+      <Filter>model\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\CheckListParser\action_define.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\dmaemodel\sim_DMAE.c">
+      <Filter>model\DMAEModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\MCU0_Main.c">
+      <Filter>firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\search_engine\sim_search_engine.c">
+      <Filter>model\search_engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\CheckListParser\nfc_Injerr.c">
+      <Filter>model\CheckListParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\platform\win_bootloader.c">
+      <Filter>model\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\Config\Disk_Config.c">
+      <Filter>firmware\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\platform\COM_MainSche.c">
+      <Filter>model\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\COM\COM_Memory.c">
+      <Filter>firmware\COM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\COM\COM_QWord.c">
+      <Filter>firmware\COM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L0\L0_Interface.c">
+      <Filter>firmware\algorithm\L0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Buffer.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Cache.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_CacheStatus.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Debug.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_GlobalInfo.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Interface.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_RdPreFetch.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Schedule.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_SCmdInterface.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_SpecialSCMD.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_SubCmdProc.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Trim.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Boot.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Debug.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_ErrorHandling.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Evaluater.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_FTL.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_FullRecovery.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_GCManager.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Init.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_LLF.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_PBIT.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_PMTI.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_PMTManager.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_PMTPage.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_RPMT.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_RT.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Schedule.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_SearchEngine.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Shutdown.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_StaticWL.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_StripeInfo.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_TableBlock.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_TblChk.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Thread.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Trim.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_VBT.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_BufAddr.c">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_DataMonitor.c">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_Debug.c">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_Event.c">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\HAL_Init.c">
+      <Filter>firmware\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\ChainMaintain\HAL_ChainMaintain.c">
+      <Filter>firmware\HAL\ChainMaintain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\DataMonitor\HAL_NfcDataCheck.c">
+      <Filter>firmware\HAL\DataMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\DMAE\HAL_Dmae.c">
+      <Filter>firmware\HAL\DMAE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\DSG\HAL_NormalDSG.c">
+      <Filter>firmware\HAL\DSG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\Flash\HAL_FlashCmd.c">
+      <Filter>firmware\HAL\Flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\GPIO\HAL_GPIO.c">
+      <Filter>firmware\HAL\GPIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\HCT\HAL_HCT.c">
+      <Filter>firmware\HAL\HCT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\HSG\HAL_HSG.c">
+      <Filter>firmware\HAL\HSG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\Interrupt\HAL_Interrupt.c">
+      <Filter>firmware\HAL\Interrupt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\MultiCore\HAL_MultiCore.c">
+      <Filter>firmware\HAL\MultiCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\NFC\HAL_FlashDriverBasic.c">
+      <Filter>firmware\HAL\NFC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\NFC\HAL_FlashDriverExt.c">
+      <Filter>firmware\HAL\NFC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\ParamTable\HAL_ParamTable.c">
+      <Filter>firmware\HAL\ParamTable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\SE\HAL_SearchEngine.c">
+      <Filter>firmware\HAL\SE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\SGE\HAL_SGE.c">
+      <Filter>firmware\HAL\SGE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\Trace\HAL_TraceLog.c">
+      <Filter>firmware\HAL\Trace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\Xtensa\HAL_Xtensa.c">
+      <Filter>firmware\HAL\Xtensa</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\HCTModel\Sim_HCT.c">
+      <Filter>model\HCTModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\HostInterface\HostInterface.c">
+      <Filter>model\HostInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\NVMeDeviceModel\NVME_ControllerModel.c">
+      <Filter>model\NVMeDeviceModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\NVMeDeviceModel\NVME_HostCommand.c">
+      <Filter>model\NVMeDeviceModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\NVMeDeviceModel\NVME_HSCMDCallBack.c">
+      <Filter>model\NVMeDeviceModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\NVMeHostModel\nvmeStd.c">
+      <Filter>model\NVMeHostModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\Timer\HAL_HCmdTimer.c">
+      <Filter>firmware\HAL\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\COM\COM_BitMask.c">
+      <Filter>firmware\COM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_DWA.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L0\L0_ViaCmd.c">
+      <Filter>firmware\algorithm\L0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_ViaCmd.c">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\Flash\HAL_FlashChipFeature.c">
+      <Filter>firmware\HAL\Flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L0\L0_Event.c">
+      <Filter>firmware\algorithm\L0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L0\L0_MainTasks.c">
+      <Filter>firmware\algorithm\L0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L0\L0_TrimProcess.c">
+      <Filter>firmware\algorithm\L0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_SMSG.c">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Erase.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L1\L1_Ramdisk.c">
+      <Filter>firmware\algorithm\L1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMe.c">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeAdminCmd.c">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeDataIO.c">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeErrHandle.c">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeHCT.c">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeISR.c">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeNVMCmd.c">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\adapter\L0\NVMe\L0_NVMeSchedule.c">
+      <Filter>firmware\adapter\L0_NVMe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\adapter\L1\NVMe\L1_NVMeIO.c">
+      <Filter>firmware\adapter\L1_NVMe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\adapter\L2\NVMe\L2_NVMe.c">
+      <Filter>firmware\adapter\L2_NVMe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\main.c" />
+    <ClCompile Include="..\..\..\firmware\HAL\HwDebug\HAL_HwDebug.c">
+      <Filter>firmware\HAL\HwDebug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_TableBBT.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Ramdisk.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\256fm_x64\flash_opinfo.c">
+      <Filter>model\256fm_x64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_ReadDisturb.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\MCU1_Main.c">
+      <Filter>firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\MCU2_Main.c">
+      <Filter>firmware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\XOR\HAL_XOR.c">
+      <Filter>firmware\HAL\XOR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\XORModel\Sim_XOR_Common.c">
+      <Filter>model\XORModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\XORModel\Sim_XOR_Interface.c">
+      <Filter>model\XORModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\XORModel\Sim_XOR_Schedule.c">
+      <Filter>model\XORModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\LDPC\HAL_LdpcEngine.c">
+      <Filter>firmware\HAL\LDPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\LDPC\HAL_LdpcSoftDec.c">
+      <Filter>firmware\HAL\LDPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_FCMDQ.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\FlashDriver\FlashDriver_Test.c">
+      <Filter>unittest\HAL_UnitTest\FlashDriver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\L2_TableRebuildCheck\L2_SimRebuildTable.c">
+      <Filter>unittest\L2_TableRebuildCheck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\L2_TableRebuildCheck\L2_SimTablecheck.c">
+      <Filter>unittest\L2_TableRebuildCheck</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_Interface.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\DecSts\HAL_DecStsReport.c">
+      <Filter>firmware\HAL\DecSts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Common.c">
+      <Filter>unittest\HAL_UnitTest\XOR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Config.c">
+      <Filter>unittest\HAL_UnitTest\XOR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Nfc_Interface.c">
+      <Filter>unittest\HAL_UnitTest\XOR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\XOR\XorUt_Schedule.c">
+      <Filter>unittest\HAL_UnitTest\XOR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\BkEnd_TestMain\BkEnd_TestMain.c">
+      <Filter>unittest\BkEnd_TestMain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L2\L2_TLCMerge.c">
+      <Filter>firmware\algorithm\L2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\LDPC\TEST_LdpcSoftDec.c">
+      <Filter>unittest\HAL_UnitTest\LDPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\Flash\TSB_2D_TLC\HAL_FlashSoftDecPara.c">
+      <Filter>firmware\HAL\Flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\EM\HAL_EncriptionModule.c">
+      <Filter>firmware\HAL\EM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_BufMgr.c">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_DataRecover.c">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_Debug.c">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_ErrHBasic.c">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_ErrHExtend.c">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_FCMDQ.c">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_FlashMonitor.c">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_Init.c">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_Interface.c">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_Schedule.c">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\L3\L3_SoftDecoder.c">
+      <Filter>firmware\algorithm\L3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\algorithm\Misc\FW_SDL.c">
+      <Filter>firmware\algorithm\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3BbtTest\BBT_Test.c">
+      <Filter>unittest\L3_UnitTest\L3BbtTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3FCmdTest\FCMD_Test.c">
+      <Filter>unittest\L3_UnitTest\L3FCmdTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3LLFBootTest\LLFBoot_Test.c">
+      <Filter>unittest\L3_UnitTest\L3LLFBootTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3Seq4kRTest\Seq4KR_Test.c">
+      <Filter>unittest\L3_UnitTest\L3Seq4kRTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\RDT\RDT.c">
+      <Filter>unittest\L3_UnitTest\RDT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3StressTest\L3MixStressTest\MixStress_Test.c">
+      <Filter>unittest\L3_UnitTest\L3StressTest\L3MixStressTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3StressTest\L3RdStressTest\ReadStress_Test.c">
+      <Filter>unittest\L3_UnitTest\L3StressTest\L3RdStressTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\256fm_x64\TSB_FOURPLN\flash_special_interface.c">
+      <Filter>model\256fm_x64\TSB_FOURPLN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\256fm_x64\TSB_2D_TLC\flash_special_interface.c">
+      <Filter>model\256fm_x64\TSB_2D_TLC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\256fm_x64\TSB_3D_TLC\flash_special_interface.c">
+      <Filter>model\256fm_x64\TSB_3D_TLC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\256fm_x64\MICRON_MLC_L95\flash_special_interface.c">
+      <Filter>model\256fm_x64\MICRON_MLC_L95</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\flashmodel\sim_flash_status.c">
+      <Filter>model\flashmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\platform\single_list.c">
+      <Filter>model\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\platform\sim_log.c">
+      <Filter>model\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\L3_UnitTest\L3XorTest\Xor_Test.c">
+      <Filter>unittest\L3_UnitTest\L3XorTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\adapter\L3\NVMe\L3_NVMe.c">
+      <Filter>firmware\adapter\L3_NVMe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\DECstsModel\Sim_DEC_Status.c">
+      <Filter>model\DECstsModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\model\256fm_x64\INTEL_3D_TLC\flash_special_interface.c">
+      <Filter>model\256fm_x64\INTEL_3D_TLC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcCheckList.c">
+      <Filter>unittest\HAL_UnitTest\NFC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcMCU1.c">
+      <Filter>unittest\HAL_UnitTest\NFC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcMCU2.c">
+      <Filter>unittest\HAL_UnitTest\NFC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcFuncBasic.c">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_BASIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcPattGenBasic.c">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_BASIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcPattQ.c">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_BASIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcExtDataCheck.c">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcFCMDQ.c">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcFuncExt.c">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcLLF.c">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcPattExtInsert.c">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\TEST_NfcPattGenExt.c">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\IIC\HAL_IIC.c">
+      <Filter>firmware\HAL\IIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\firmware\HAL\IIC\HAL_TemperatureSensor.c">
+      <Filter>firmware\HAL\IIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_EXT\INTEL_3D_TLC\TEST_NfcFlashTypeAdapter.c">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_EXT\INTEL_3D_TLC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\TEST_NfcPerformance.c">
+      <Filter>unittest\HAL_UnitTest\NFC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\unittest\HAL_UnitTest\NFC\NFC_BASIC\TEST_NfcPattBasicInsert.c">
+      <Filter>unittest\HAL_UnitTest\NFC\NFC_BASIC</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
